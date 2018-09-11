@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+body {
+  font-size: 12px;
+  font-family: Arial, 'Microsoft YaHei';
+}
+.resumeContainer {
+  width: 1200px;
+  height: 145px;
+  margin: 10px auto;
+  border: 1px solid #e1e1e1;
+}
+.resumeContainer .resumeWrap {
+  float: left;
+  width: 25%;
+  margin: 20px 0;
+}
+.resumeContainer .resumeWrap .catalogInfo {
+  float: left;
+  margin-left: 30px;
+  text-align: center;
+}
+.resumeContainer .resumeWrap .catalogInfo .title {
+  color: #666;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.resumeContainer .resumeWrap .catalogInfo .imgWrap img {
+  margin-top: 18px;
+  width: 65px;
+  height: 65px;
+}
+.resumeContainer .resumeWrap .catalogChoice {
+  float: left;
+  margin-left: 20px;
+}
+.resumeContainer .resumeWrap .catalogChoice ul {
+  float: left;
+  margin-right: 15px;
+}
+.resumeContainer .resumeWrap .catalogChoice ul li {
+  height: 20px;
+  margin-bottom: 10px;
+  color: #666;
+}
+.resumeContainer .resumeWrap .catalogChoice ul li a:hover {
+  color: #f36;
+}
+.resumeContainer .resumeWrap .catalogChoice ul li a.checked {
+  padding: 3px;
+  font-size: 10px;
+  background: #f36;
+  color: #fff;
+  cursor: pointer;
+}
+.userContain {
+  width: 1200px;
+  margin: auto;
+}
+.userContain .orderWrap {
+  margin: 10px auto;
+  background: #f8f8f8;
+  border: 1px solid #e1e1e1;
+}
+.userContain .orderWrap:after {
+  clear: both;
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+.userContain .orderWrap .orderInfo {
+  float: left;
+  cursor: pointer;
+}
+.userContain .orderWrap .orderInfo .fashion {
+  display: block;
+  float: left;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.userContain .orderWrap .orderInfo .on {
+  background: #fff;
+  border-right: 1px solid #e1e1e1;
+}
+.userContain .orderWrap .orderInfo .borderleft {
+  border-left: 1px solid #e1e1e1;
+}
+.userContain .orderWrap .orderInfo .both:hover {
+  color: #f36;
+}
+.userContain .orderWrap .orderInfo .price {
+  position: relative;
+  display: block;
+}
+.userContain .orderWrap .orderInfo .price span {
+  float: left;
+  display: block;
+}
+.userContain .orderWrap .orderInfo .price span.priceArrow {
+  margin-left: 3px;
+  width: 10px;
+  height: 40px;
+  background: url(http://s17.mogucdn.com/p1/160726/idid_ie4wezrsgy2gey3ghezdambqgqyde_9x5.png) no-repeat center center;
+  background-size: 10px;
+}
+.userContain .orderWrap .orderInfo .price .priceDesc {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 106px;
+  border: 1px solid #c5c5c5;
+  background: #fff;
+  z-index: 10;
+}
+.userContain .orderWrap .priceWrap {
+  float: left;
+  margin-left: 22px;
+  height: 40px;
+  line-height: 40px;
+}
+.userContain .orderWrap .priceWrap input {
+  width: 62px;
+  height: 22px;
+  border: 1px solid #eaeaea;
+}
+.userContain .orderWrap .priceWrap .sure {
+  padding: 4px 5px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+.userContain .product {
+  width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.userContain .product ul {
+  margin-right: -20px;
+}
+.userContain .product ul .product-list {
+  width: 224px;
+  position: relative;
+  margin: 0 20px 20px 0;
+}
+.userContain .product ul .product-list div .img-size {
+  position: relative;
+  width: 224px;
+  height: 336px;
+  overflow: hidden;
+  background: url(https://s10.mogucdn.com/mlcdn/c45406/170609_2iihha256bi8207b8b5g2bj7dablb_120x120.png) no-repeat center center;
+}
+.userContain .product ul .product-list div .img-size a img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.userContain .product ul .product-list div .product-info {
+  width: 224px;
+  margin-top: 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.userContain .product ul .product-list div .product-info .price {
+  font-size: 16px;
+  color: #f36;
+  float: left;
+}
+.userContain .product ul .product-list div .product-info .fav {
+  float: right;
+}
+.userContain .product ul .product-list div .product-info .fav .fav-i {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background: url(http://s2.mogucdn.com/mlcdn/c45406/170328_88giad0l4lcl61kg8ak02567ddhfd_32x30.png) no-repeat center;
+  background-size: 100%;
+}
+.userContain .product ul .product-list div .product-info .fav .fav-n {
+  color: #999;
+  line-height: 14px;
+  margin-left: 3px;
+}
+.userContain .product ul .product-list div .text-link {
+  color: #666;
+  display: block;
+  height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.userContain .product ul .product-list div .text-link:hover {
+  color: #F4388F;
+}
+.pageNav {
+  width: 1200px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto;
+}
+.pageNav .pageNum {
+  width: 600px;
+  margin: 20px auto;
+}
+.pageNav .pageNum a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 5px;
+  border: 1px solid #eee;
+  white-space: nowrap;
+  color: #333;
+  background-color: #fff;
+}
+.pageNav .pageNum a:hover {
+  border: 1px solid #f36;
+  color: #f36;
+}
+.pageNav .pageNum a.pagePrev,
+.pageNav .pageNum a.pageNext {
+  width: auto;
+  height: 30px;
+  padding: 0 13px;
+  font-weight: 400;
+}
+.pageNav .pageNum a.pagePrev {
+  opacity: 0;
+}
+.pageNav .pageNum a.currentpage {
+  background-color: #f36;
+  border: 1px solid #f36;
+  color: #fff;
+}
