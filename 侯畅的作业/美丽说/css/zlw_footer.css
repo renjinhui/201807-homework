@@ -1,0 +1,193 @@
+
+.zlw_footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    height: 297px;
+    color: #666;
+    display: block;
+    background: rgb(245,245,245);
+
+
+
+}
+.zlw_footer .zlw_footer_margin{
+
+    padding-top: 30px;
+    border-top:1px solid #ddd;
+    font-size: 12px;
+    /*font-size: 1%;*/
+    color: #666;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header{
+    width: 100%;
+    height: 179px;
+    /*padding-left: 104px;*/
+    /*padding-left: 10%;
+    padding-right: 104px;*/
+    position: relative;
+}
+
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left div{
+    width: 64px;
+    height: 178.4px;
+    float: left;
+    margin-left:108px ;
+    /*padding-right: 104px;*/
+    /*padding-right: 8%;*/
+    position:relative;
+    font-size: 12px;
+    color: #666;
+
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link1 h4{
+
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link1 ul li{
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    margin-top: 12px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link2 h4{
+
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link2 ul li{
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    margin-top: 12px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link3 h4{
+
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link3 ul li{
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    margin-top: 12px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link4 h4{
+
+    width: 71px;
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link4{
+    /*padding-right: 286px;*/
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link4 ul li{
+    font-size: 12px;
+    color: #666;
+    height: 26px;
+    width: 71px;
+    line-height: 26px;
+    margin-top: 12px;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link4 ul li span{
+    height: 18px;
+    width: 18px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    background: url("../img/icon74x18.png") no-repeat;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_left .zlw_footer_link4 ul li img{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    position: relative;
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_right{
+
+    display: block;
+    position: absolute;
+    /*margin-left: 828px;*/
+    margin-left: 50%;
+    margin-right: 60px;
+
+
+
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_right div{
+
+    float: left;
+    display: block;
+    font-size: 16px;
+    color: #666666;
+    line-height: 36px;
+    text-align: center;
+
+
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_right .zlw_img1{
+    position: absolute;
+    top: -8px;
+    right: -350px;
+    /*padding-right: 60px;*/
+
+}
+.zlw_footer .zlw_footer_margin .zlw_footer_header .zlw_footer_right .zlw_img2{
+   /* margin-right: 60px;*/
+    position: absolute;
+    top: -8px;
+    right: -550px;
+}
+
+.zlw_footer .zlw_footer_record{
+    /*width: 100%;*/
+    position: relative;
+    bottom: -20px;
+    padding: 12px 19px;
+    margin:0 auto;
+    border-top: 1px solid #e6e6e6;
+    line-height: 22px;
+     text-align: center;
+
+    font-size: 12px;
+    display: block;
+    min-width: 1200px;
+
+}
+a{
+    font-size: 12px;
+    color: #666666;
+}
+a:hover{
+    color: #ff3366;
+}
+.adBox{
+    float: left;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    width: 264px;
+    height: 222px;
+    cursor: pointer;
+    z-index: 99;
+}
+.adBox span{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
