@@ -1,0 +1,1209 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  color: #888;
+  background: #fff;
+  font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+/*推荐游戏*/
+.push {
+  width: 1300px;
+  overflow: hidden;
+  margin: 20px auto;
+  .lf-push {
+    width: 1000px;
+    float: left;
+    .title-push {
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+      height: 20px;
+      margin-bottom: 20px;
+      line-height: 20px;
+      .title-lf {
+        padding-left: 10px;
+        float: left;
+        font-size: 18px;
+        line-height: 20px;
+        border-left: 3px solid #00aeff;
+        color: #3f3f3f;
+      }
+      .notice {
+        float: right;
+        span {
+          background: url("../images/games/bit.png") -42px -16px no-repeat;
+          height: 19px;
+          width: 19px;
+          float: right;
+          margin-right: 20px;
+        }
+        span:hover {
+          background: url("../images/games/bit.png") -90px -16px no-repeat;
+        }
+      }
+    }
+    .box-push {
+      width: 1000px;
+      height: 320px;
+      li {
+        float: left;
+        width: 228px;
+        height: 318px;
+        margin-right: 20px;
+        position: relative;
+        border: 1px solid #e9e9e9;
+        z-index: 0;
+        a {
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 228px;
+            height: 268px;
+            overflow: hidden;
+            box-sizing: border-box;
+            vertical-align: middle;
+            transition: transform 0.5s ease;
+          }
+          img:hover {
+            transform: scale(1.01);
+            transform-origin: center center 0;
+          }
+        }
+        p {
+          position: absolute;
+          height: 50px;
+          width: 224px;
+          bottom: 0;
+          left: 0;
+          display: block;
+          line-height: 50px;
+          padding-left: 5px;
+          z-index: 100;
+          a {
+            font-size: 14px;
+            line-height: 50px;
+            color: #3f3f3f;
+            margin-left: 5px;
+
+          }
+          a:hover {
+            color: #ff6b21;
+          }
+          a.go {
+            height: 50px;
+            width: 88px;
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            float: right;
+            text-align: center;
+            background: #00aeff;
+          }
+        }
+
+        .float-box {
+          height: 30px;
+          width: 220px;
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          left: 0;
+          bottom: 50px;
+          display: none;
+          z-index: 1;
+          padding-left: 8px;
+          color: #fff;
+          line-height: 30px;
+          span {
+            float: right;
+            padding: 0 8px;
+            a {
+              color: #fff;
+            }
+          }
+
+        }
+      }
+      li:hover {
+        border: 1px solid #ff6b21;
+        .go {
+          background: #ff6b21;
+        }
+        .float-box {
+          display: block;
+          animation: move2 0.3s;
+          z-index: 1;
+        }
+
+      }
+
+    }
+  }
+  .callboard {
+    width: 300px;
+    position: relative;
+    float: left;
+    .calltitle {
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+      padding-bottom: 20px;
+      height: 20px;
+      line-height: 20px;
+      float: left;
+      color: #3f3f3f;
+    }
+    .menu {
+      width: 299px;
+      height: 36px;
+      overflow: hidden;
+      border-right: 1px solid #e5e5e5;
+      border-bottom: none;
+      div {
+        float: left;
+        width: 149px;
+        line-height: 34px;
+        font-size: 14px;
+        height: 34px;
+        text-align: center;
+        border-right: 0;
+        background: #f5f5f5;
+        color: #808080;
+      }
+      div:hover {
+        color: #191a1a;
+        background: #fff;
+        border-top: 2px solid #00aeff;
+      }
+
+    }
+
+  }
+  @keyframes move2 {
+    from {
+      transform: translateY(30px);
+      z-index: 0;
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      z-index: 1;
+    }
+  }
+}
+
+/*网页游戏*/
+.webplay {
+  width: 1300px;
+  margin: 40px auto;
+  .play-left {
+    width: 990px;
+    height: 405px;
+    float: left;
+    .webtitle {
+      height: 30px;
+      .left-top {
+        border-left: 3px solid #fa760b;
+        padding-left: 10px;
+        float: left;
+        color: #3f3f3f;
+        font-size: 18px;
+        line-height: 20px;
+        overflow: hidden;
+        padding-right: 65px;
+      }
+      .center-top {
+        ul {
+          li {
+
+            float: left;
+            height: 28px;
+            text-align: center;
+            width: 62px;
+            margin: 0 10px;
+            font-size: 14px;
+            cursor: pointer;
+          }
+          li:hover {
+            color: #fa760b;
+          }
+          .current {
+            background: url('../images/games/bit.png') -65px 24px no-repeat;
+            color: #fa760b;
+          }
+        }
+      }
+      .right-top {
+        float: right;
+        span {
+          background: url("../images/games/bit.png")-42px -16px no-repeat;
+          height: 19px;
+          width: 19px;
+          float: right;
+        }
+        span:hover {
+          background: url("../images/games/bit.png") -90px -16px no-repeat;
+        }
+      }
+    }
+    .body {
+      width: 994px;
+      height: 354px;
+      overflow: hidden;
+      ul {
+        overflow: hidden;
+
+        li.content {
+          width: 1014px;
+          height: 354px;
+          //display: none;
+          margin-top: -14px;
+          div {
+            float: left;
+            margin: 23px 23px 0 0;
+            width: 228px;
+            height: 159px;
+            border: 1px solid #e9e9e9;
+            position: relative;
+            z-index: 5;
+            a {
+              img {
+                overflow: hidden;
+                width: 228px;
+                height: 124px;
+                left: 50%;
+                top: 50%;
+                vertical-align: middle;
+                transition: transform 0.5s ease 0s;
+              }
+              img:hover {
+                transform: scale(1.01);
+                transform-origin: center center 0;
+
+              }
+
+            }
+          }
+          .float-play {
+            left: 0;
+            bottom: 32px;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            height: 35px;
+            width: 198px;
+            color: #fff;
+            font-size: 12px;
+            display: none;
+            position: absolute;
+            animation: move 0.3s;
+            z-index: 0;
+            padding: 0 15px;
+            line-height: 35px;
+            a {
+              color: #fff;
+              i {
+                font-style: normal;
+
+              }
+
+            }
+            a {
+              color: #fff;
+              span {
+                float: right;
+
+              }
+              em {
+                width: 15px;
+                height: 11px;
+                float: right;
+                margin-right: 10px;
+                margin-top: 12px;
+                vertical-align: middle;
+                display: block;
+                background: url("../images/games/bit.png")-50px 0 no-repeat;
+              }
+            }
+
+          }
+          div:hover {
+            .float-play {
+              display: block;
+              border: none;
+            }
+          }
+
+          div:hover {
+            border: 1px solid #fa760b;
+          }
+          .name {
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            color: #3f3f3f;
+            z-index: 10;
+            background: #fff;
+            position: absolute;
+            width: 228px;
+            left: 0;
+            bottom: 0;
+          }
+          p:hover {
+            color: #fa760b;
+          }
+
+          @-webkit-keyframes move {
+            from {
+              transform: translateY(35px);
+            }
+            to {
+              transform: translateY(0px);
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
+  .play-right {
+    float: left;
+    width: 300px;
+    position: relative;
+    .title-a {
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+      padding-bottom: 20px;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 15px;
+      a {
+        float: right;
+        width: 19px;
+        height: 19px;
+        background: url("../images/games/bit.png") -42px -16px no-repeat;
+      }
+      a:hover {
+        background: url("../images/games/bit.png") -90px -16px no-repeat;
+      }
+      strong {
+        font-style: normal;
+        font-weight: normal;
+        float: left;
+        color: #3f3f3f;
+      }
+      .title-border {
+        position: absolute;
+        width: 300px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #e5e5e5;
+      }
+      .title-line {
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: #007eff;
+      }
+    }
+    .newslist {
+      overflow: hidden;
+      margin: auto;
+      ul {
+        overflow: hidden;
+        li {
+          font-size: 14px;
+          line-height: 36px;
+          width: 284px;
+          float: left;
+          margin-left: 15px;
+          height: 36px;
+          border-bottom: 1px dashed #e5e5e5;
+          text-align: -webkit-match-parent;
+          a {
+            background: url("../images/games/bit.png") -418px -283px no-repeat;
+            padding-left: 3px;
+          }
+          a:hover {
+            color: #ff6b21;
+          }
+          span {
+            color: #c4c4c4;
+            float: right;
+            line-height: 36px;
+          }
+
+        }
+        li:last-child {
+          border-bottom: none;
+        }
+
+      }
+      .pic {
+        display: block;
+        width: 282px;
+        height: 100px;
+        margin: 12px auto 0 15px;
+        img {
+          vertical-align: middle;
+        }
+      }
+
+    }
+
+  }
+}
+
+/*h5游戏榜*/
+.h5 {
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+  .game {
+    padding-bottom: 8px;
+    margin: 40px auto 0 auto;
+    width: 1300px;
+    .left-a {
+      float: left;
+      width: 1000px;
+
+      .h5games-title {
+        height: 20px;
+        overflow: hidden;
+        strong {
+          border-left: 3px solid #b911f7;
+          padding-left: 10px;
+          float: left;
+          color: #3f3f3f;
+          font-size: 18px;
+          line-height: 20px;
+          font-style: normal;
+          font-weight: normal;
+        }
+        a {
+          width: 19px;
+          height: 19px;
+          background: url("../images/games/bit.png") -42px -16px no-repeat;
+          float: right;
+          margin-right: 16px;
+
+        }
+        a:hover {
+          background: url("../images/games/bit.png") -90px -16px no-repeat;
+        }
+
+      }
+      dl {
+        width: 311px;
+        float: left;
+        border: 1px solid #e5e5e5;
+        margin-right: 20px;
+        margin-top: 15px;
+        dt {
+          position: relative;
+          em {
+            background: url("../images/games/bit.png") right -37px no-repeat;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+          }
+
+        }
+        dd {
+          width: 270px;
+          margin: 0 auto 0 auto;
+          ul {
+            .over {
+              position: relative;
+              height: 50px;
+              padding: 15px 0px;
+              .erweima {
+                display: none;
+                position: absolute;
+                right: 70px;
+                top: -15px;
+                width: 115px;
+                height: 113px;
+                overflow: hidden;
+                background: url("../images/games/bit.png")0 -42px no-repeat;
+                img {
+                  width: 80px;
+                  height: 80px;
+                  margin: 16px 0 0 16px;
+                }
+              }
+
+              .logo {
+                float: left;
+                width: 50px;
+                height: 50px;
+                border-radius: 8px;
+              }
+              p {
+                width: 140px;
+                float: left;
+                margin-left: 10px;
+                a {
+                  text-decoration: none;
+                  font-size: 14px;
+                  line-height: 25px;
+                  color: #3f3f3f;
+                }
+                a:hover {
+                  color: #ff6b21;
+                }
+
+                span {
+                  color: #b4b4b4;
+                  display: block;
+                  i {
+                    font-style: normal;
+                    color: #24ccc8;
+                  }
+                }
+
+              }
+              .play {
+                float: right;
+                margin-top: 10px;
+                width: 70px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background-color: #007eff;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+                outline: 0;
+
+              }
+              .play:hover {
+                background: #ff6b21;
+              }
+
+              /*如何写*/
+
+            }
+            li:nth-child(1) {
+              border-top: none !important;
+            }
+          ;
+          }
+        }
+      }
+
+    }
+  }
+  .right-a {
+    position: relative;
+    float: left;
+    width: 300px;
+    .top {
+      width: 300px;
+      position: relative;
+      float: right;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e5e5e5;
+      .hot {
+        float: left;
+        color: #3f3f3f;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .add {
+        a {
+          width: 19px;
+          height: 19px;
+          background: url("../images/games/bit.png") -42px -16px no-repeat;
+          float: right;
+        }
+        a:hover {
+          background: url("../images/games/bit.png") -90px -16px no-repeat;
+        }
+      }
+    }
+    .list {
+      ul {
+        margin-top: -3px;
+        li {
+          overflow: hidden;
+          float: left;
+          width: 300px;
+          padding: 10px 0 9px 0;
+          border-top: 1px dashed #e5e5e5;
+          i {
+            float: left;
+            width: 20px;
+            margin: 3px 20px 0 0;
+            background-color: #d2d2d2;
+            color: #fff;
+            text-align: center;
+            font-style: normal;
+          }
+          p.fcgr3 {
+            font-size: 14px;
+            color: #3f3f3f;
+          }
+          a:hover {
+            color: #ff6b21;
+          }
+          strong {
+            float: right;
+            font-style: normal;
+            font-weight: normal;
+            em {
+              color: #11b9f7;
+              font-style: normal;
+              font-weight: normal;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+/*微密*/
+.girlplay {
+  width: 1300px;
+  overflow: hidden;
+  margin: 40px auto 0 auto;
+  .left-girl {
+    width: 1000px;
+    float: left;
+    .title-weimi {
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+      padding-bottom: 20px;
+      height: 20px;
+      line-height: 20px;
+      strong {
+        border-left: 3px solid #ff2045;
+        padding-left: 10px;
+        float: left;
+        color: #3f3f3f;
+        font-weight: normal;
+      }
+    }
+    .weimibox {
+      height: 302px;
+      ul {
+        li.first_i {
+          width: 290px;
+          overflow: hidden;
+          position: relative;
+          margin: 0 20px 20px 0;
+          .img-box {
+            height: 302px;
+            width: 100%;
+            position: relative;
+            img {
+              vertical-align: middle;
+            }
+            span {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 302px;
+              background: url("../images/games/wm_back2.png") left bottom repeat-x;
+
+            }
+            em {
+              width: 38px;
+              height: 38px;
+              background: url("../images/games/bit.png") -120px -42px no-repeat;
+              left: 240px;
+              bottom: 250px;
+              position: absolute;
+            }
+            p {
+              width: 85%;
+              left: 0;
+              bottom: 0;
+              height: 30px;
+              line-height: 30px;
+              position: absolute;
+              color: #fff;
+              padding-left: 25px;
+              background: url("../images/games/bit.png")-190px -46px no-repeat;
+              i {
+                float: right;
+                font-style: normal;
+                background: url("../images/games/bit.png") -196px -71px no-repeat;
+                padding-left: 20px;
+              }
+            }
+          }
+          .float-img {
+            width: 100%;
+            height: 302px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: none;
+            float: left;
+            em {
+              display: block;
+              width: 100%;
+              height: 302px;
+              background-color: #000;
+              opacity: 0.6;
+            }
+            p {
+              width: 170px;
+              height: 122px;
+              line-height: 20px;
+              color: #fff;
+              text-align: center;
+              position: absolute;
+              left: 23%;
+              top: 30%;
+              span {
+                display: block;
+                text-align: left;
+                font-size: 14px;
+                line-height: 25px;
+                color: #fff;
+              }
+              a {
+                display: block;
+                height: 30px;
+                width: 80px;
+                line-height: 30px;
+                text-align: center;
+                background: #00aeff;
+                opacity: 1;
+                z-index: 12;
+                margin-top: 15px;
+                margin-left: 42px;
+                color: #fff !important;
+              }
+              a:hover {
+                background: #ff6b21;
+              }
+            }
+          }
+        }
+        li.first_i:hover {
+          .float-img {
+            display: block;
+          }
+        }
+        li {
+          float: left;
+          overflow: hidden;
+          position: relative;
+          width: 210px;
+          margin: 0 20px 20px 0;
+          .img-box{
+            position: relative;
+            width: 210px;
+            height: 141px;
+            img{
+              vertical-align: middle;
+            }
+            span{
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 141px;
+              background: url("../images/games/wm_back2.png") left bottom repeat-x;
+
+            }
+            em{
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              display: block;
+              width: 29px;
+              height: 29px;
+              background: url("../images/games/bit.png") -159px -42px no-repeat;
+              font-style: normal;
+            }
+            p{
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 175px;
+              height: 30px;
+              padding: 0 10px 0 25px;
+              line-height: 30px;
+              color: #fff;
+              background: url("../images/games/bit.png") -190px -46px no-repeat;
+              i{
+                float: right;
+                background: url("../images/games/bit.png") -196px -71px no-repeat;
+                padding-left: 18px;
+                font-style: normal;
+              }
+            }
+          }
+          .float-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 210px;
+            height: 141px;
+            color: #fff;
+            display: none;
+            em{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 210px;
+              height: 141px;
+              filter: alpha(opacity=60);
+              opacity: 0.6;
+              background-color: #000;
+            }
+            p{
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              padding: 20px;
+              width: 170px;
+              height: 101px;
+              line-height: 25px;
+              color: #fff;
+              text-align: center;
+              span{
+                display: block;
+                text-align: left;
+                font-size: 14px;
+              }
+              a{
+                display: block;
+                margin: 10px auto 0 auto;
+                width: 80px;
+                height: 30px;
+                line-height: 30px;
+                color: #fff;
+                background-color: #007eff;
+              }
+              a:hover{
+                background: #ff6b21;
+              }
+            }
+          }
+
+        }
+        li:hover{
+          .float-img {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .right-girl{
+  .right-a{
+    position: relative;
+    float: left;
+    width: 300px;
+    .title-a {
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+      padding-bottom: 20px;
+      height: 20px;
+      line-height: 20px;
+      .more-c{
+        float: right;
+        height: 19px;
+        font-size: 14px;
+        color: #007eff;
+      }
+      .more-c:hover{
+        color: #ea181a;
+      }
+    }
+
+    .weimi-rz{
+      width: 300px;
+      .rz-btn{
+        display: block;
+        width: 300px;
+        height: 50px;
+        background: url("../images/games/bit.png") 0 -316px no-repeat;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+
+      }
+      .rz-btn:hover{
+        background: url("../images/games/bit.png") 0 -366px no-repeat;
+      }
+      p{
+        height: 30px;
+        line-height: 29px;
+        text-align: center;
+        background-color: #f0f0f0;
+        color: #888;
+      }
+      .wm-backa{
+        overflow: hidden;
+        width: 299px;
+        color: #000;
+        text-align: center;
+        border-right: 1px solid #f0f0f0;
+        border-top: 1px solid #f0f0f0;
+        li{
+          float: left;
+          width: 148px;
+          height: 44px;
+          line-height: 44px;
+          border-left: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+        }
+      }
+      .wm-backb{
+        position: relative;
+        overflow: hidden;
+        width: 298px;
+        height: 99px;
+        color: #000;
+        text-align: center;
+        border: 1px solid #f0f0f0;
+        a{
+          display: block;
+          margin-top: 16px;
+          width: 298px;
+          height: 50px;
+          background: url("../images/games/bit.png") -4px -175px no-repeat;
+        }
+        ul{
+          width: 298px;
+          li{
+            float: left;
+            width: 33%;
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+/*尾部导航*/
+.part-e {
+  font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+  padding-bottom: 30px;
+  width: 100%;
+  position: relative;
+  margin: 40px auto 0 auto;
+  padding-bottom: 30px;
+  background-color: #666;
+  overflow: hidden;
+  .help-text {
+    width: 960px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -480px;
+    background-color: #4c4c4c;
+    overflow: hidden;
+    li {
+      float: left;
+      width: 480px;
+      height: 66px;
+      overflow: hidden;
+    }
+    span {
+      float: left;
+      width: 90px;
+      height: 66px;
+      background-image: url("../images/games/bit.png");
+      background-repeat: no-repeat;
+    }
+    .bit3, .bit4 {
+      background-color: #3f3f3f
+    }
+
+    .bit1 span {
+      background-position: 0px -250px;
+      background-color: #3f3f3f;
+    }
+
+    .bit2 span {
+      background-position: -90px -250px;
+      background-color: #3f3f3f;
+    }
+
+    .bit3 span {
+      background-position: -180px -250px;
+      background-color: #323232;
+    }
+
+    .bit4 span {
+      background-position: -270px -250px;
+      background-color: #323232;
+    }
+
+    strong {
+      display: block;
+      line-height: 28px;
+      margin-top: 8px;
+      padding-left: 15px;
+      font-size: 14px;
+    }
+
+    p {
+      float: left;
+      width: 390px;
+      color: #00aeff;
+    }
+
+    a {
+      margin-left: 15px;
+      text-decoration: none;
+      font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+      color: #888;
+    }
+    a:hover {
+      color: #ff6b21;
+    }
+  }
+  .help-lm {
+    width: 960px;
+    margin: 240px auto 0 auto;
+    overflow: hidden;
+    li {
+      float: left;
+      width: 240px;
+      img {
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+      }
+      strong {
+        display: block;
+        font-size: 14px;
+        height: 40px;
+        color: #fff;
+
+      }
+      .add {
+        display: inline-block;
+        width: 96px;
+        margin-top: 10px;
+        line-height: 29px;
+        text-align: center;
+        padding-left: 10px;
+        height: 30px;
+        color: #fff;
+        text-decoration: none;
+        background: url("../images/games/bit.png") #3f3f3f -301px -156px no-repeat;
+      }
+      a.add:hover {
+        background-color: #00aeff;
+      }
+      .add-ok {
+        display: inline-block;
+        width: 96px;
+        margin-top: 10px;
+        line-height: 29px;
+        text-align: center;
+        padding-left: 10px;
+        height: 30px;
+        color: #fff;
+        background: url("../images/games/bit.png") #848585 -301px -190px no-repeat;
+      }
+
+    }
+
+  }
+  .my-links {
+    width: 960px;
+    margin: 34px auto 0 auto;
+    line-height: 28px;
+    //overflow: hidden;
+    strong {
+      float: left;
+      width: 70px;
+      color: #fff;
+    }
+    p {
+      float: left;
+      width: 890px;
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        margin-right: 15px;
+        color: #aaa;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*footer底部*/
+footer {
+  width: 100%;
+  background-color: #3f3f3f;
+  overflow: hidden;
+  .bottom {
+    width: 860px;
+    background: url("../images/games/wyx_img.gif") 0 0 no-repeat;
+    margin: 50px auto 0 auto;
+    padding: 0 0 50px 80px;
+    p {
+      color: #aaa;
+      line-height: 30px;
+      font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+      .target {
+        margin-left: 190px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #aaa;
+      cursor: pointer;
+      margin: 0 5px;
+      line-height: 30px;
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

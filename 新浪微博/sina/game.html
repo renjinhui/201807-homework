@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微游戏-动漫游戏</title>
+    <link rel="icon" href="http://swf.games.sina.com.cn/weiyouxi/hpage/wyx/vgame/img/logo.gif">
+    <link rel="stylesheet" href="css/xt.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/zx.css">
+
+
+</head>
+<body>
+<!--头部-->
+<header class="z_box">
+    <div class="z_wrap">
+        <a href="#" class="sy">微游戏首页</a>
+        <a href="#" class="qp">棋牌游戏</a>
+        <a href="#" class="web">网页游戏</a>
+        <a href="index.html" class="blog">微博</a>
+        <a href="#" class="we_chat">微信</a>
+        <img src="./images/ad.png" alt="" class="lit_ad">
+        <div class="big_ad">
+            <img src="images/zbig.jpg" height="105" width="970" class="big_pic"/>
+        </div>
+
+
+        <div class="user_login">
+            <a href="#">登录 ｜ 注册 <em></em>
+            </a>
+
+        </div>
+    </div>
+</header>
+<div class="qipai-float">
+    <div class="bor"><em></em></div>
+    <div class="gBox">
+        <a href="#" class="big-img">
+            <img src="images/weiyouxi_detail_ca336c07bb30aa7569d70837e96c6fd2.png"/>
+        </a>
+
+    </div>
+</div>
+<div class="webgame-float">
+    <div class="bor"><em></em></div>
+    <div class="box">
+        <ul>
+            <li><a href="#" target="_blank">新热血江湖</a></li>
+            <li><a href="#">鬼吹灯之牧野诡事</a></li>
+            <li><a href="#">乐蜀三国</a></li>
+            <li><a href="#" target="_blank">盗墓笔记页游</a></li>
+            <li><a href="#" target="_blank">大天使之剑</a></li>
+            <li><a href="#" target="_blank">德克萨斯扑克</a></li>
+            <li><a href="#" target="_blank">大唐盛世OL</a></li>
+            <li><a href="#" target="_blank">NBA范特西</a></li>
+            <li><a href="#" target="_blank">范特西足球经理II</a></li>
+            <li><a href="#" target="_blank">神魔传说</a></li>
+            <li><a href="#" target="_blank">最佳阵容页游</a></li>
+            <li><a href="#" target="_blank">足球大师2017</a></li>
+            <li><a href="#" target="_blank">村长打天下</a></li>
+            <li><a href="#" target="_blank">鲜花物语</a></li>
+            <li><a href="#" target="_blank">热血江湖传</a></li>
+            <li><a href="#" target="_blank" class="fcgr2">更多游戏&gt;</a></li>
+        </ul>
+        <div class="list">
+            <a href="#" target="_blank">
+
+                <img src="images/weiyouxi_detail_8504ed07afab566b0aa8cbd686effd2f.jpg" height="60" width="245"/></a>
+            <a href="#" target="_blank">
+
+                <img src="images/weiyouxi_detail_67c2ee6b45c609511635a5d76717b57a.jpg" height="70" width="290"/></a>
+        </div>
+    </div>
+</div>
+<div class="weChat-float">
+    <div class="bor"><em></em></div>
+    <div class="box">
+        <img src="images/wyx_2wf.png"/>
+        <p>微信公众号<br>微游戏手机页游</p>
+    </div>
+</div>
+<div class="login-float">
+    <div class="bor"><em></em></div>
+    <div class="gBox">
+        <strong>欢迎来到
+            <span class="bl">微</span>
+            <span class="gr">游</span>
+            <span class="or">戏</span>
+            !</strong>
+        <p>支持新浪微游戏、微博、博客、邮箱登录</p>
+        <ul>
+            <li><a href="#" class="login-btn">登 录</a></li>
+            <li><a href="#" class="login-btn">注 册</a></li>
+        </ul>
+        <a href="#" class="float-ad">
+            <img src="images/weiyouxi_detail_67c2ee6b45c609511635a5d76717b57a.jpg"/>
+        </a>
+    </div>
+</div>
+
+<!--轮播图-->
+<div class="head-top">
+    <a href="#" class="wyx-logo"></a>
+    <ul class="nav">
+        <li><a href="#" class="on">首页</a></li>
+        <li><a href="#">个人中心</a></li>
+        <li><a href="#">网页游戏</a></li>
+        <li><a href="#">H5游戏</a></li>
+        <li><a href="#">礼包中心</a></li>
+        <li><a href="#">积分商城</a></li>
+        <li><a href="#">充值中心</a></li>
+        <li><a href="#">客服</a></li>
+        <li><a href="#">论坛</a></li>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" id="common_search_game_text" value="请输入你要搜索的游戏" disableautocomplete="" autocomplete="off"
+                   class="searchgame-text" name="keyword">
+            <input class="searchgame-btn" type="submit" value="">
+
+        </form>
+        <div class="search" style="display: none">
+            <p>本月热搜游戏</p>
+            <ul>
+                <li><a href="#">散人传说</a></li>
+                <li><a href="#">盗墓笔记页游</a></li>
+                <li><a href="#">镇魂街OL</a></li>
+                <li><a href="#">大天使之剑</a></li>
+                <li><a href="#">冒险世界OL</a></li>
+                <li><a href="#">足球大师2017</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="play-box">
+    <ul class="img_box">
+        <li>
+            <img src="images/game1.jpg"/>
+        </li>
+        <li>
+            <img src="images/game2.jpg"/>
+        </li>
+        <li>
+            <img src="images/game3.jpg"/>
+        </li>
+        <li>
+            <img src="images/game4.jpg"/>
+        </li>
+        <li>
+            <img src="images/game5.jpg"/>
+        </li>
+    </ul>
+
+    <ul class="tip_box">
+        <li class="tip">
+
+            <div class="play-wrap">
+                <img src="images/play1.png" height="80" width="80"/>
+                <div class="small_tit">
+                    <h2>散人传说</h2>
+                    <p>再战沙城 一万年</p>
+                </div>
+            </div>
+        </li>
+        <li class="tip">
+
+            <div class="play-wrap">
+                <img src="images/play1.png" height="80" width="80"/>
+                <div class="small_tit">
+                    <h2>镇魂街OL</h2>
+                    <p>这一条街 由我守护</p>
+                </div>
+            </div>
+        </li>
+        <li class="tip">
+
+            <div class="play-wrap">
+                <img src="images/play1.png" height="80" width="80"/>
+                <div class="small_tit">
+                    <h2>足球大师2017</h2>
+                    <p>最佳足球游戏</p>
+                </div>
+            </div>
+        </li>
+        <li class="tip">
+
+            <div class="play-wrap">
+                <img src="images/play1.png" height="80" width="80"/>
+                <div class="small_tit">
+                    <h2>大天使之剑</h2>
+                    <p>斩妖除魔</p>
+                </div>
+            </div>
+        </li>
+        <li class="tip">
+
+            <div class="play-wrap">
+                <img src="images/play1.png" height="80" width="80"/>
+                <div class="small_tit">
+                    <h2>NBA征程</h2>
+                    <p>2018NBA最新授权游戏</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<!--推荐游戏-->
+<div class="push">
+    <div class="lf-push">
+        <div class="title-push">
+            <div class="title-lf">推荐游戏</div>
+            <div class="notice"><span></span></div>
+        </div>
+        <div class="box-push">
+            <ul>
+                <li>
+                    <a href="##"><img
+                        src="http://image.game.weibo.com/weiyouxi_detail_8e8051a420c88ad7c78a59543442d7e8.jpg"
+                        alt=""></a>
+                    <p><a href="##">足球大师2017</a><a href="##"class="go">进入游戏</a></p>
+                    <div class="float-box">模拟经营<span><a href="##">官网</a>|<a href="##">礼包</a></span></div>
+                </li>
+                <li>
+                    <a href="##"><img
+                            src="http://image.game.weibo.com/weiyouxi_detail_4b271a07a75e5370e2a40ea9bd35915f.jpg"
+                            alt=""></a>
+                    <p><a href="##">冒险世界OL</a><a href="##"class="go">进入游戏</a></p>
+                    <div class="float-box">模拟经营<span><a href="##">官网</a>|<a href="##">礼包</a></span></div>
+                </li>
+                <li>
+                    <a href="##"><img
+                            src="http://image.game.weibo.com/weiyouxi_detail_5d15c547c525e7d92fdde2fa3c9198a7.jpg"
+                            alt=""></a>
+                    <p><a href="##">NBA征程</a><a href="##"class="go">进入游戏</a></p>
+                    <div class="float-box">模拟经营<span><a href="##">官网</a>|<a href="##">礼包</a></span></div>
+                </li>
+                <li>
+                    <a href="##"><img
+                            src="http://image.game.weibo.com/weiyouxi_detail_7d684a137655c3e5eedbf60745a213ed.jpg"
+                            alt=""></a>
+                    <p><a href="##">大天使之剑</a><a href="##"class="go">进入游戏</a></p>
+                    <div class="float-box">模拟经营<span><a href="##">官网</a>|<a href="##">礼包</a></span></div>
+                </li>
+            </ul></div>
+    </div>
+    <div class="callboard"><div class="calltitle">开服公告</div>
+    <div class="menu"><div class="menu1">已开新服</div>
+    <div class="menu2">新服预告</div></div>
+    </div>
+</div>
+<!--网页游戏-->
+<div class="webplay">
+    <div class="play-left">
+    <div class="webtitle">
+        <div class="left-top">网页游戏</div>
+        <div class="center-top">
+            <ul>
+                <li>热门游戏</li>
+                <li>经典游戏</li>
+                <li>猜你喜欢</li>
+            </ul></div>
+        <div class="right-top"><a href="##"><span></span></a></div>
+        <div class="body">
+            <ul>
+                <li class="content">
+                    <div>  <a href="##"><img src="images/games/play1.jpg" alt=""></a>
+                        <p class="name">蛮荒之路2</p>
+                        <div class="float-play">
+                            <a href="##"class="left-a"> <i class="lf">礼包</i>|<i>官网</i></a> <a href="##" ><span>进入游戏</span>
+                            <em></em>
+                        </a></div></div>
+
+                    </li>
+                <li class="content ">2</li>
+                <li class="content">3</li>
+            </ul></div>
+    </div></div>
+    <div class="play-right">
+        <div class="title-a">
+            <a href="##"></a>
+            <strong>新闻公告</strong>
+            <div class="title-border"></div>
+            <div class="title-line"></div>
+        </div>
+        <div class="newslist">
+            <ul>
+                <li><span>12/19</span><a href="##"
+                                         target="_blank"> 2017年上半年积分清零公告</a></li>
+                <li><span>04/07</span><a href="##"
+                                         target="_blank">《妖怪宝可萌》新服7日活动送福利</a></li>
+                <li><span>04/07</span><a href="##" target="_blank">《大天使之剑》4月6-8日每日充值活动</a>
+                </li>
+                <li><span>04/01</span><a href="##" target="_blank">【重要】微币支付下线公告</a>
+                </li>
+                <li><span>04/01</span><a href="##" target="_blank">《九阴绝学》欢乐愚人，节日狂欢</a>
+                </li>
+                <li><span>04/01</span><a href="##"
+                                         target="_blank">《大天使之剑》愚人节抢拍活动</a></li>
+            </ul>
+            <a href="##" class="pic"><img src="http://image.game.weibo.com/weiyouxi_detail_21a9cba3a615e3c8dcecfc0e9664624c.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<!--手机游戏-->
+<div class="tan">
+    <div class="title-a"><strong class="bor-green">手机游戏</strong></div>
+    <div class="list-f">
+        <ul>
+            <li class="over">
+                <div class="small-box">
+
+                    <img src="images/smallPic1.jpg" height="270" width="160"/>
+                    <img src="" class="gl-logo" alt="熹妃传"><em></em><span>熹妃传</span></div>
+                <div class="big-box">
+                    <a href="#">
+
+                        <img src="images/bigPic1.jpg" height="270" width="490"/></a>
+                    <p>
+                        <span>
+                        <img src="images/erweima1.png" height="100" width="100"/>
+                        </span>扫描用手机玩
+                    </p>
+                    <span><strong>熹妃传</strong>宫廷穿越唯美古风换装手游</span><em></em><i></i></div>
+            </li>
+            <li class="over">
+                <div class="small-box">
+
+                    <img src="images/smallPic1.jpg" height="270" width="160"/>
+                    <img src="" class="gl-logo" alt="熹妃传"><em></em><span>熹妃传</span></div>
+                <div class="big-box">
+                    <a href="#">
+
+                        <img src="images/bigPic1.jpg" height="270" width="490"/></a>
+                    <p>
+                        <span><img src="images/erweima1.png" height="100" width="100"/></span>扫描用手机玩
+                    </p>
+                    <span><strong>熹妃传</strong>宫廷穿越唯美古风换装手游</span><em></em><i></i></div>
+            </li>
+            <li class="over">
+                <div class="small-box">
+
+                    <img src="images/smallPic1.jpg" height="270" width="160"/>
+                    <img src="" class="gl-logo" alt="熹妃传"><em></em><span>熹妃传</span></div>
+                <div class="big-box">
+                    <a href="#">
+
+                        <img src="images/bigPic1.jpg" height="270" width="490"/></a>
+                    <p>
+                        <span><img src="images/erweima1.png" height="100" width="100"/></span>扫描用手机玩
+                    </p>
+                    <span><strong>熹妃传</strong>宫廷穿越唯美古风换装手游</span><em></em><i></i></div>
+            </li>
+            <li class="over">
+                <div class="small-box">
+
+                    <img src="images/smallPic1.jpg" height="270" width="160"/>
+                    <img src="" class="gl-logo" alt="熹妃传"><em></em><span>熹妃传</span></div>
+                <div class="big-box">
+                    <a href="#">
+
+                        <img src="images/bigPic1.jpg" height="270" width="490"/></a>
+                    <p>
+                        <span><img src="images/erweima1.png" height="100" width="100"/></span>扫描用手机玩
+                    </p>
+                    <span><strong>熹妃传</strong>宫廷穿越唯美古风换装手游</span><em></em><i></i></div>
+            </li>
+            <li class="over">
+                <div class="small-box">
+
+                    <img src="images/smallPic1.jpg" height="270" width="160"/>
+                    <img src="" class="gl-logo" alt="熹妃传"><em></em><span>熹妃传</span></div>
+                <div class="big-box">
+                    <a href="#">
+
+                        <img src="images/bigPic1.jpg" height="270" width="490"/></a>
+                    <p>
+                        <span><img src="images/erweima1.png" height="100" width="100"/></span>扫描用手机玩
+                    </p>
+                    <span><strong>熹妃传</strong>宫廷穿越唯美古风换装手游</span><em></em><i></i></div>
+            </li>
+            <li class="over">
+                <div class="small-box">
+
+                    <img src="images/smallPic1.jpg" height="270" width="160"/>
+                    <img src="" class="gl-logo" alt="熹妃传"><em></em><span>熹妃传</span></div>
+                <div class="big-box">
+                    <a href="#">
+
+                        <img src="images/bigPic1.jpg" height="270" width="490"/></a>
+                    <p>
+                        <span><img src="images/erweima1.png" height="100" width="100"/></span>扫描用手机玩
+                    </p>
+                    <span><strong>熹妃传</strong>宫廷穿越唯美古风换装手游</span><em></em><i></i></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--h5游戏-->
+<div class="h5">
+    <div class="game">
+        <!--左盒子-->
+        <div class="left-a">
+            <!--游戏头部-->
+            <div class="h5games-title"><strong>H5游戏</strong><a href="##"></a>
+            </div>
+            <!--游戏list 有三个list盒子-->
+            <dl>
+                <dt><a href="##">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_29c64bc203e8c486ee67f8f5ff57c64d.jpg" alt="">
+                    <em></em></a></dt>
+                <dd>
+                    <ul>
+                        <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                            <div class="erweima">
+                                <img src="images/games/erweima.png" alt=""></div>
+                            <a href="##"><img src="images/games/h5-1.png" alt="" class="logo">
+                            </a>
+                            <p><a href="##">王城霸域</a><span>角色扮演| <i>118363</i>人在玩</span>
+                            </p>
+                            <a href="##" class="play">直接玩 </a>
+
+                        </li>
+                        <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                            <div class="erweima">
+                                <img src="images/games/erweima.png" alt=""></div>
+                            <a href="##"><img src="images/games/h5-2.png" alt="" class="logo">
+                            </a>
+                            <p><a href="##">神奇大斗乱</a><span>角色扮演| <i>119302</i>人在玩</span>
+                            </p>
+                            <a href="##" class="play">直接玩 </a>
+
+                        </li>
+                        <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                            <div class="erweima">
+                                <img src="images/games/erweima.png" alt=""></div>
+                            <a href="##"><img src="images/games/h5-3.png" alt="" class="logo">
+                            </a>
+                            <p><a href="##">玉龙传奇</a><span>角色扮演| <i>117798</i>人在玩</span>
+                            </p>
+                            <a href="##" class="play">直接玩 </a>
+
+                        </li>
+                    </ul>
+                </dd>
+
+            </dl>
+            <dl>
+            <dt><a href="##">
+                <img src="http://image.game.weibo.com/weiyouxi_detail_46c74377792ccb34896df36c132f4270.jpg" alt="">
+                <em></em></a></dt>
+            <dd>
+                <ul>
+                    <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                        <div class="erweima">
+                            <img src="images/games/erweima.png" alt=""></div>
+                        <a href="##"><img src="images/games/h5-4.png" alt="" class="logo">
+                        </a>
+                        <p><a href="##">莽荒纪</a><span>角色扮演| <i>116783</i>人在玩</span>
+                        </p>
+                        <a href="##" class="play">直接玩 </a>
+
+                    </li>
+                    <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                        <div class="erweima">
+                            <img src="images/games/erweima.png" alt=""></div>
+                        <a href="##"><img src="images/games/h5-5.png" alt="" class="logo">
+                        </a>
+                        <p><a href="##">梦道</a><span>角色扮演| <i>163502</i>人在玩</span>
+                        </p>
+                        <a href="##" class="play">直接玩 </a>
+
+                    </li>
+                    <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                        <div class="erweima">
+                            <img src="images/games/erweima.png" alt=""></div>
+                        <a href="##"><img src="images/games/h5-6.png" alt="" class="logo">
+                        </a>
+                        <p><a href="##">大天使之剑</a><span>角色扮演| <i>187798</i>人在玩</span>
+                        </p>
+                        <a href="##" class="play">直接玩 </a>
+
+                    </li>
+                </ul>
+            </dd>
+
+        </dl>
+            <dl>
+                <dt><a href="##">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_157044b2905115fd67e8d92bac43766b.jpg" alt="">
+                    <em></em></a></dt>
+                <dd>
+                    <ul>
+                        <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                            <div class="erweima">
+                                <img src="images/games/erweima.png" alt=""></div>
+                            <a href="##"><img src="images/games/h5-7.png" alt="" class="logo">
+                            </a>
+                            <p><a href="##">宝贝星球</a><span>角色扮演| <i>133783</i>人在玩</span>
+                            </p>
+                            <a href="##" class="play">直接玩 </a>
+
+                        </li>
+                        <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                            <div class="erweima">
+                                <img src="images/games/erweima.png" alt=""></div>
+                            <a href="##"><img src="images/games/h5-8.png" alt="" class="logo">
+                            </a>
+                            <p><a href="##">传奇世界</a><span>角色扮演| <i>169902</i>人在玩</span>
+                            </p>
+                            <a href="##" class="play">直接玩 </a>
+
+                        </li>
+                        <li style=" border-top: 1px dashed #b1b1b1" class="over">
+                            <div class="erweima">
+                                <img src="images/games/erweima.png" alt=""></div>
+                            <a href="##"><img src="images/games/h5-9.png" alt="" class="logo">
+                            </a>
+                            <p><a href="##">妖怪宝可蒙</a><span>角色扮演| <i>187798</i>人在玩</span>
+                            </p>
+                            <a href="##" class="play">直接玩 </a>
+
+                        </li>
+                    </ul>
+                </dd>
+
+            </dl>
+        </div>
+        <!--人气榜-->
+        <div class="right-a">
+            <div class="top">
+                <div class="hot">人气榜</div>
+                <div class="add"><a href="##"></a></div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><strong><em>352091</em>人在玩</strong><i>1</i>
+                        <p><a href="##" target="_blank"
+                              class="fcgr3">妖怪宝可萌</a></p></li>
+                    <li><strong><em>175952</em>人在玩</strong><i>2</i>
+                        <p><a href="##" target="_blank"
+                              class="fcgr3">御龙传奇</a></p></li>
+                    <li><strong><em>166752</em>人在玩</strong><i>3</i>
+                        <p><a href="##" target="_blank"
+                              class="fcgr3">宝贝星球</a></p></li>
+                    <li><strong><em>161039</em>人在玩</strong><i>4</i>
+                        <p><a href="##" target="_blank"
+                              class="fcgr3">梦道</a></p></li>
+                    <li><strong><em>127776</em>人在玩</strong><i>5</i>
+                        <p><a href="##">莽荒纪</a></p></li>
+                    <li><strong><em>118743</em>人在玩</strong><i>6</i>
+                        <p><a href="##">神奇大乱斗</a></p></li>
+                    <li><strong><em>118378</em>人在玩</strong><i>7</i>
+                        <p><a href="##" target="_blank"
+                              class="fcgr3">王城霸域</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--微密-->
+<div class="girlplay">
+    <div class="left-girl">
+        <div class="title-weimi"><strong>微密专区</strong></div>
+        <div class="weimibox">
+            <ul>
+                <li class="first_i">
+                    <div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_7f37efa7fbe6bc6c50effbe5f686b005.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>90288</i>老纸改名了</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            神仙道
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+                <li><div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_0e8bf025f06afa29f82dcc82e8934f78.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>90288</i>老纸改名了</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            神仙道
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+                <li><div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_b235f2d00b1c3f968a494bd89bafc135.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>96688</i>s12 楚玥</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            盗墓笔记页游
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+                <li><div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_80f62564943d6a7a81e80123f87e5625.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>73688</i>s3 范小月</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            盗墓笔记页游
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+                <li><div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_625635b16839fba0cc0260e361bc7725.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>90288</i>S11穆珍</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            神仙道
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+                <li><div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_9299ccfc0f2b73e25aebce3ba37b1b80.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>23388</i>米米吉姆</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            盗墓笔记页游
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+                <li><div class="img-box">
+                    <img src="http://image.game.weibo.com/weiyouxi_detail_a8460d3fa74c469bac999363bef637fb.jpg" alt="">
+                    <span></span>
+                    <em></em>
+                    <p><i>88288</i>恬雨</p>
+                </div>
+                    <div class="float-img">
+                        <em></em>
+                        <p>
+                            <span>最近玩过：</span>
+                            神仙道
+                            <a href="##">陪她玩</a>
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="right-girl">
+        <div class="right-a">
+            <div class="title-a"><a href="##"
+                                    target="_blank" class="fcbl more-c" title="我要加入">我要加入</a></div>
+            <div class="weimi-rz">
+                <a href="##" class="rz-btn">我要认证“微蜜”</a>
+                <p>微蜜认证玩家可享受4大福利</p>
+                <ul class="wm-backa">
+                    <li>300微币奖励</li>
+                    <li>首页免费推广</li>
+                    <li>专属微蜜标志</li>
+                    <li>区服红人</li>
+                </ul>
+                <p>简单3步，认证“微蜜”美女玩家</p>
+                <div class="wm-backb"><a href="##" title="我要加入"></a>
+                    <ul>
+                        <li>填写申请</li>
+                        <li>提交申请</li>
+                        <li>审核通过</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div>
+    <div class="part-e">
+        <ul class="help-text">
+            <li class="bit1">
+                <span></span>
+                <p><strong>账号服务</strong>
+                    <a href="##">修改密码</a>
+                    <a href="##">找回密码</a></p>
+            </li>
+            <li class="bit2"><span></span>
+                <p><strong class="fcbu">玩家服务</strong><a href="##">客服中心</a><a
+                        href="##" target="_blank">我要提问</a><a
+                        href="##" target="_blank">vip通道</a><a
+                        href="##" target="_blank">防沉迷验证</a></p></li>
+            <li class="bit3"><span></span>
+                <p><strong class="fcbu">充值服务</strong><a href="##">充值中心</a><a
+                        href="##" target="_blank">充值记录</a><a
+                        href="##" target="_blank">积分兑换</a><a
+                        href="##" target="_blank">充值FAQ</a></p></li>
+            <li class="bit4"><span></span>
+                <p><strong class="fcbu">常见问题</strong><a href="##">账号问题</a><a
+                        href="##" target="_blank">充值问题</a><a
+                        href="##" target="_blank">游戏问题</a></p></li>
+
+        </ul>
+        <ul class="help-lm">
+            <li><img src="http://event.game.weibo.com/jc15828/img/img_vip.png" alt="微游戏积分商城"
+                     style="cursor: pointer;"><strong>微游戏积分商城</strong><a href="javascript:void(0);" class="add"
+                                                                         value="1951679282">加关注</a></li>
+            <li><img src="http://event.game.weibo.com/jc15828/img/img_hd.png" alt="微游戏活动"
+                     style="cursor: pointer;"><strong>微游戏活动</strong><a
+                    href="javascript:void(0);" class="add" value="2735239927">加关注</a></li>
+            <li><img src="http://event.game.weibo.com/jc15828/img/img_kf.png" alt="微游戏客服"
+                     style="cursor: pointer;"><strong>微游戏客服</strong><a
+                    href="javascript:void(0);" class="add" value="1936362482">加关注</a></li>
+            <li><img src="http://event.game.weibo.com/jc15828/img/img_wb.png" alt="微游戏官方微博"
+                     style="cursor: pointer;"><strong>微游戏官方微博</strong><a href="javascript:void(0);" class="add"
+                                                                         value="2218712947">加关注</a></li>
+        </ul>
+        <div class="my-links"><strong>友情链接：</strong>
+            <p class="fcgr"><a href="##" target="_blank">火影忍者中文网</a><a href="##" target="_blank">太平洋游戏网页游戏</a><a
+                    href="##" target="_blank">86wan</a><a href="##" target="_blank">聚侠网</a><a href="##" target="_blank">CEO玩</a><a
+                    href="http://game.163.com/" target="_blank">网易游戏</a><a href="http://www.25pp.com/" target="_blank">苹果游戏</a><a
+                    href="##" target="_blank">安卓游戏</a><a href="##" target="_blank">40407网页游戏</a><a
+                    href="http://www.6711.com/" target="_blank">6711游戏</a><a href="##" target="_blank">17173</a><a
+                    href="##" target="_blank">手机游戏</a><a href="##" target="_blank">网页游戏开服表</a><a href="##"
+                                                                                                 target="_blank">56手机游戏</a><a
+                    href="##" target="_blank"> 玩玩游戏</a><a href="##" target="_blank">新浪游戏</a><a href="##"
+                                                                                               target="_blank">游戏GO</a><a
+                    href="##" target="_blank">好玩的手游</a><a href="##" target="_blank">页游之家</a><a href="##"
+                                                                                               target="_blank">霸气pk网页游戏</a><a
+                    href="##" target="_blank">页游家开服表</a><a href="##" target="_blank">913U网页游戏</a><a href="##"
+                                                                                                    target="_blank">17PK页游</a><a
+                    href="##" target="_blank"> 游侠页游</a><a href="## " target="_blank">Guan5页游网</a><a href="##"
+                                                                                                    target="_blank">361游戏网</a><a
+                    href="##" target="_blank">游戏王国</a><a href="##" target="_blank">521G游戏网</a></p></div>
+    </div>
+    <footer>
+        <div class="bottom">
+            <div class="rt-food">
+                <p>
+                    <a href="##">帮助</a> |
+                    <a href="##">官方微博</a> |
+                    <a href="##">微游戏开放平台</a> |
+                    <a href="##">微博认证及合作</a> |
+                    <a href="##">新浪网导航</a> |
+                    <a href="##">未成年人家长监护</a> |
+                    <a href="##">游戏防沉迷</a>
+                </p>
+                <p><a target="_blank" href="##" class="target">京公网安备 11010802023591号</a></p>
+                <p>
+            <span>北京微游互动网络科技有限公司 北京微梦创科网络技术有限公司
+            <a href="##">京网文[2011]0398-130号</a> 京ICP证100780号
+        </span>
+                    Copyright © 1996-2017 SINA
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<script src="js/zx.js"></script>
+<script src="js/xt.js"></script>

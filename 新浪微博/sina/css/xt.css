@@ -1,0 +1,1112 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  color: #888;
+  background: #fff;
+  font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+}
+a {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+/*推荐游戏*/
+.push {
+  width: 1300px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.push .lf-push {
+  width: 1000px;
+  float: left;
+}
+.push .lf-push .title-push {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  height: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.push .lf-push .title-push .title-lf {
+  padding-left: 10px;
+  float: left;
+  font-size: 18px;
+  line-height: 20px;
+  border-left: 3px solid #00aeff;
+  color: #3f3f3f;
+}
+.push .lf-push .title-push .notice {
+  float: right;
+}
+.push .lf-push .title-push .notice span {
+  background: url("../images/games/bit.png") -42px -16px no-repeat;
+  height: 19px;
+  width: 19px;
+  float: right;
+  margin-right: 20px;
+}
+.push .lf-push .title-push .notice span:hover {
+  background: url("../images/games/bit.png") -90px -16px no-repeat;
+}
+.push .lf-push .box-push {
+  width: 1000px;
+  height: 320px;
+}
+.push .lf-push .box-push li {
+  float: left;
+  width: 228px;
+  height: 318px;
+  margin-right: 20px;
+  position: relative;
+  border: 1px solid #e9e9e9;
+  z-index: 0;
+}
+.push .lf-push .box-push li a {
+  position: relative;
+  overflow: hidden;
+}
+.push .lf-push .box-push li a img {
+  width: 228px;
+  height: 268px;
+  overflow: hidden;
+  box-sizing: border-box;
+  vertical-align: middle;
+  transition: transform 0.5s ease;
+}
+.push .lf-push .box-push li a img:hover {
+  transform: scale(1.01);
+  transform-origin: center center 0;
+}
+.push .lf-push .box-push li p {
+  position: absolute;
+  height: 50px;
+  width: 224px;
+  bottom: 0;
+  left: 0;
+  display: block;
+  line-height: 50px;
+  padding-left: 5px;
+  z-index: 100;
+}
+.push .lf-push .box-push li p a {
+  font-size: 14px;
+  line-height: 50px;
+  color: #3f3f3f;
+  margin-left: 5px;
+}
+.push .lf-push .box-push li p a:hover {
+  color: #ff6b21;
+}
+.push .lf-push .box-push li p a.go {
+  height: 50px;
+  width: 88px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  float: right;
+  text-align: center;
+  background: #00aeff;
+}
+.push .lf-push .box-push li .float-box {
+  height: 30px;
+  width: 220px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  display: none;
+  z-index: 1;
+  padding-left: 8px;
+  color: #fff;
+  line-height: 30px;
+}
+.push .lf-push .box-push li .float-box span {
+  float: right;
+  padding: 0 8px;
+}
+.push .lf-push .box-push li .float-box span a {
+  color: #fff;
+}
+.push .lf-push .box-push li:hover {
+  border: 1px solid #ff6b21;
+}
+.push .lf-push .box-push li:hover .go {
+  background: #ff6b21;
+}
+.push .lf-push .box-push li:hover .float-box {
+  display: block;
+  animation: move2 0.3s;
+  z-index: 1;
+}
+.push .callboard {
+  width: 300px;
+  position: relative;
+  float: left;
+}
+.push .callboard .calltitle {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding-bottom: 20px;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  color: #3f3f3f;
+}
+.push .callboard .menu {
+  width: 299px;
+  height: 36px;
+  overflow: hidden;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+.push .callboard .menu div {
+  float: left;
+  width: 149px;
+  line-height: 34px;
+  font-size: 14px;
+  height: 34px;
+  text-align: center;
+  border-right: 0;
+  background: #f5f5f5;
+  color: #808080;
+}
+.push .callboard .menu div:hover {
+  color: #191a1a;
+  background: #fff;
+  border-top: 2px solid #00aeff;
+}
+@keyframes move2 {
+  from {
+    transform: translateY(30px);
+    z-index: 0;
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    z-index: 1;
+  }
+}
+/*网页游戏*/
+.webplay {
+  width: 1300px;
+  margin: 40px auto;
+}
+.webplay .play-left {
+  width: 990px;
+  height: 405px;
+  float: left;
+}
+.webplay .play-left .webtitle {
+  height: 30px;
+}
+.webplay .play-left .webtitle .left-top {
+  border-left: 3px solid #fa760b;
+  padding-left: 10px;
+  float: left;
+  color: #3f3f3f;
+  font-size: 18px;
+  line-height: 20px;
+  overflow: hidden;
+  padding-right: 65px;
+}
+.webplay .play-left .webtitle .center-top ul li {
+  float: left;
+  height: 28px;
+  text-align: center;
+  width: 62px;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.webplay .play-left .webtitle .center-top ul li:hover {
+  color: #fa760b;
+}
+.webplay .play-left .webtitle .center-top ul .current {
+  background: url('../images/games/bit.png') -65px 24px no-repeat;
+  color: #fa760b;
+}
+.webplay .play-left .webtitle .right-top {
+  float: right;
+}
+.webplay .play-left .webtitle .right-top span {
+  background: url("../images/games/bit.png") -42px -16px no-repeat;
+  height: 19px;
+  width: 19px;
+  float: right;
+}
+.webplay .play-left .webtitle .right-top span:hover {
+  background: url("../images/games/bit.png") -90px -16px no-repeat;
+}
+.webplay .play-left .body {
+  width: 994px;
+  height: 354px;
+  overflow: hidden;
+}
+.webplay .play-left .body ul {
+  overflow: hidden;
+}
+.webplay .play-left .body ul li.content {
+  width: 1014px;
+  height: 354px;
+  margin-top: -14px;
+}
+.webplay .play-left .body ul li.content div {
+  float: left;
+  margin: 23px 23px 0 0;
+  width: 228px;
+  height: 159px;
+  border: 1px solid #e9e9e9;
+  position: relative;
+  z-index: 5;
+}
+.webplay .play-left .body ul li.content div a img {
+  overflow: hidden;
+  width: 228px;
+  height: 124px;
+  left: 50%;
+  top: 50%;
+  vertical-align: middle;
+  transition: transform 0.5s ease 0s;
+}
+.webplay .play-left .body ul li.content div a img:hover {
+  transform: scale(1.01);
+  transform-origin: center center 0;
+}
+.webplay .play-left .body ul li.content .float-play {
+  left: 0;
+  bottom: 32px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  height: 35px;
+  width: 198px;
+  color: #fff;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  animation: move 0.3s;
+  z-index: 0;
+  padding: 0 15px;
+  line-height: 35px;
+}
+.webplay .play-left .body ul li.content .float-play a {
+  color: #fff;
+}
+.webplay .play-left .body ul li.content .float-play a i {
+  font-style: normal;
+}
+.webplay .play-left .body ul li.content .float-play a {
+  color: #fff;
+}
+.webplay .play-left .body ul li.content .float-play a span {
+  float: right;
+}
+.webplay .play-left .body ul li.content .float-play a em {
+  width: 15px;
+  height: 11px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 12px;
+  vertical-align: middle;
+  display: block;
+  background: url("../images/games/bit.png") -50px 0 no-repeat;
+}
+.webplay .play-left .body ul li.content div:hover .float-play {
+  display: block;
+  border: none;
+}
+.webplay .play-left .body ul li.content div:hover {
+  border: 1px solid #fa760b;
+}
+.webplay .play-left .body ul li.content .name {
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color: #3f3f3f;
+  z-index: 10;
+  background: #fff;
+  position: absolute;
+  width: 228px;
+  left: 0;
+  bottom: 0;
+}
+.webplay .play-left .body ul li.content p:hover {
+  color: #fa760b;
+}
+@-webkit-keyframes move {
+  from {
+    transform: translateY(35px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.webplay .play-right {
+  float: left;
+  width: 300px;
+  position: relative;
+}
+.webplay .play-right .title-a {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding-bottom: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 15px;
+}
+.webplay .play-right .title-a a {
+  float: right;
+  width: 19px;
+  height: 19px;
+  background: url("../images/games/bit.png") -42px -16px no-repeat;
+}
+.webplay .play-right .title-a a:hover {
+  background: url("../images/games/bit.png") -90px -16px no-repeat;
+}
+.webplay .play-right .title-a strong {
+  font-style: normal;
+  font-weight: normal;
+  float: left;
+  color: #3f3f3f;
+}
+.webplay .play-right .title-a .title-border {
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #e5e5e5;
+}
+.webplay .play-right .title-a .title-line {
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #007eff;
+}
+.webplay .play-right .newslist {
+  overflow: hidden;
+  margin: auto;
+}
+.webplay .play-right .newslist ul {
+  overflow: hidden;
+}
+.webplay .play-right .newslist ul li {
+  font-size: 14px;
+  line-height: 36px;
+  width: 284px;
+  float: left;
+  margin-left: 15px;
+  height: 36px;
+  border-bottom: 1px dashed #e5e5e5;
+  text-align: -webkit-match-parent;
+}
+.webplay .play-right .newslist ul li a {
+  background: url("../images/games/bit.png") -418px -283px no-repeat;
+  padding-left: 3px;
+}
+.webplay .play-right .newslist ul li a:hover {
+  color: #ff6b21;
+}
+.webplay .play-right .newslist ul li span {
+  color: #c4c4c4;
+  float: right;
+  line-height: 36px;
+}
+.webplay .play-right .newslist ul li:last-child {
+  border-bottom: none;
+}
+.webplay .play-right .newslist .pic {
+  display: block;
+  width: 282px;
+  height: 100px;
+  margin: 12px auto 0 15px;
+}
+.webplay .play-right .newslist .pic img {
+  vertical-align: middle;
+}
+/*h5游戏榜*/
+.h5 {
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+}
+.h5 .game {
+  padding-bottom: 8px;
+  margin: 40px auto 0 auto;
+  width: 1300px;
+}
+.h5 .game .left-a {
+  float: left;
+  width: 1000px;
+}
+.h5 .game .left-a .h5games-title {
+  height: 20px;
+  overflow: hidden;
+}
+.h5 .game .left-a .h5games-title strong {
+  border-left: 3px solid #b911f7;
+  padding-left: 10px;
+  float: left;
+  color: #3f3f3f;
+  font-size: 18px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+.h5 .game .left-a .h5games-title a {
+  width: 19px;
+  height: 19px;
+  background: url("../images/games/bit.png") -42px -16px no-repeat;
+  float: right;
+  margin-right: 16px;
+}
+.h5 .game .left-a .h5games-title a:hover {
+  background: url("../images/games/bit.png") -90px -16px no-repeat;
+}
+.h5 .game .left-a dl {
+  width: 311px;
+  float: left;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.h5 .game .left-a dl dt {
+  position: relative;
+}
+.h5 .game .left-a dl dt em {
+  background: url("../images/games/bit.png") right -37px no-repeat;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+}
+.h5 .game .left-a dl dd {
+  width: 270px;
+  margin: 0 auto 0 auto;
+}
+.h5 .game .left-a dl dd ul .over {
+  position: relative;
+  height: 50px;
+  padding: 15px 0px;
+  /*如何写*/
+}
+.h5 .game .left-a dl dd ul .over .erweima {
+  display: none;
+  position: absolute;
+  right: 70px;
+  top: -15px;
+  width: 115px;
+  height: 113px;
+  overflow: hidden;
+  background: url("../images/games/bit.png") 0 -42px no-repeat;
+}
+.h5 .game .left-a dl dd ul .over .erweima img {
+  width: 80px;
+  height: 80px;
+  margin: 16px 0 0 16px;
+}
+.h5 .game .left-a dl dd ul .over .logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+.h5 .game .left-a dl dd ul .over p {
+  width: 140px;
+  float: left;
+  margin-left: 10px;
+}
+.h5 .game .left-a dl dd ul .over p a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 25px;
+  color: #3f3f3f;
+}
+.h5 .game .left-a dl dd ul .over p a:hover {
+  color: #ff6b21;
+}
+.h5 .game .left-a dl dd ul .over p span {
+  color: #b4b4b4;
+  display: block;
+}
+.h5 .game .left-a dl dd ul .over p span i {
+  font-style: normal;
+  color: #24ccc8;
+}
+.h5 .game .left-a dl dd ul .over .play {
+  float: right;
+  margin-top: 10px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #007eff;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+.h5 .game .left-a dl dd ul .over .play:hover {
+  background: #ff6b21;
+}
+.h5 .game .left-a dl dd ul li:nth-child(1) {
+  border-top: none !important;
+}
+.h5 .right-a {
+  position: relative;
+  float: left;
+  width: 300px;
+}
+.h5 .right-a .top {
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.h5 .right-a .top .hot {
+  float: left;
+  color: #3f3f3f;
+  font-size: 18px;
+  line-height: 20px;
+}
+.h5 .right-a .top .add a {
+  width: 19px;
+  height: 19px;
+  background: url("../images/games/bit.png") -42px -16px no-repeat;
+  float: right;
+}
+.h5 .right-a .top .add a:hover {
+  background: url("../images/games/bit.png") -90px -16px no-repeat;
+}
+.h5 .right-a .list ul {
+  margin-top: -3px;
+}
+.h5 .right-a .list ul li {
+  overflow: hidden;
+  float: left;
+  width: 300px;
+  padding: 10px 0 9px 0;
+  border-top: 1px dashed #e5e5e5;
+}
+.h5 .right-a .list ul li i {
+  float: left;
+  width: 20px;
+  margin: 3px 20px 0 0;
+  background-color: #d2d2d2;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+}
+.h5 .right-a .list ul li p.fcgr3 {
+  font-size: 14px;
+  color: #3f3f3f;
+}
+.h5 .right-a .list ul li a:hover {
+  color: #ff6b21;
+}
+.h5 .right-a .list ul li strong {
+  float: right;
+  font-style: normal;
+  font-weight: normal;
+}
+.h5 .right-a .list ul li strong em {
+  color: #11b9f7;
+  font-style: normal;
+  font-weight: normal;
+}
+/*微密*/
+.girlplay {
+  width: 1300px;
+  overflow: hidden;
+  margin: 40px auto 0 auto;
+}
+.girlplay .left-girl {
+  width: 1000px;
+  float: left;
+}
+.girlplay .left-girl .title-weimi {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding-bottom: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.girlplay .left-girl .title-weimi strong {
+  border-left: 3px solid #ff2045;
+  padding-left: 10px;
+  float: left;
+  color: #3f3f3f;
+  font-weight: normal;
+}
+.girlplay .left-girl .weimibox {
+  height: 302px;
+}
+.girlplay .left-girl .weimibox ul li.first_i {
+  width: 290px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 20px 20px 0;
+}
+.girlplay .left-girl .weimibox ul li.first_i .img-box {
+  height: 302px;
+  width: 100%;
+  position: relative;
+}
+.girlplay .left-girl .weimibox ul li.first_i .img-box img {
+  vertical-align: middle;
+}
+.girlplay .left-girl .weimibox ul li.first_i .img-box span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 302px;
+  background: url("../images/games/wm_back2.png") left bottom repeat-x;
+}
+.girlplay .left-girl .weimibox ul li.first_i .img-box em {
+  width: 38px;
+  height: 38px;
+  background: url("../images/games/bit.png") -120px -42px no-repeat;
+  left: 240px;
+  bottom: 250px;
+  position: absolute;
+}
+.girlplay .left-girl .weimibox ul li.first_i .img-box p {
+  width: 85%;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  color: #fff;
+  padding-left: 25px;
+  background: url("../images/games/bit.png") -190px -46px no-repeat;
+}
+.girlplay .left-girl .weimibox ul li.first_i .img-box p i {
+  float: right;
+  font-style: normal;
+  background: url("../images/games/bit.png") -196px -71px no-repeat;
+  padding-left: 20px;
+}
+.girlplay .left-girl .weimibox ul li.first_i .float-img {
+  width: 100%;
+  height: 302px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  float: left;
+}
+.girlplay .left-girl .weimibox ul li.first_i .float-img em {
+  display: block;
+  width: 100%;
+  height: 302px;
+  background-color: #000;
+  opacity: 0.6;
+}
+.girlplay .left-girl .weimibox ul li.first_i .float-img p {
+  width: 170px;
+  height: 122px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 23%;
+  top: 30%;
+}
+.girlplay .left-girl .weimibox ul li.first_i .float-img p span {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+  color: #fff;
+}
+.girlplay .left-girl .weimibox ul li.first_i .float-img p a {
+  display: block;
+  height: 30px;
+  width: 80px;
+  line-height: 30px;
+  text-align: center;
+  background: #00aeff;
+  opacity: 1;
+  z-index: 12;
+  margin-top: 15px;
+  margin-left: 42px;
+  color: #fff !important;
+}
+.girlplay .left-girl .weimibox ul li.first_i .float-img p a:hover {
+  background: #ff6b21;
+}
+.girlplay .left-girl .weimibox ul li.first_i:hover .float-img {
+  display: block;
+}
+.girlplay .left-girl .weimibox ul li {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 210px;
+  margin: 0 20px 20px 0;
+}
+.girlplay .left-girl .weimibox ul li .img-box {
+  position: relative;
+  width: 210px;
+  height: 141px;
+}
+.girlplay .left-girl .weimibox ul li .img-box img {
+  vertical-align: middle;
+}
+.girlplay .left-girl .weimibox ul li .img-box span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 141px;
+  background: url("../images/games/wm_back2.png") left bottom repeat-x;
+}
+.girlplay .left-girl .weimibox ul li .img-box em {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 29px;
+  height: 29px;
+  background: url("../images/games/bit.png") -159px -42px no-repeat;
+  font-style: normal;
+}
+.girlplay .left-girl .weimibox ul li .img-box p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 175px;
+  height: 30px;
+  padding: 0 10px 0 25px;
+  line-height: 30px;
+  color: #fff;
+  background: url("../images/games/bit.png") -190px -46px no-repeat;
+}
+.girlplay .left-girl .weimibox ul li .img-box p i {
+  float: right;
+  background: url("../images/games/bit.png") -196px -71px no-repeat;
+  padding-left: 18px;
+  font-style: normal;
+}
+.girlplay .left-girl .weimibox ul li .float-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 141px;
+  color: #fff;
+  display: none;
+}
+.girlplay .left-girl .weimibox ul li .float-img em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 141px;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  background-color: #000;
+}
+.girlplay .left-girl .weimibox ul li .float-img p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  width: 170px;
+  height: 101px;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+}
+.girlplay .left-girl .weimibox ul li .float-img p span {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+.girlplay .left-girl .weimibox ul li .float-img p a {
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #007eff;
+}
+.girlplay .left-girl .weimibox ul li .float-img p a:hover {
+  background: #ff6b21;
+}
+.girlplay .left-girl .weimibox ul li:hover .float-img {
+  display: block;
+}
+.girlplay .right-girl .right-a {
+  position: relative;
+  float: left;
+  width: 300px;
+}
+.girlplay .right-girl .right-a .title-a {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding-bottom: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.girlplay .right-girl .right-a .title-a .more-c {
+  float: right;
+  height: 19px;
+  font-size: 14px;
+  color: #007eff;
+}
+.girlplay .right-girl .right-a .title-a .more-c:hover {
+  color: #ea181a;
+}
+.girlplay .right-girl .right-a .weimi-rz {
+  width: 300px;
+}
+.girlplay .right-girl .right-a .weimi-rz .rz-btn {
+  display: block;
+  width: 300px;
+  height: 50px;
+  background: url("../images/games/bit.png") 0 -316px no-repeat;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+}
+.girlplay .right-girl .right-a .weimi-rz .rz-btn:hover {
+  background: url("../images/games/bit.png") 0 -366px no-repeat;
+}
+.girlplay .right-girl .right-a .weimi-rz p {
+  height: 30px;
+  line-height: 29px;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #888;
+}
+.girlplay .right-girl .right-a .weimi-rz .wm-backa {
+  overflow: hidden;
+  width: 299px;
+  color: #000;
+  text-align: center;
+  border-right: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+.girlplay .right-girl .right-a .weimi-rz .wm-backa li {
+  float: left;
+  width: 148px;
+  height: 44px;
+  line-height: 44px;
+  border-left: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.girlplay .right-girl .right-a .weimi-rz .wm-backb {
+  position: relative;
+  overflow: hidden;
+  width: 298px;
+  height: 99px;
+  color: #000;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+}
+.girlplay .right-girl .right-a .weimi-rz .wm-backb a {
+  display: block;
+  margin-top: 16px;
+  width: 298px;
+  height: 50px;
+  background: url("../images/games/bit.png") -4px -175px no-repeat;
+}
+.girlplay .right-girl .right-a .weimi-rz .wm-backb ul {
+  width: 298px;
+}
+.girlplay .right-girl .right-a .weimi-rz .wm-backb ul li {
+  float: left;
+  width: 33%;
+}
+/*尾部导航*/
+.part-e {
+  font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+  width: 100%;
+  position: relative;
+  margin: 40px auto 0 auto;
+  padding-bottom: 30px;
+  background-color: #666;
+  overflow: hidden;
+}
+.part-e .help-text {
+  width: 960px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #4c4c4c;
+  overflow: hidden;
+}
+.part-e .help-text li {
+  float: left;
+  width: 480px;
+  height: 66px;
+  overflow: hidden;
+}
+.part-e .help-text span {
+  float: left;
+  width: 90px;
+  height: 66px;
+  background-image: url("../images/games/bit.png");
+  background-repeat: no-repeat;
+}
+.part-e .help-text .bit3,
+.part-e .help-text .bit4 {
+  background-color: #3f3f3f;
+}
+.part-e .help-text .bit1 span {
+  background-position: 0px -250px;
+  background-color: #3f3f3f;
+}
+.part-e .help-text .bit2 span {
+  background-position: -90px -250px;
+  background-color: #3f3f3f;
+}
+.part-e .help-text .bit3 span {
+  background-position: -180px -250px;
+  background-color: #323232;
+}
+.part-e .help-text .bit4 span {
+  background-position: -270px -250px;
+  background-color: #323232;
+}
+.part-e .help-text strong {
+  display: block;
+  line-height: 28px;
+  margin-top: 8px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+.part-e .help-text p {
+  float: left;
+  width: 390px;
+  color: #00aeff;
+}
+.part-e .help-text a {
+  margin-left: 15px;
+  text-decoration: none;
+  font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+  color: #888;
+}
+.part-e .help-text a:hover {
+  color: #ff6b21;
+}
+.part-e .help-lm {
+  width: 960px;
+  margin: 240px auto 0 auto;
+  overflow: hidden;
+}
+.part-e .help-lm li {
+  float: left;
+  width: 240px;
+}
+.part-e .help-lm li img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+.part-e .help-lm li strong {
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  color: #fff;
+}
+.part-e .help-lm li .add {
+  display: inline-block;
+  width: 96px;
+  margin-top: 10px;
+  line-height: 29px;
+  text-align: center;
+  padding-left: 10px;
+  height: 30px;
+  color: #fff;
+  text-decoration: none;
+  background: url("../images/games/bit.png") #3f3f3f -301px -156px no-repeat;
+}
+.part-e .help-lm li a.add:hover {
+  background-color: #00aeff;
+}
+.part-e .help-lm li .add-ok {
+  display: inline-block;
+  width: 96px;
+  margin-top: 10px;
+  line-height: 29px;
+  text-align: center;
+  padding-left: 10px;
+  height: 30px;
+  color: #fff;
+  background: url("../images/games/bit.png") #848585 -301px -190px no-repeat;
+}
+.part-e .my-links {
+  width: 960px;
+  margin: 34px auto 0 auto;
+  line-height: 28px;
+}
+.part-e .my-links strong {
+  float: left;
+  width: 70px;
+  color: #fff;
+}
+.part-e .my-links p {
+  float: left;
+  width: 890px;
+}
+.part-e .my-links p a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  margin-right: 15px;
+  color: #aaa;
+}
+.part-e .my-links p a:hover {
+  color: #fff;
+}
+/*footer底部*/
+footer {
+  width: 100%;
+  background-color: #3f3f3f;
+  overflow: hidden;
+}
+footer .bottom {
+  width: 860px;
+  background: url("../images/games/wyx_img.gif") 0 0 no-repeat;
+  margin: 50px auto 0 auto;
+  padding: 0 0 50px 80px;
+}
+footer .bottom p {
+  color: #aaa;
+  line-height: 30px;
+  font: normal 12px/1.5 Microsoft YaHei, Arial, san-serif;
+}
+footer .bottom p .target {
+  margin-left: 190px;
+}
+footer .bottom a {
+  text-decoration: none;
+  color: #aaa;
+  cursor: pointer;
+  margin: 0 5px;
+  line-height: 30px;
+}
+footer .bottom a:hover {
+  color: #fff;
+}
