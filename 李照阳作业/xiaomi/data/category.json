@@ -1,0 +1,206 @@
+[
+  {
+    "category":"手机 电话卡",
+    "child":[
+      {"title":"小米8","img":"./img/m8-80.png"},
+      {"title":"小米8 SE","img":"./img/m8se-80.png"},
+      {"title":"小米MIX 2S","img":"./img/mix2s80-80white.png"},
+      {"title":"小米Max 3","img":"./img/max3-80-80.png"},
+      {"title":"小米6X","img":"./img/max3-80-80.png"},
+      {"title":"黑鲨游戏手机","img":"./img/max3-80-80.png"},
+      {"title":"小米MIX 2","img":"./img/max3-80-80.png"},
+      {"title":"小米Max 2","img":"./img/max3-80-80.png"},
+      {"title":"红米6 Pro","img":"./img/max3-80-80.png"},
+      {"title":"红米6","img":"./img/max3-80-80.png"},
+      {"title":"红米6A","img":"./img/max3-80-80.png"},
+      {"title":"红米Note 5","img":"./img/max3-80-80.png"},
+      {"title":"红米S2","img":"./img/max3-80-80.png"},
+      {"title":"红米5 Plus","img":"./img/max3-80-80.png"},
+      {"title":"移动4G+专区","img":"./img/max3-80-80.png"},
+      {"title":"对比手机","img":"./img/max3-80-80.png"},
+      {"title":"米粉卡 日租卡","img":"./img/max3-80-80.png"},
+      {"title":"小米移动 电话卡","img":"./img/max3-80-80.png"},
+      {"title":"手机上门维修","img":"./img/max3-80-80.png"}
+    ]
+  },
+  {
+    "category":"电视 盒子",
+    "child":[
+      {"title":"米家激光投影电视","img":"./img/14000000000.png"},
+      {"title":"小米电视4 75英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 32英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 40英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 43英寸青春版","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 49英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 50英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 55英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4A 65英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4X 55英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4C 32英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4C 43英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4C 50英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4C 55英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视 体育版","img":"./img/TV4-75.png"},
+      {"title":"小米电视4 49英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4 55英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4 65英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4S 55英寸曲面","img":"./img/TV4-75.png"},
+      {"title":"小米电视4S 55英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4S 50英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4S 43英寸","img":"./img/TV4-75.png"},
+      {"title":"小米电视4S 32英寸","img":"./img/TV4-75.png"},
+      {"title":"小米盒子","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"笔记本 平板",
+    "child":[
+      {"title":"小米平板","img":"./img/14000000000.png"},
+      {"title":"小米笔记本 15.6","img":"./img/TV4-75.png"},
+      {"title":"小米游戏本 15.6第八代","img":"./img/TV4-75.png"},
+      {"title":"小米游戏本 15.6","img":"./img/TV4-75.png"},
+      {"title":"笔记本Air 12.5","img":"./img/TV4-75.png"},
+      {"title":"笔记本Air 13.3四核增强","img":"./img/TV4-75.png"},
+      {"title":"笔记本Pro 15.6","img":"./img/TV4-75.png"},
+      {"title":"小米笔记本Pro 15.6GTX版","img":"./img/TV4-75.png"},
+      {"title":"HDMI转接器","img":"./img/TV4-75.png"},
+      {"title":"VGA千兆网口转接器","img":"./img/TV4-75.png"},
+      {"title":"小米笔记本内胆包","img":"./img/TV4-75.png"},
+      {"title":"小米游戏键盘","img":"./img/TV4-75.png"},
+      {"title":"悦米机械键盘","img":"./img/TV4-75.png"},
+      {"title":"悦米机械键盘Pro静音版","img":"./img/TV4-75.png"},
+      {"title":"小米便携鼠标","img":"./img/TV4-75.png"},
+      {"title":"小米无限鼠标","img":"./img/TV4-75.png"},
+      {"title":"鼠标垫","img":"./img/TV4-75.png"},
+      {"title":"DisplayProt转接器","img":"./img/TV4-75.png"},
+      {"title":"USB至千兆网口转接器","img":"./img/TV4-75.png"},
+      {"title":"游戏鼠标","img":"./img/TV4-75.png"},
+      {"title":"笔记本双肩包","img":"./img/TV4-75.png"},
+      {"title":"USB-C电源适配器","img":"./img/TV4-75.png"},
+      {"title":"平板配件","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"家电 插线板",
+    "child":[
+      {"title":"米家互联网空调","img":"./img/14000000000.png"},
+      {"title":"净水器","img":"./img/TV4-75.png"},
+      {"title":"净水器滤芯","img":"./img/TV4-75.png"},
+      {"title":"扫地机器人","img":"./img/TV4-75.png"},
+      {"title":"扫地机配件","img":"./img/TV4-75.png"},
+      {"title":"空气净化器","img":"./img/TV4-75.png"},
+      {"title":"电饭煲","img":"./img/TV4-75.png"},
+      {"title":"电磁炉","img":"./img/TV4-75.png"},
+      {"title":"厨房用具","img":"./img/TV4-75.png"},
+      {"title":"电水壶","img":"./img/TV4-75.png"},
+      {"title":"料理机","img":"./img/TV4-75.png"},
+      {"title":"滤水壶","img":"./img/TV4-75.png"},
+      {"title":"落地风扇","img":"./img/TV4-75.png"},
+      {"title":"投影仪","img":"./img/TV4-75.png"},
+      {"title":"灯具","img":"./img/TV4-75.png"},
+      {"title":"插线板","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"出行 穿戴",
+    "child":[
+      {"title":"手环手表","img":"./img/14000000000.png"},
+      {"title":"VR","img":"./img/TV4-75.png"},
+      {"title":"平衡车","img":"./img/TV4-75.png"},
+      {"title":"滑板车","img":"./img/TV4-75.png"},
+      {"title":"自行车","img":"./img/TV4-75.png"},
+      {"title":"车载逆变器","img":"./img/TV4-75.png"},
+      {"title":"平衡车配件","img":"./img/TV4-75.png"},
+      {"title":"智能后视镜","img":"./img/TV4-75.png"},
+      {"title":"车载空气净化器","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"智能 路由器",
+    "child":[
+      {"title":"路由器","img":"./img/14000000000.png"},
+      {"title":"对讲机","img":"./img/TV4-75.png"},
+      {"title":"智能家庭","img":"./img/TV4-75.png"},
+      {"title":"无人机","img":"./img/TV4-75.png"},
+      {"title":"摄像机","img":"./img/TV4-75.png"},
+      {"title":"照相机","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"电源 配件",
+    "child":[
+      {"title":"移动电源","img":"./img/14000000000.png"},
+      {"title":"数据线","img":"./img/TV4-75.png"},
+      {"title":"车充","img":"./img/TV4-75.png"},
+      {"title":"充电器","img":"./img/TV4-75.png"},
+      {"title":"无线充","img":"./img/TV4-75.png"},
+      {"title":"电池","img":"./img/TV4-75.png"},
+      {"title":"自拍杆","img":"./img/TV4-75.png"},
+      {"title":"存储卡","img":"./img/TV4-75.png"},
+      {"title":"手机壳","img":"./img/TV4-75.png"},
+      {"title":"手机贴膜","img":"./img/TV4-75.png"},
+      {"title":"手机支架","img":"./img/TV4-75.png"},
+      {"title":"平板配件","img":"./img/TV4-75.png"},
+      {"title":"黑鲨配件","img":"./img/TV4-75.png"},
+      {"title":"其他配件","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"个护 儿童",
+    "child":[
+      {"title":"剃须刀","img":"./img/14000000000.png"},
+      {"title":"牙刷","img":"./img/TV4-75.png"},
+      {"title":"体重秤","img":"./img/TV4-75.png"},
+      {"title":"血压计","img":"./img/TV4-75.png"},
+      {"title":"体温计","img":"./img/TV4-75.png"},
+      {"title":"早教启智","img":"./img/TV4-75.png"},
+      {"title":"遥控电动","img":"./img/TV4-75.png"},
+      {"title":"益智积木","img":"./img/TV4-75.png"},
+      {"title":"儿童手表","img":"./img/TV4-75.png"},
+      {"title":"儿童滑板车","img":"./img/TV4-75.png"},
+      {"title":"儿童书包","img":"./img/TV4-75.png"},
+      {"title":"平板配件","img":"./img/TV4-75.png"},
+      {"title":"黑鲨配件","img":"./img/TV4-75.png"},
+      {"title":"其他配件","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"耳机 音箱",
+    "child":[
+      {"title":"小爱音箱","img":"./img/14000000000.png"},
+      {"title":"遥控耳机","img":"./img/TV4-75.png"},
+      {"title":"蓝牙耳机","img":"./img/TV4-75.png"},
+      {"title":"头戴耳机","img":"./img/TV4-75.png"},
+      {"title":"品牌耳机","img":"./img/TV4-75.png"},
+      {"title":"蓝牙音箱","img":"./img/TV4-75.png"}
+    ]
+  },
+  {
+    "category":"生活 箱包",
+    "child":[
+      {"title":"双肩包","img":"./img/14000000000.png"},
+      {"title":"钱包","img":"./img/TV4-75.png"},
+      {"title":"口罩","img":"./img/TV4-75.png"},
+      {"title":"收纳包","img":"./img/TV4-75.png"},
+      {"title":"旅行箱","img":"./img/TV4-75.png"},
+      {"title":"运动鞋","img":"./img/TV4-75.png"},
+      {"title":"服饰","img":"./img/TV4-75.png"},
+      {"title":"眼镜","img":"./img/TV4-75.png"},
+      {"title":"床垫","img":"./img/TV4-75.png"},
+      {"title":"枕头","img":"./img/TV4-75.png"},
+      {"title":"被子","img":"./img/TV4-75.png"},
+      {"title":"沙发","img":"./img/TV4-75.png"},
+      {"title":"针织件套","img":"./img/TV4-75.png"},
+      {"title":"金米兔","img":"./img/TV4-75.png"},
+      {"title":"螺丝刀","img":"./img/TV4-75.png"},
+      {"title":"保温杯","img":"./img/TV4-75.png"},
+      {"title":"伞","img":"./img/TV4-75.png"},
+      {"title":"驱蚊器","img":"./img/TV4-75.png"},
+      {"title":"尤克里里","img":"./img/TV4-75.png"},
+      {"title":"毛巾/浴巾","img":"./img/TV4-75.png"},
+      {"title":"米兔","img":"./img/TV4-75.png"},
+      {"title":"签字笔","img":"./img/TV4-75.png"},
+      {"title":"笔记本","img":"./img/TV4-75.png"}
+    ]
+  }
+]
