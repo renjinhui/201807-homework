@@ -1,13 +1,16 @@
-var $head_nav = $('.head_nav ul li'),
+var $head = $('.head'),
+    $head_nav = $('.head_nav ul li'),
     $nav_menu = $('.nav_menu'),
     $cateUl = $('.cateUl'),
     $oLis = null,
+    $category = $('.category'),
     $banner = $('.ul_box'),
     $child_box = $('.child_box'),
     $menu_ul = $('.menu_ul'),
     $sg_banner = $('.sg_banner'),
     $timer_title = $('.timer_titile'),
-    $timer_box = $('.timer_box');
+    $timer_box = $('.timer_box'),
+    $right = $('.phone_box .right');
 
 //获取分类列表
 function getData(type,url){
@@ -72,22 +75,19 @@ $oLis.on('mouseenter',function () {
     $(this).addClass('bgc').siblings().removeClass('bgc');
     showInfo(category[n]['child']);
 });
-$oLis.on('mouseleave',function () {
-    $(this).removeClass('bgc');
+$category.on('mouseleave',function () {
+    $oLis.removeClass('bgc');
     $child_box.html('').hide();
 });
 function showInfo(data) {
+    $child_box.html('');
     var str = '';
     data.forEach((item,index) => {//循环鼠标划入分类下的所有子分类
         if(index % 6 == 0){//每个ul下6个li，所以对6求余
             str = '';
         }
         str += `<li><img src="${item.img}" alt=""><span>${item.title}</span></li>`;
-        if((index + 1) % 6 == 0 && index > 0){//每6个li创建一个ul，判断当前索引是否是第六个
-            var eleUl = document.createElement('ul');
-            eleUl.innerHTML = str;
-            $child_box[0].appendChild(eleUl);
-        }else if(index == data.length - 1){//如果当前索引不是第六个，但是是最后一个也需要创建一个ul
+        if((index + 1) % 6 == 0 && index > 0 || index == data.length - 1){//每6个li创建一个ul，判断当前索引是否是第六个;如果当前索引不是第六个，但是是最后一个也需要创建一个ul
             var eleUl = document.createElement('ul');
             eleUl.innerHTML = str;
             $child_box[0].appendChild(eleUl);
@@ -118,9 +118,12 @@ $head_nav.on('mouseenter',function () {
     if(nav_menu[n]['child'].length > 0){
         appendMenu(nav_menu[n]['child']);
         $nav_menu.show();
+    }else{
+        $menu_ul.html('');
+        $nav_menu.hide();
     }
 });
-$head_nav.on('mouseleave',function () {
+$head.on('mouseleave',function () {
     $menu_ul.html('');
     $nav_menu.hide();
 });
@@ -175,4 +178,33 @@ function sgTimer() {
     },1000);
 }
 sgTimer();
+
+var phone_arr = getData('get','./data/phone.json');
+appendPhone(phone_arr);
+function appendPhone(data) {
+    var str = '';
+    data.forEach((item,index) => {
+
+        if(index % 4 == 0){//每个ul下4个li，所以对4求余
+            str = '';
+        }
+        str += `<li class="swiper-slide">`;
+        if(item.flag){
+            str += `<span class="flag">${item.flag}</span>`;
+        }
+        str += `<img src="${item.img}" alt="">
+                <p class="title">${item.title}</p>
+                <p class="desc">${item.desc}</p>
+                <p class="price"><span class="now">${item.price}</span><span class="old">${item.del_price}</span></p>
+                </li>`;
+
+        if((index + 1) % 4 == 0 && index > 0 || index == data.length - 1){
+            var eleUl = document.createElement('ul');
+            eleUl.setAttribute("class","clearfix");
+            eleUl.innerHTML = str;
+            $right[0].appendChild(eleUl);
+        }
+    })
+}
+
 

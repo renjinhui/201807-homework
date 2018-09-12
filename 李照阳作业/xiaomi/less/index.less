@@ -442,7 +442,7 @@
   background: #f5f5f5;
   .phone{
     width: 1226px;
-    height: 886px;
+    height: 720px;
     margin: 0 auto;
     padding-top: 10px;
     h2{
@@ -473,7 +473,7 @@
       }
     }
     .phone_box{
-      width: 1226px;
+      width: 100%;
       .left{
         float: left;
         width: 234px;
@@ -489,6 +489,7 @@
         width: 978px;
         ul{
           width: 978px;
+          text-align: center;
           li{
             float: left;
             width: 234px;
@@ -496,15 +497,48 @@
             font-size: 14px;
             background: #fff;
             margin-right: 10px;
+            .flag{
+              background-color: #e53935;
+              position: absolute;
+              top: 0;
+              width: 64px;
+              height: 20px;
+              left: 50%;
+              margin-left: -32px;
+              font-size: 12px;
+              line-height: 20px;
+              text-align: center;
+              color: #fff;
+            }
+            img{
+              width: 160px;
+              height: 160px;
+              margin-top: 23px;
+            }
+            .title{
+              margin-top: 25px;
+              height: 20px;
+              line-height: 20px;
+            }
+            .desc{
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px;
+              color: #b0b0b0;
+              margin-bottom: 5px;
+            }
+            .now{
+              color: #ff6700;
+              margin-right: 8px;
+            }
+            .old{
+              color: #b0b0b0;
+              text-decoration: line-through;
+            }
           }
           &:nth-child(2){
-            background: #ff6700;
-            margin-top: 5px;
+            margin-top: 14px;
           }
-        }
-        .second{
-          background: #ff6700;
-          margin-top: 5px;
         }
       }
     }
