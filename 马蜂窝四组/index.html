@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>马蜂窝</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="css/less.css">
+    <link rel="stylesheet" href="less/left_less.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!--header-->
+<header>
+    <div class="hdBox">
+        <div class="logo">
+            <a href="http://www.mafengwo.cn/" title="马蜂窝自由行"></a>
+        </div>
+
+        <ul class="hdNav">
+            <li class="li_bord nav_li1 "><a class="li_aa" href="http://www.mafengwo.cn/">首页</a></li>
+            <li class="li_bord "><a class="li_a" href="http://www.mafengwo.cn/mdd/">目的地</a></li>
+            <li class="li_bord"><a class="li_a" href="./gonglue/index.html">旅游攻略</a></li>
+            <li class="nav_li2 hovBlock1">
+                <a class="li_a" href="">
+                        <span>
+                            旅行商城
+                            <i class="icon_caret"></i>
+                        </span>
+                </a>
+                <div class="hidBox">
+                    <a class="a_icon1">自由行
+                        <!--<i class="i_con1">hot</i>--></a>
+                    <a>跟团游</a>
+                    <a>当地游</a>
+                    <a class="a_icon2">国内机票
+                        <!--<i class="i_con2">new</i>--></a>
+                    <a>签证</a>
+                    <a>保险</a>
+                </div>
+            </li>
+            <li class="li_bord"><a class="li_a" href="">酒店</a></li>
+            <li class="nav_li2 hovBlock2">
+                <a class="li_a" href="">
+                        <span>
+                            社区
+                            <i class="icon_caret"></i>
+                        </span></a>
+                <div class="hidBox2">
+                    <ul class="hidUl1">
+                        <li><a href="">问答
+                            <!--<i class="i_con3">hot</i>--></a></li>
+                        <li><a href="">马蜂窝周边
+                            <!--<i class="i_con4">new</i>--></a></li>
+                        <li><a href="">蜂首俱乐部</a></li>
+                        <li><a href="">结伴</a></li>
+                    </ul>
+                    <ul class="hidUl2">
+                        <li><a href="">小组论坛</a></li>
+                        <li><a href="">分舵同城</a></li>
+                        <li><a href="">马蜂窝拍卖行</a></li>
+                        <li><a href="">照片PK</a></li>
+                        <li><a href="">真人兽</a></li>
+                        <li><a href="">道具商店</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li class="li_bord"><a class="li_a" href="">APP</a></li>
+        </ul>
+        <div class="loginBox">
+            <a class="weibo-login" href="https://passport.mafengwo.cn/weibo" title="微博登录" rel="nofollow"></a>
+            <a class="qq-login" href="https://passport.mafengwo.cn/qq" title="QQ登录" rel="nofollow"></a>
+            <a class="weixin-login" href="https://passport.mafengwo.cn/wechat" title="微信登录" rel="nofollow"></a>
+            <a id="_j_showlogin" title="登录马蜂窝" href="https://passport.mafengwo.cn" rel="nofollow">登录</a>
+            <span class="split">|</span>
+            <a href="https://passport.mafengwo.cn/regist.html" title="注册帐号" rel="nofollow">注册</a>
+        </div>
+    </div>
+</header>
+<!-- BANNER开始 -->
+<div class="mfw-banner">
+    <ul class="show-image">
+    </ul>
+    <ul class="show-nav">
+    </ul>
+    <a href="./app/calendar.html" target="_blank" class="show-more"></a>
+    <div class="searchBox">
+        <div class="searchGroup">
+            <div class="searchTab">
+                <ul>
+                    <li class="current"><i></i>全部</li>
+                    <li><i></i>酒店</li>
+                    <li><i></i>目的地</li>
+                    <li><i></i>旅行商城</li>
+                </ul>
+            </div>
+            <div class="searchBarBox">
+                <div class="searchBar all ">
+                    <div class="searchWrapper"><input type="text" placeholder="搜目的地/攻略/酒店/旅行特价"></div>
+                    <div class="searchButton"><a href="javascript:;"><i class="icon-search"></i></a></div>
+                </div>
+                <div class="searchBar hotel hide">
+                    <div class="searchWrapper">
+                        <div class="search-input"><input type="text" placeholder="请输入国家、地区、城市名称"></div>
+                        <div class="search-date"><input type="text" class="dataStart" id="date" placeholder="未定"><i></i>
+                        </div>
+                        <div class="search-date"><input type="text" class="dataEnd" placeholder="未定"><i></i></div>
+                    </div>
+
+                    <div class="searchButton"><a href="javascript:;"><i class="icon-search"></i></a></div>
+                </div>
+                <div class="searchBar destination hide">
+                    <div class="searchWrapper"><input type="text" placeholder="我要去..."></div>
+                    <div class="searchButton"><a href="javascript:;"><i class="icon-search"></i></a></div>
+                </div>
+                <div class="searchBar sale hide">
+                    <div class="searchWrapper"><input type="text" placeholder="产品名称/目的地/优惠"></div>
+                    <div class="searchButton"><a href="javascript:;"><i class="icon-search"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BANNER结束 -->
+<!-- container主体 -->
+<div class="container">
+    <div class="mfw-left">
+        <!--第一模块 -->
+
+        <div class="mfw-traveller">
+            <div class="traveller-hd">
+                <p class="hd-title">
+                    <a href="#">旅行家专栏</a>
+                </p>
+                <a class="hd-right" href="#">专栏首页</a>
+            </div>
+            <div id="img1">
+                <ul class="traveller-images">
+                    <li>
+                        <img src="" alt="">
+                        <h3><a href="#"></a></h3>
+                        <p></p>
+                    </li>
+
+                </ul>
+                <ul class="traveller-tip_box">
+                    <!--<li class="tip"></li>-->
+
+                </ul>
+            </div>
+        </div>
+
+        <!--第二模块-->
+
+        <div class="mfw-tuijian">
+            <div class="tuijian-hd">
+                <p class="hd-title">
+                    旅游攻略推荐
+                </p>
+                <a class="hd-right" href="#">更多</a>
+
+            </div>
+            <div class="tuijian-bd">
+                <div class="gonglve-item">
+                    <div class="img">
+                        <a href="##">
+                            <img src="img/tuijian.jpeg" alt="">
+                            <p>自由行攻略</p>
+                        </a>
+                    </div>
+                    <h3><a href="##">一入夜，便长安 | 西安夜游的正确打开方式</a></h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="##">two soul</a> 点评了&nbsp;
+                        大叻的 <a href="##">沙非大叻酒店</a>
+                    </li>
+                    <li>
+                        <a href="##">成都市</a> 点评了&nbsp;
+                        天涯区的 <a href="##">阿彬川味海鲜</a>
+                    </li>
+                    <li>
+                        <a href="##">马蜂窝用</a> 点评了&nbsp;
+                        资兴的 <a href="##">小东江</a>
+                    </li>
+                    <li>
+                        <a href="##">舍不得、</a> 点评了&nbsp;
+                        沙坪坝的 <a href="##">磁器口古镇</a>
+                    </li>
+                    <li>
+                        <a href="##">ba困</a> 点评了&nbsp;
+                        天涯区的 <a href="##">梅姐川味海鲜</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--第三模块-->
+        <div class="mfw-traveller newplay changeCBox">
+            <div class="traveller-hd ">
+                <p class="hd-title">
+                    <a href="#">最新活动</a>
+                </p>
+                <a class="hd-right" href="#">查看全部></a>
+            </div>
+            <div id="img2">
+                <ul class="traveller-images">
+                    <li>
+                        <img src="" alt="">
+                        <h3><a href="#"></a></h3>
+                        <p></p>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="traveller-tip_box">
+                    <!--<li class="tip"></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <!--第四个模块-->
+        <div class="foreBox">
+            <a href="##">
+                <img src="img/tu2.jpeg" alt="">
+            </a>
+            <img src="img/icon.png" alt="">
+        </div>
+        <!--第五个模块-->
+        <div class="mfw-traveller changeCBox">
+            <div class="traveller-hd">
+                <p class="hd-title">
+                    <a href="#">未知旅行实验室</a>
+                </p>
+                <a class="hd-right" href="#">查看更多></a>
+            </div>
+            <a href="##">
+                <img src="img/tu3.png" alt="">
+            </a>
+        </div>
+        <!--第六个模块-->
+        <div class="mfw-traveller sixBox changeCBox">
+            <div class="traveller-hd">
+                <p class="hd-title">
+                    <a href="#">加入马蜂窝</a>
+                </p>
+                <a class="hd-right" href="#">更多职位></a>
+            </div>
+            <div>
+                <a href="##">
+                    <img src="img/tu4.jpg" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="##">广告销售经理<i>HOT</i><span>申请职位></span></a>
+                    </li>
+                    <li>
+                        <a href="##">资深PHP开发工程师<i>HOT</i><span>申请职位></span></a>
+                    </li>
+                    <li>
+                        <a href="##">广告执行经理<span>申请职位></span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--第七个模块-->
+        <div class="sevenBox">
+            <div class="sevenbox-hd">
+                <p>马蜂窝<a href="##">旅行网站</a>最新进展</p>
+            </div>
+            <div class="sevenbox-bd">
+                <ul>
+                    <li>
+                        02月06日<a href="##">正式更名为“马蜂窝旅游”</a>
+                    </li>
+                    <li>
+                        11月08日<a href="##">蚂蜂窝2018蜂首台历开始预售</a>
+                    </li>
+                    <li>
+                        11月05日<a href="##">蚂蜂窝赤水音乐季圆满结束</a>
+                    </li>
+                    <li>
+                        05月12日<a href="##">指路人俱乐部首期面基大会圆满成功</a>
+                    </li>
+                    <li>
+                        10月29日<a href="##">蚂蜂窝2016秋酷大趴全纪录</a>
+                    </li>
+                    <li>
+                        09月29日<a href="##">蚂蜂窝秋酷大趴进入倒计时</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="sales">
+        <div class="sales_head">爆款热卖</div>
+        <ul class="sales_content">
+            <li>
+                <a href="#">
+                    <img src="https://b4-q.mafengwo.net/s11/M00/4F/22/wKgBEFr_mHCAX-BtABSQiCI6oro694.gif?imageMogr2%2Fthumbnail%2F%21440x270r%2Fgravity%2FCenter%2Fcrop%2F%21440x270%2Fquality%2F90"
+                         alt="">
+                    <h3>沈阳出发西安6天往返含税机票(深航正班+1晚酒店+免费行李额25kg)</h3>
+                    <div class="price">￥<strong>9999</strong><em>起</em></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://n4-q.mafengwo.net/s10/M00/7D/07/wKgBZ1kVNXuAOUjGAAIS2j54bqk35.jpeg?imageMogr2%2Fthumbnail%2F%21440x270r%2Fgravity%2FCenter%2Fcrop%2F%21440x270%2Fquality%2F90"
+                         alt="">
+                    <h3>亲子度假·广州直飞沙巴亚庇6天4晚自由行（五星航空+接送机+特定套餐赠自助晚餐）</h3>
+                    <div class="price">￥<strong>9999</strong><em>起</em></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://n2-q.mafengwo.net/s11/M00/39/1E/wKgBEFsV6xaADR-AAAXLWAnJhrg68.jpeg?imageMogr2%2Fthumbnail%2F%21440x270r%2Fgravity%2FCenter%2Fcrop%2F%21440x270%2Fquality%2F90"
+                         alt="">
+                    <h3>【国庆免签爆款】长沙直飞印尼美娜多5天3晚/6天4晚高品质半自由行（销量破百好评如潮/免签胜地说走就走/含1-2天自由活动/四五星豪华酒店）</h3>
+                    <div class="price">￥<strong>9999</strong><em>起</em></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="popularTravel">
+        <div class="header_r">
+            <ul>
+                <li class="hot current">
+                    <a href="##" class="choose_btn">热门游记</a>
+                    <span id="down-choose-wr"><i></i>筛选</span>
+                </li>
+
+                <li class="new">
+                    <a href="##" class="choose_btn">最新发表</a>
+                </li>
+            </ul>
+            <div class="writeBtn">
+                <a href="" class="write">
+                    <i></i>
+                    写游记
+                </a>
+            </div>
+        </div>
+        <div class="body_wr">
+            <div class="tn_body">
+
+            </div>
+            <div class="m-pagination">
+                <span class="current">共177页/2120条</span>
+                <a href="javascript:;" class="next_j_pageitem"><< 上一页</a>
+                <a href="javascript:;" class="pi pi_j_pageitem pg-current">1</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">2</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">3</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">4</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">5</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">6</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">7</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">8</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">9</a>
+                <a href="javascript:;" class="next_j_pageitem">下一页>></a>
+            </div>
+        </div>
+        <div class="body_wr hidden">
+            <div class="tn_body">
+            </div>
+            <div class="m-pagination">
+                <span class="current">共177页/2120条</span>
+                <a href="javascript:;" class="next_j_pageitem"><< 上一页</a>
+                <span class="pg-current pi_j_pageitem">1</span>
+                <a href="javascript:;" class="pi pi_j_pageitem">2</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">3</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">4</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">5</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">6</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">7</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">8</a>
+                <a href="javascript:;" class="pi pi_j_pageitem">9</a>
+                <a href="javascript:;" class="next_j_pageitem">下一页>></a>
+            </div>
+        </div>
+        <div class="input_wr ">
+            <a href="##" class="x">×</a>
+            <div class="inp_title">
+                <div class="tit_inp">
+                    <p>目的地</p>
+                    <div class="inp_box">
+                        <input type="text" placeholder="输入你想查看的目的地">
+                    </div>
+                </div>
+                <div class="hot_plice">
+                    <a href="##">斯里兰卡</a>
+                    <a href="##">济州岛</a>
+                    <a href="##">日本</a>
+                    <a href="##">香港</a>
+                    <a href="##">北京</a>
+                    <a href="##">云南</a>
+                    <a href="##">泰国</a>
+                    <a href="##">青海湖</a>
+                </div>
+            </div>
+            <div class="pic">
+                <div class="tit">兴趣</div>
+                <ul>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://p2-q.mafengwo.net/s9/M00/72/E2/wKgBs1d8s0eAIzOxAADHUDzpwyk33.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>吃遍天下</h3>
+                            <p>无敌手</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://b3-q.mafengwo.net/s9/M00/4C/88/wKgBs1d8dTCAcpbjAACantFj9Lc31.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>带着对象</h3>
+                            <p>去虐狗</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://p2-q.mafengwo.net/s9/M00/4D/44/wKgBs1d8diWAeEuVAACQdwKycrM19.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>姑娘漂亮</h3>
+                            <p>就是美</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://p2-q.mafengwo.net/s9/M00/52/74/wKgBs1d8fXSASKT6AAA5t6CGBs050.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>带着孩子</h3>
+                            <p>看世界</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://p2-q.mafengwo.net/s9/M00/72/E2/wKgBs1d8s0eAIzOxAADHUDzpwyk33.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>吃遍天下</h3>
+                            <p>无敌手</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://b3-q.mafengwo.net/s9/M00/4C/88/wKgBs1d8dTCAcpbjAACantFj9Lc31.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>带着对象</h3>
+                            <p>去虐狗</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://p2-q.mafengwo.net/s9/M00/4D/44/wKgBs1d8diWAeEuVAACQdwKycrM19.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>姑娘漂亮</h3>
+                            <p>就是美</p>
+                        </a></li>
+                    <li>
+                        <a href="##">
+            <span>
+                <img src="https://p2-q.mafengwo.net/s9/M00/52/74/wKgBs1d8fXSASKT6AAA5t6CGBs050.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90"
+                     alt="">
+            </span>
+                            <h3>带着孩子</h3>
+                            <p>看世界</p>
+                        </a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- container主体结束 -->
+<!--footer-->
+<footer>
+    <div class="ftBox">
+        <div class="ft_info ">
+
+            <div class="ft_info_intro ft_info-col">
+                <p>全球旅游消费指南</p>
+                <ul>
+                    <li>覆盖全球200多个国家和地区</li>
+                    <li><span>100,000,000</span>位旅行者</li>
+                    <li><span>920,000 </span>家国际酒店</li>
+                    <li><span>21,000,000</span>条真实点评</li>
+                    <li><span>382,000,000</span>次攻略下载</li>
+                    <li><span>中国旅游行业第一部“玩法”</span></li>
+                </ul>
+            </div>
+            <div class="ft_info_about ft_info-col">
+                <p>关于我们</p>
+                <ul>
+                    <li><a href="" class="m_r_10">关于马蜂窝</a><a href="">联系我们</a></li>
+                    <li><a href="" class="m_r_10">隐私政策</a><a href="">商标声明</a></li>
+                    <li><a href="" class="m_r_10">服务协议</a><a href="">游记协议</a></li>
+                    <li><a href="">商城平台服务协议</a></li>
+                    <li><a href="">网络信息侵权通知指引</a></li>
+                    <li><a href="" class="m_r_10">网站地图</a><a href=""><span>加入马蜂窝</span></a></li>
+                </ul>
+            </div>
+            <div class="ft_info_service ft_info-col">
+                <p>旅行服务</p>
+                <ul>
+                    <li>旅游攻略</li>
+                    <li>酒店预订</li>
+                    <li>旅游特价</li>
+                    <li>国际租车</li>
+                    <li>旅游问答</li>
+                    <li>旅游保险</li>
+                    <li>旅游指南</li>
+                    <li>订火车票</li>
+                    <li>旅游咨询</li>
+                    <li>APP下载</li>
+                </ul>
+                <p class="col_p">旅行商城全球商家入驻</p>
+            </div>
+            <ul class="ft_info_qrcode ">
+                <li>
+                    <span class="ft-qrcode-tejia"></span>
+                    <p>马蜂窝良品<br>官方服务号</p>
+                </li>
+                <li>
+                    <span class="ft-qrcode-weixin"></span>
+                    <p>马蜂窝旅游<br>订阅号</p>
+                </li>
+                <li>
+                    <span class="ft-qrcode-weixin2"></span>
+                    <p>马蜂窝APP<br>扫描立即下载</p>
+                </li>
+            </ul>
+
+            <dl class="ft-info-social">
+                <dt>向崇尚自由的加勒比海盗致敬！</dt>
+                <dd>
+                    <a class="ft-social-weibo" target="_blank" href="http://weibo.com/mafengwovip"><i></i></a>
+                    <a class="ft-social-qqt" target="_blank" href="http://t.qq.com/mafengwovip"><i></i></a>
+                    <a class="ft-social-qzone" target="_blank" href="http://1213600479.qzone.qq.com/"><i></i></a>
+                </dd>
+            </dl>
+        </div>
+        <div class="ft_links">
+            <a href="##">马可波罗</a><a href="##">Onlylady女人志</a><a href="##">艺龙旅游指南</a><a href="##">欣欣旅游网</a><a
+                href="##">户外运动</a><a
+                href="##">365音乐网</a><a href="##">爱问共享资料</a><a href="##">旅游网</a><a href="##">小说网</a><a
+                href="##">学习啦</a><a
+                href="##">游多多自助游</a><a href="##">问答</a><a href="##">火车时刻表</a><a href="##">驴妈妈旅游网</a><a
+                href="##">好豆美食网</a><a
+                href="##">二手车</a><a href="##">绿野户外</a><a href="##">途牛旅游网</a><a href="##">图吧</a><a
+                href="##">SUV联合越野</a><a
+                href="##">手机浏览器</a><a href="##">上海地图</a><a href="##">天气预报查询</a><a href="##">同程旅游</a><a
+                href="##">火车票</a><a
+                href="##">YunOS</a><a href="##">携程旅游</a><a href="##">锦江旅游</a><a href="##">火车时刻表</a><a href="##">TripAdvisor</a><a
+                href="##">天巡网</a><a href="##">短租房</a><a href="##">租租车</a><a href="##">五分旅游网</a><a href="##">酒店预订</a><a
+                href="##">爱旅行网</a><a href="##">旅游</a><a href="##">旅游网</a><a href="##">wed114结婚网</a><a
+                href="##">车讯网</a><a
+                href="##">遨游旅游网</a><a href="##">手机</a><a href="##">更多友情链接>></a>
+        </div>
+        <div class="ft-copyright">
+            <i class="ft-mfw-logo"></i>
+            <p>
+                © 2018 Mafengwo.cn
+                <a href="">京ICP备11015476号</a>
+                <a href="">
+                    <img src="http://images.mafengwo.net/images/footer/police_record.png" alt="">
+                    京公网安备11010502013401号
+                </a>
+                <a href="">京ICP证110318号</a>
+                <span class="m_l_10">网络出版服务许可证：(总)网出证(京)字第161号</span>
+            </p>
+            <p>
+                增值电信业务经营许可证：京B2-20180228
+                <a href="">营业执照</a>
+                <a href="">帮助中心</a>
+                <span class="m_l_10">马蜂窝客服：国内</span>
+                <span class="highlight">4006-345-678</span>
+                <span class="m_l_10">海外</span>
+                <span class="highlight">+86-10-5922-2799</span>
+            </p>
+        </div>
+
+        <div class="ft-safety">
+            <a class="s_a" href=""></a>
+            <a class="s_b" href=""></a>
+            <a class="s_c" href=""></a>
+        </div>
+    </div>
+</footer>
+
+<!--窗口固定img-->
+<div class="coupon-wrap">
+    <a href="">
+        <img src="https://images.mafengwo.net/mobile/images/omc/coupon-pop/coupon-hx-v2.png">
+    </a>
+</div>
+
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="./js/laydate/laydate.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/utils.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: 60px;
+  font-size: 12px;
+  border-bottom: 1px solid #E2D5FA;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  .hdBox {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    .logo {
+      float: left;
+      width: 136px;
+      padding: 13px 0;
+      a {
+        width: 120px;
+        height: 34px;
+        background: url("../img/1.png") no-repeat 0 0;
+        background-size: 175px;
+        display: block;
+      }
+    }
+    .hdNav {
+      float: left;
+      width: 545px;
+      margin: 0 10px 0 25px;
+      li {
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        .li_a {
+          display: inline-block;
+          height: 100%;
+          font-size: 14px;
+          padding: 0 16px;
+          margin-top: 2px;
+        }
+        .li_aa {
+          display: inline-block;
+          height: 100%;
+          font-size: 14px;
+          padding: 0 16px;
+          margin-top: 2px;
+          color: white;
+        }
+        .icon_caret {
+          margin: 0 -5px 0 3px;
+          vertical-align: middle;
+          display: inline-block;
+          height: 0;
+          width: 0;
+          border-top: 4px solid #666;
+          border-left: 4px dashed transparent;
+          border-right: 4px dashed transparent;
+          overflow: hidden;
+        }
+        .li_a:hover {
+          color: #ff9d00;
+        }
+        .hidBox {
+          width: 140px;
+          height: 260px;
+          position: absolute;
+          top: 58.5px;
+          left: 0;
+          background: #fff;
+          opacity: 0.8;
+          display: none;
+          box-sizing: border-box;
+          border: 1px solid #eee;
+          border-top: 1px solid transparent;
+          z-index: 20;
+          a {
+            height: 40px;
+            display: block;
+            line-height: 40px;
+            font-size: 14px;
+            padding-left: 20px;
+            color: #666;
+          }
+        }
+        .hidBox a:hover {
+          background: #eee
+        }
+        .hidBox2 {
+          position: absolute;
+          top: 58.5px;
+          left: 0;
+          display: none;
+          font-size: 14px;
+          width: 300px;
+          height: 270px;
+          padding-top: 10px;
+          overflow: hidden;
+          background: #fff;
+          border: 1px solid #eee;
+          border-top: 1px solid transparent;
+          z-index: 20;
+          .hidUl1 {
+            padding-left: 17px;
+            width: 120px;
+            float: left;
+            li {
+              width: 120px;
+              height: 75px;
+              font-size: 16px;
+              margin-top: -20px;
+              a {
+                color: #666
+              }
+
+            }
+          }
+          .hidUl2 {
+            width: 120px;
+            float: left;
+            padding-left: 25px;
+            height: 192px;
+            margin-top: 12px;
+            li {
+              margin: 0;
+              padding: 0;
+              height: 32px;
+              font-size: 14px;
+              float: none;
+              line-height: 32px;
+              display: list-item;
+              a {
+                color: #666
+              }
+            }
+          }
+        }
+        .hidBox2 ul li a:hover {
+          color: #ff9d00
+        }
+      }
+      .nav_li1 {
+        background-color: #ff9d00;
+      }
+      .li_bord:hover {
+        border-bottom: 2px solid #ff9d00
+      }
+      .nav_li2 {
+        height: 59px;
+        vertical-align: top;
+        border-top: 2px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        position: relative;
+        a {
+          height: auto !important;
+          overflow: hidden;
+        }
+      }
+      .nav_li2:hover {
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-top: 2px solid #ff9d00;
+      }
+      .hovBlock1:hover .hidBox {
+        display: block;
+      }
+      .hovBlock2:hover .hidBox2 {
+        display: block;
+      }
+    }
+    .loginBox {
+      float: right;
+      padding: 21px 0;
+      height: 26px;
+      line-height: 26px;
+      color: #c9c9c9;
+      text-align: right;
+      a {
+        display: inline-block;
+        width: 28px;
+        height: 26px;
+        overflow: hidden;
+        vertical-align: -7px;
+        font-size: 14px;
+        color: #ff9d00;
+        cursor: pointer;
+        text-align: right;
+
+      }
+      .weibo-login {
+        background-position: 0 -50px !important;
+        background: url("../img/1.png") no-repeat;
+        background-size: 200px;
+        margin-right: 6px;
+      }
+      .weibo-login:hover {
+        background-position: 0 -80px !important;
+      }
+      .qq-login {
+        background-position: -30px -50px !important;
+        background: url("../img/1.png") no-repeat;
+        background-size: 200px;
+        margin-right: 6px;
+      }
+      .qq-login:hover {
+        background-position: -30px -80px !important
+      }
+      .weixin-login {
+        background-position: 0 -165px !important;
+        background: url("../img/1.png") no-repeat;
+        background-size: 200px;
+        margin-right: 6px;
+      }
+      .weixin-login:hover {
+        background-position: -30px -165px !important
+      }
+      .split {
+        width: 1px;
+        margin: 0 10px 5px 10px;
+        display: inline-block;
+        position: relative;
+        top: -3px
+      }
+    }
+  }
+}
+footer {
+  clear: both;
+  background-color: #3c3c3c;
+  color: #c2c2c2;
+  line-height: 22px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  .ftBox {
+    width: 1105px;
+    margin: auto;
+    .ft_info {
+      overflow: hidden;
+      width: 1089px;
+      height: 259px;
+      padding: 30px 8px 40px 8px;
+      border-bottom: 1px solid #575a5b;
+      .ft_info_intro {
+        width: 200px;
+        margin-right: 68px;
+        span {
+          color: #ff9d00
+        }
+      }
+      .ft_info-col {
+        float: left;
+        display: inline;
+        p {
+          height: 30px;
+          font-size: 14px;
+          overflow: hidden;
+          color: #c2c2c2;
+        }
+      ;
+      }
+      .ft_info_about {
+        width: 128px;
+        margin-right: 85px;
+        a {
+          color: #c2c2c2;
+          span{color: #ff9d00}
+        }
+        .m_r_10{margin-right: 10px}
+      }
+      .ft_info_service {
+        width: 135px;
+        margin-right: 80px;
+        ul {
+          margin-right: -35px;
+          overflow: hidden;
+          li {
+            float: left;
+            width: 85px;
+            display: list-item;
+
+          }
+        }
+        .col_p{color: #ff9d00;
+          font-size: 12px;}
+      }
+      .ft_info_qrcode {
+        float: right;
+        padding-top: 22px;
+        line-height: 140px;
+        text-align: center;
+        li {
+          width: 101px;
+          margin-left: 30px;
+          float: right;
+          span {
+            display: block;
+            height: 90px;
+            margin: 0 0 8px 6px;
+          }
+          p{height: 35px ;line-height: 16px!important;}
+          .ft-qrcode-tejia {
+            background: url("http://css.mafengwo.net/images/footer/qr_tejia4.png") no-repeat
+          }
+          .ft-qrcode-weixin {
+            background: url("http://css.mafengwo.net/images/footer/qr_mfw4.gif") no-repeat
+          }
+          .ft-qrcode-weixin2 {
+            background: url("http://css.mafengwo.net/images/footer/qr_mfw4.gif") no-repeat;
+          }
+        }
+      }
+
+
+
+      .ft-info-social{
+        width: 1089px;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 25px;
+        dt{
+          font-size: 16px;
+          height: 30px;
+          display: block;
+          color: #c2c2c2;
+        }
+        dd{
+          padding: 5px 0;
+          display: block;
+          a{
+            display: inline-block;
+            margin: 0 6px;
+            color: #c2c2c2;
+            background-color: transparent;
+          }
+          .ft-social-weibo{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat 0 0;
+            overflow: hidden;
+            font-style: italic;
+          }
+          .ft-social-qqt{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat -30px 0;
+            overflow: hidden;
+          }
+          .ft-social-qzone{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat -60px 0;
+            overflow: hidden;
+          }
+        }
+      }
+
+    }
+    .ft_links{
+      margin-top: -1px;
+      border-top: 1px solid #575a5b;
+      border-bottom: 1px solid #575a5b;
+      padding: 17px 0 17px 8px;
+      a{
+        color: #c2c2c2;
+        display: inline-block;
+        margin-right: 12px;
+      }
+    }
+    .ft-copyright{
+      width: 1085px;
+      height: 44px;
+      padding: 12px 0 12px 20px;
+      margin-top: -1px;
+      border-top: 1px solid #575a5b;
+      .ft-mfw-logo{
+        float: left;
+        margin: 2px 20px 0 0;
+        width: 136px;
+        height: 39px;
+        background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat 0 -30px;
+        overflow: hidden;
+      }
+      p{
+        a{
+          color: #c2c2c2;
+          img{
+            margin: 0 2px 4px 0;
+            border: 0;
+            vertical-align: middle;
+            width: 12px;
+          }
+        }
+        a:hover{
+          color: #fff;
+        }
+        .m_l_10{
+          margin-left: 10px;
+        }
+        .highlight{
+          color: #ff9d00!important;
+        }
+      };
+    }
+    .ft-safety{
+      text-align: center;
+      .s_a{
+        display: inline-block;
+        margin-left: 10px;
+        width: 90px;
+        height: 30px;
+        background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat 0 -70px;
+        overflow: hidden;
+      }
+      .s_b{
+        display: inline-block;
+        margin-left: 10px;
+        width: 90px;
+        height: 30px;
+        background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat 0 -70px;
+        overflow: hidden;
+      }
+      .s_c{
+        display: inline-block;
+        margin-left: 10px;
+        width: 90px;
+        height: 30px;
+        background: url("http://css.mafengwo.net/images/mfw-footer-sprite7.png") no-repeat 0 -70px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.coupon-wrap{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  a{
+    position: fixed;
+    right: 50%;
+    bottom: 30px;
+    margin-right: 520px;
+    z-index: 99;
+    img{
+      width: 150px;
+      border: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+//主体
+.main{
+  height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

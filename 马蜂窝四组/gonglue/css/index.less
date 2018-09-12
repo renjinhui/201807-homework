@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  _font-family: Tahoma, Arial, Helvetica, STHeiti;
+  color: #666
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 15px auto 0;
+  .focus {
+    height: 340px;
+    margin: 10px 0 15px;
+    .mdd_nav {
+      float: left;
+      width: 260px;
+      .gonglve-nav {
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 30;
+        .nav-item{
+
+          .nav-title {
+            height: 40px;
+            padding: 0 15px;
+            border-bottom: 1px solid #ddd;
+            line-height: 40px;
+            font-size: 14px;
+            color: #666;
+            cursor: default;
+            position: relative;
+            h3 {
+              font-size: 100%;
+              font-weight: normal;
+            }
+            .gn-arrow {
+              position: absolute;
+              right: 15px;
+              top: 15px;
+              width: 6px;
+              height: 10px;
+              background: url("../img/new-gl-icon6.png")no-repeat -20px -40px;
+            }
+          }
+          .nav-panel {
+            width: 350px;
+            height: 338px;
+            border: 1px solid #ddd;
+            //background-color: red;
+            box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+            ol {
+              z-index: 2;
+              padding: 15px 10px;
+              width: 260px;
+              line-height: 30px;
+              .top3 {
+                height: 30px;
+                overflow: hidden;
+                .rank-num {
+                  color: #ffa800;
+                  float: left;
+                  width: 30px;
+                  font-size: 20px;
+                  font-family: Letter Gothic Std, Verdana, Geneva, sans-serif;
+                  text-align: right;
+                  font-weight: bold;
+                }
+                strong {
+                  padding: 0 15px;
+                  font-size: 14px;
+                  font-weight: normal;
+                  a {
+                    color: #ffa800;
+                  }
+                }
+                a {
+                  color: #999;
+                }
+              }
+              li {
+                height: 30px;
+                overflow: hidden;
+                .rank-num {
+                  float: left;
+                  width: 30px;
+                  font-size: 20px;
+                  font-family: Letter Gothic Std, Verdana, Geneva, sans-serif;
+                  text-align: right;
+                  color: #aaa;
+                  font-weight: bold;
+                }
+                strong {
+                  padding: 0 15px;
+                  font-size: 14px;
+                  font-weight: normal;
+                  color: #666;
+                  a {
+                    color: #666;
+                  }
+                }
+                a {
+                  color: #999;
+                }
+              }
+            }
+          }
+        }
+        .category-panel {
+          width: 490px;
+          padding: 10px 0;
+          height: 318px;
+          dl {
+            overflow: hidden;
+            margin: 0 0 0 20px;
+            padding-left: 60px;
+            border: 0;
+            font-size: 12px;
+            width: auto;
+            height: auto;
+            line-height: 20px;
+            dt {
+              float: left;
+              display: inline;
+              width: 60px;
+              height: 20px;
+              background: none;
+              margin: 5px 0 5px -60px;
+              font-weight: bold;
+              white-space: nowrap;
+              overflow: hidden;
+              line-height: 20px;
+              font-size: 12px;
+              cursor: default;
+              color: #666;
+              font-weight: bold;
+            }
+            dd {
+              display: inline;
+              position: static;
+              border: 0;
+              width: auto;
+              padding: 0;
+              float: left;
+              margin: 5px 15px 5px 0;
+              height: 20px;
+              overflow: hidden;
+              white-space: nowrap;
+              line-height: 20px;
+              background-color: #FFFFFF;
+              left: 248px;
+              top: -1px;
+              z-index: 98;
+              a {
+                color: #999;
+              }
+            }
+          }
+        }
+        .nav-panel {
+          z-index: 20;
+          display: none;
+          position: absolute;
+          left: 258px;
+          top: -1px;
+          border: 1px solid #ddd;
+          background-color: #fff;
+          box-shadow: 0 3px 2px rgba(0, 0, 0, .1);
+        }
+        .nav-item:hover .nav-panel{
+          display: block;
+        }
+        .nav-item:hover .nav-item{
+          border-right:#fff;
+        }
+      }
+      .input_like {
+        border: 2px #FFA800 solid;
+        height: 40px;
+        margin-top: 10px;
+        span {
+          float: left;
+          height: 27px;
+          width: 29px;
+          background: url("../img/new-gl-icon6.png")no-repeat -20px -60px;
+          margin: 7px 0 0 8px;
+        }
+        input {
+          height: 30px;
+          outline: none;
+          width: 206px;
+          padding: 3px 0;
+          border: 0;
+          font-size: 12px;
+          color: #888888;
+          margin: 2px 0 0 8px;
+          font-family: "Microsoft Yahei", Tahoma, Arial, Helvetica, STHeiti;
+        }
+      }
+      .app_d {
+        border-bottom: 1px #E3E3E3 solid;
+        height: 50px;
+        padding-bottom: 14px;
+        margin-top: 15px;
+        h3 {
+          float: left;
+          width: 50px;
+          height: 50px;
+          a {
+            background-color: transparent;
+            text-decoration: none;
+            color: #ff9d00;
+            cursor: pointer;
+            img {
+              border: 0 none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+        .domn_in {
+          float: left;
+          width: 180px;
+          margin-left: 18px;
+          h4 {
+            font-size: 16px;
+            color: #414141;
+            line-height: 18px;
+            font-weight: normal;
+            margin-top: 5px;
+            a {
+              text-decoration: none;
+              color: #ff9d00;
+              cursor: pointer;
+            }
+          }
+          p {
+            overflow: hidden;
+            margin-top: 8px;
+            a {
+              float: left;
+              color: #666;
+              line-height: 14px;
+              background-color: transparent;
+              text-decoration: none;
+              font-size: 12px;
+            }
+            span {
+              float: left;
+              color: #D8D8D8;
+              height: 12px;
+              width: 2px;
+              line-height: 14px;
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .slide {
+      width: 700px;
+      float: right;
+      height: 340px;
+    }
+  }
+
+}
