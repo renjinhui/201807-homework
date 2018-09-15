@@ -1,0 +1,93 @@
+[
+  {
+    "category":"小米手机",
+    "child":[
+      {"title":"小米8","img":"./img/m8-80.png","flag":"新品","price":"2699元起"},
+      {"title":"小米8 SE","img":"./img/m8se-80.png","flag":"新品","price":"1799元起"},
+      {"title":"小米Max 3","img":"./img/max3-80-80.png","flag":"新品","price":"1699元起"},
+      {"title":"小米MIX 2S","img":"./img/max3-80-80.png","flag":"","price":"3299元起"},
+      {"title":"小米MIX 2","img":"./img/max3-80-80.png","flag":"","price":"2599元起"},
+      {"title":"小米6X","img":"./img/max3-80-80.png","flag":"","price":"1399元起"}
+    ]
+  },
+  {
+    "category":"红米",
+    "child":[
+      {"title":"红米6 Pro","img":"./img/14000000000.png","flag":"新品","price":"999元起"},
+      {"title":"红米6","img":"./img/TV4-75.png","flag":"新品","price":"799元起"},
+      {"title":"红米6A","img":"./img/TV4-75.png","flag":"新品","price":"599元起"},
+      {"title":"红米Note 5","img":"./img/TV4-75.png","flag":"","price":"1099元起"},
+      {"title":"红米S2","img":"./img/TV4-75.png","flag":"","price":"999元起"},
+      {"title":"红米5 Plus","img":"./img/TV4-75.png","flag":"","price":"999元起"}
+    ]
+  },
+  {
+    "category":"电视",
+    "child":[
+      {"title":"小米电视4 75英寸","img":"./img/14000000000.png","flag":"新品","price":"8999元起"},
+      {"title":"小米电视4A 32英寸","img":"./img/TV4-75.png","flag":"热卖","price":"899元起"},
+      {"title":"小米电视4A 43英寸青春版","img":"./img/TV4-75.png","flag":"新品","price":"1499元起"},
+      {"title":"小米电视4A 50英寸","img":"./img/TV4-75.png","flag":"热卖","price":"1999元起"},
+      {"title":"小米电视4A 55英寸","img":"./img/TV4-75.png","flag":"热卖","price":"2499元起"},
+      {"title":"查看","img":"./img/TV4-75.png","flag":"","price":""}
+    ]
+  },
+  {
+    "category":"笔记本",
+    "child":[
+      {"title":"米家互联网空调","img":"./img/14000000000.png","flag":"","price":"1099元起"},
+      {"title":"净水器","img":"./img/TV4-75.png","flag":"新品","price":"4199元起"},
+      {"title":"滤水壶","img":"./img/TV4-75.png","flag":"新品","price":"6999元起"},
+      {"title":"落地风扇","img":"./img/TV4-75.png","flag":"新品","price":"6299元起"},
+      {"title":"投影仪","img":"./img/TV4-75.png","flag":"","price":"5999元起"},
+      {"title":"插线板","img":"./img/TV4-75.png","flag":"","price":"3599元起"}
+    ]
+  },
+  {
+    "category":"空调",
+    "child":[
+      {"title":"米家互联网空调","img":"./img/14000000000.png","flag":"","price":"1999元"}
+    ]
+  },
+  {
+    "category":"新品",
+    "child":[
+      {"title":"小米手环3","img":"./img/14000000000.png","flag":"","price":"169元"},
+      {"title":"小米路由器4","img":"./img/TV4-75.png","flag":"","price":"199元"},
+      {"title":"小米小爱音箱mini","img":"./img/TV4-75.png","flag":"","price":"169元"},
+      {"title":"米家投影仪","img":"./img/TV4-75.png","flag":"","price":"3999元"},
+      {"title":"小米VR 一体机","img":"./img/TV4-75.png","flag":"","price":"1499元"},
+      {"title":"小米米家智能摄像机 云台版","img":"./img/TV4-75.png","flag":"","price":"199元"}
+    ]
+  },
+  {
+    "category":"路由器",
+    "child":[
+      {"title":"小米路由器4","img":"./img/14000000000.png","flag":"双频双核","price":"199元"},
+      {"title":"小米路由器4Q","img":"./img/TV4-75.png","flag":"","price":"99元"},
+      {"title":"小米路由器3A","img":"./img/TV4-75.png","flag":"","price":"139元"},
+      {"title":"小米路由器3G","img":"./img/TV4-75.png","flag":"双千兆","price":"249元"},
+      {"title":"小米路由器 HD/Pro","img":"./img/TV4-75.png","flag":"大容量","price":"499元"},
+      {"title":"查看全部小米路由器","img":"./img/TV4-75.png","flag":"","price":""}
+    ]
+  },
+  {
+    "category":"智能硬件",
+    "child":[
+      {"title":"小米小爱音箱mini","img":"./img/14000000000.png","flag":"","price":"169元"},
+      {"title":"小米无人机","img":"./img/TV4-75.png","flag":"航拍利器","price":"2999元"},
+      {"title":"小米净水器","img":"./img/TV4-75.png","flag":"","price":"1999元"},
+      {"title":"米家扫地机器人","img":"./img/TV4-75.png","flag":"","price":"1699元"},
+      {"title":"米家压力IH电饭煲","img":"./img/TV4-75.png","flag":"","price":"999元"},
+      {"title":"查看全部智能硬件","img":"./img/TV4-75.png","flag":"","price":""}
+    ]
+  },
+  {
+    "category":"服务",
+    "child":[]
+  },
+  {
+    "category":"社区",
+    "child":[]
+  }
+]
