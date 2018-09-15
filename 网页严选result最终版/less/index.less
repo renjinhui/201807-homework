@@ -1,0 +1,4093 @@
+@import "1.less";
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Microsoft Yahei","微软雅黑",verdana;
+  text-decoration: none;
+  font-size: 14px;
+  font-style:normal;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: block!important;
+}
+/*头部*/
+#j-YXComponentTop{
+  width: 100%;
+  height: 240px;
+  //黑通条
+  .yx-cp-m-siteNav{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    color: #333;
+    position: relative;
+    z-index: 4;
+    background-color: #333;
+    .yx-cp-row{
+      width: 1090px;
+      margin: 0 auto;
+      position: relative;
+      box-sizing: border-box;
+      .yx-cp-siteNav-l{
+        float: left;
+        .yx-cp-siteNavItem{
+          position: relative;
+          float: left;
+          color: #ccc;
+          a{
+            color: #ccc;
+            display: inline-block;
+            cursor: pointer;
+          }
+        }
+        .yx-cp-m-noticeList{
+          float: right;
+          height: 36px;
+          line-height: 36px;
+          margin-left: 30px;
+          overflow: hidden;
+          background: url("http://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif") no-repeat center left ;
+          .yx-cp-noticeListUL{
+            position: relative;
+            padding-left: 26px;
+            cursor: pointer;
+            li{
+              height: 36px;
+              a{
+                color: #b4a078;
+                text-decoration: underline;
+              }
+              a:hover{
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .yx-cp-siteNav-r{
+        float: right;
+        .login{
+          float: left;
+          color: #ccc;
+          cursor: pointer;
+          display: inline-block;
+          .j-yx-cp-topLogin{
+            margin-left: 10px;
+            a{
+              color: #ccc;
+            }
+          }
+          .yx-cp-siteNavItemHd{
+            margin-left: 20px;
+          }
+          .j-yx-cp-topLogin:hover,.yx-cp-siteNavItemHd:hover{
+            color:#fff;
+          }
+        }
+        .others{
+          float: left;
+          li{
+            float: left;
+            margin-left: 10px;
+            a{
+              color: #ccc;
+            }
+            a:hover{
+              color: #fff;
+            }
+          }
+          li::before{
+            content: '';
+            height: 16px;
+            margin-right: 8px;
+            border: 1px solid #5c5c5c;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          li:nth-child(5){
+            position: relative;
+            i{
+              display: inline-block;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat 0 -321px;
+              width: 11px;
+              height: 5px;
+              margin-left: 10px;
+              vertical-align: middle;
+            }
+            &:hover{
+              .first{
+                transform: rotateX(180deg);
+              }
+              ul{
+                display: block;
+              }
+            }
+              ul{
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                min-width: 83px;
+                padding: 3px 0;
+                box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+                li{
+                  margin-left: 5px;
+                  a{
+                    position: relative;
+                    display: block;
+                    margin: 0 13px;
+                    color: #999;
+                    text-align: center;
+                    line-height: 38px;
+                    border-top: 1px solid #ddd;
+                    white-space: nowrap;
+                    font-size: 12px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover{
+                      color: #b4a078;
+                    }
+                  }
+                  &:nth-child(1){
+                    a{
+                      border-top:0;
+                    }
+                  }
+                }
+                li::before{
+                  content: '';
+                  border:0;
+                  display: none;
+                }
+                i{
+                  background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+                  background-position: 0 -336px;
+                  width: 12px;
+                  height: 7px;
+                  position: absolute;
+                  top: -7px;
+                  right: 0;
+                  left: 0;
+                  margin: auto;
+                  vertical-align: middle;
+                }
+              }
+          }
+          li:nth-child(6){
+            position: relative;
+            i{
+              display: inline-block;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat 0 0;
+              margin-right: 6px;
+              width: 7px;
+              height: 11px;
+              vertical-align: middle;
+            }
+            .yx-cp-m-dropdownMenu{
+              display: none;
+              position: absolute;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              min-width: 83px;
+              box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+              width: 139px;
+              text-align: center;
+              left: -43px;
+              padding: 10px 0!important;
+              border-radius: 1px;
+              .yx-cp-QRcode{
+                width: 117px;
+                height: 117px;
+                cursor: pointer;
+                background: url("../images/erwei.png") no-repeat center;
+                margin: 0 10px;
+              }
+              .yx-cp-QRtxt{
+                display: block;
+                text-align: center;
+                line-height: 1;
+                color: #b4a078;
+                font-size: 12px;
+                margin-top: 5px;
+              }
+              i{
+                position: absolute;
+                top: -7px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 12px;
+                height: 7px;
+                background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+                background-position: 0 -336px;
+              }
+            }
+            &:hover {
+              .yx-cp-m-dropdownMenu{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //选项卡部分
+  .yx-cp-m-funcTab{
+    width: 100%;
+    height: 204px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    .yx-cp-row{
+      width: 1090px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      .yx-cp-tabLogo{
+        position: absolute;
+        top: 50px;
+        left: 455px;
+        i{
+          display: inline-block;
+          vertical-align: top;
+          width: 180px;
+          height: 60px;
+          background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center ;
+          background-position: 0 -146px;
+        }
+      }
+      .yx-cp-m-cartEnterWrap{
+        position: relative;
+        margin:65px 9px 0 20px;
+        float: right;
+        .yx-cp-m-cartEnter{
+          position: relative;
+          cursor: pointer;
+          width: 34px;
+          height: 32px;
+          .j-cart-num{
+            position: absolute;
+            left: 0;
+            right: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            z-index: 1;
+            width: 19px;
+            height: 19px;
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+            background-position: 0 -51px;
+          }
+          .yx-cp-icon-yxtop{
+            position: absolute;
+            top: 9px;
+            right: 25px;
+            width: 23px;
+            height: 23px;
+
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+            background-position: 0 -113px;
+          }
+        }
+      }
+      .yx-cp-m-tabNav{
+        position: absolute;
+        line-height: 1;
+        height: 30px;
+        bottom: 21px;
+        width: 100%;
+        font-weight: 700;
+        z-index: 5;
+        .yx-cp-tabNav-item{
+          float: left;
+          margin-top: 6px;
+          padding: 0 24px;
+          font-size: 14px;
+          margin-left: 0;
+          cursor: pointer;
+          //继续
+          a{
+            color: #000;
+            font-size: 14px;
+          }
+          &:nth-child(1){
+            a{
+              color: #b4a078;
+              border-bottom: 3px solid #b4a078;
+            }
+          }
+          &:nth-child(12){
+            padding: 0;
+            height: 20px;
+            border: 0.5px solid #ccc;
+            margin-top:3px;
+          }
+          //选项卡下拉项
+          &:nth-child(2){
+          .yx-cp-tabNav-dropdown{
+            display: none;
+            opacity: 0;
+            position: absolute;
+            top: 21px;
+            padding-top: 30px;
+            background-color: transparent;
+            width: 742px;
+            right:auto;
+            left: 0;
+            .yx-cp-cateGroupList{
+              padding: 20px 40px 30px;
+              background-color: #fff;
+              box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+              overflow: hidden;
+              .yx-cp-cateGroup{
+                width: 140px;
+                float: left;
+                margin-right: 34px;
+                .sleep{
+                  max-width: 140px;
+                  width: 140px;
+                  display: inline-block;
+                  margin-bottom: 10px;
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 36px;
+                  border-bottom: 1px solid #ddd;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+                .yx-cp-cateColumn{
+                  margin-left: 0;
+                  float: left;
+                  width: 140px;
+                  font-size: 14px;
+                  .yx-cp-cateItem{
+                    margin-bottom: 4px;
+                    font-weight: 400;
+                    line-height: 50px;
+                    a{
+                      .yx-cp-subCate-icon{
+                        width: 50px;
+                        height: 50px;
+                        border: 0;
+                        vertical-align: top;
+                      }
+                      .yx-cp-subCate-text{
+                        display: inline-block;
+                        width: 79px;
+                        max-width: 79px;
+                        max-height:48px;
+                        margin-left: 6px;
+                        font-size: 14px;
+                        vertical-align: middle;
+                        line-height: 1.2;
+                        overflow: hidden;
+                        color: #333;
+                        &:hover{
+                          color: #b4a078;
+                        }
+                      }
+                    }
+                  }
+                }
+                &:last-child{
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+            .icon-yxnormal-dropdown-arrow{
+              position: absolute;
+              top: 27px;
+              left: 97.5px;
+              width: 27px;
+              height: 26px;
+              display: none;
+              opacity: 0;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+        }
+          &:nth-child(3){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 568px;
+              right:auto;
+              left: 0;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 190px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(4){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 738px;
+              right:auto;
+              left: 0;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                  &:nth-child(2){
+                    width: 310px;
+                    .sleep{
+                      width: 310px;
+                      max-width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 280.2px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(5){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 394px;
+              right:auto;
+              left: 173px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              position: absolute;
+              top: 27px;
+              left: 356.5px;
+              width: 27px;
+              height: 26px;
+              display: none;
+              opacity: 0;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(6){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 780px;
+              right:auto;
+              left: 77px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                  &:nth-child(2){
+                    width: 310px;
+                    .sleep{
+                      width: 310px;
+                      max-width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 432.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(7){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 1264px;
+              right:auto;
+              left: -87px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 508.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(8){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 394px;
+              right:auto;
+              left: 401px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 584.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(9){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 912px;
+              right:0;
+              left: auto;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                  &:nth-child(1){
+                    width: 310px;
+                    .sleep{
+                      width: 310px;
+                      max-width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 660.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(10){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 780px;
+              right:0;
+              left: auto;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                    &:nth-child(3){
+                      margin-left: 30px;
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                    width: 310px;
+                    .sleep{
+                      max-width: 310px;
+                      width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 736.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(11){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 21px;
+              padding-top: 30px;
+              background-color: transparent;
+              width: 568px;
+              right:0;
+              left: auto;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 27px;
+              left: 819.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+        }
+
+      }
+
+      
+      
+      
+      
+      
+      
+      .yx-cp-m-search{
+      position: relative;
+        z-index: 999999;
+        width: 270px;
+        height: 22px;
+        float: right;
+        margin-top: 75px;
+        margin-right: 15px;
+        .yx-cp-searchInputWrap{
+        .yx-cp-searchInput{
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          display: block;
+          height: 22px;
+          line-height: 22px;
+          border: 0;
+          border-bottom:1px solid #D8CEBC;
+          font-size: 12px;
+          width: 252px;
+          outline: 0;
+          overflow: hidden;
+          background: 0 0;
+        }
+          .yx-cp-searchDefaultKeyword{
+            position: absolute;
+            top: 5px;
+            left: 11px;
+            color: #999;
+            line-height: 1;
+            cursor: text;
+            touch-action: none;
+            pointer-events: none;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 230px;
+            text-overflow: ellipsis;
+          }
+        }
+        .yx-cp-searchButton{
+          width: 20px;
+          float: right;
+          cursor: pointer;
+          i{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+            background-position: 0 -291px;
+          }
+        }
+        .yx-cp-m-suggest{
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #e8e8e8;
+          font-size: 14px;
+          outline: 0;
+          opacity: 0;
+          top: 21px;
+          width: 252px;
+          transition: opacity .1s ease-out;
+          .yx-cp-m-suggestList{
+            .yx-cp-top-item{
+              color: #b4282d;
+              height: 26px;
+              line-height: 26px;
+              padding:0 12px 0 10px;
+              cursor: pointer;
+              font-size: 13px;
+              &:nth-child(1){
+                color: #999;
+                font-size: 13px;
+                padding: 2px 10px;
+                margin-top: 5px;
+              }
+              &:hover{
+                background-color: #eef;
+              }
+              &:nth-child(1):hover{
+                background-color: #fff;
+              }
+            }
+            }
+          }
+        }
+
+      }
+    }
+  //浮动起来的样式
+  .yx-cp-m-funcTabSmall{
+    z-index: 10000;
+    width: 100%;
+    height: 60px!important;
+    position: fixed;
+    top: -60px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    .yx-cp-row{
+      width: 1090px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      .yx-cp-tabLogo{
+        position: absolute;
+        top: 13px;
+        left: 5px;
+        z-index: 1;
+        i{
+          display: inline-block;
+          vertical-align: top;
+          width: 105px;
+          height: 35px;
+          background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center ;
+          background-position: 0 -216px;
+        }
+      }
+      .yx-cp-m-cartEnterWrap{
+        position: relative;
+        margin:10px 24px 0 27px;
+        float: right;
+        z-index: 3;
+        .yx-cp-m-cartEnter{
+          position: relative;
+          cursor: pointer;
+          width: 34px;
+          height: 32px;
+          .j-cart-num{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            z-index: 1;
+            width: 19px;
+            height: 19px;
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+            background-position: 0 -51px;
+          }
+          .yx-cp-icon-yxtop{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 23px;
+            height: 23px;
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+            background-position: 0 -113px;
+          }
+        }
+      }
+      .yx-cp-fixed-user{
+        position: relative;
+        margin-top: 19px;
+        padding-bottom: 19px;
+        float: right;
+        a{
+          display: block;
+          i{
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            width: 20px;
+            height: 22px;
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat;
+            background-position: 0 -385px;
+          }
+        }
+      }
+      .yx-cp-m-tabNav{
+        position: absolute;
+        line-height: 1;
+        height: 30px;
+        top: 16px;
+        left: 136px;
+        bottom:auto;
+        width: 838px;
+        font-weight: 700;
+        z-index: 5;
+        .yx-cp-tabNav-item{
+          float: left;
+          margin-top: 6px;
+          padding: 0 19px 0 7px;
+          font-size: 14px;
+          margin-left: 12px;
+          cursor: pointer;
+          //继续
+          a{
+            color: #000;
+            font-size: 14px;
+          }
+          &:nth-child(1){
+            a{
+              display: block;
+              height: 18px;
+              color: #b4a078;
+              border-bottom: 3px solid #b4a078;
+            }
+          }
+          //选项卡下拉项
+          &:nth-child(2){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 742px;
+              right:auto;
+              left: -138px;
+              .yx-cp-cateGroupList{
+                //position: absolute;
+                //z-index: 99999;
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              position: absolute;
+              top: 20px;
+              left: 85.5px;
+              width: 27px;
+              height: 26px;
+              display: none;
+              opacity: 0;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(3){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 568px;
+              left: -108px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 164px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(4){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 738px;
+              right:auto;
+              left: -98px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                  &:nth-child(2){
+                    width: 310px;
+                    .sleep{
+                      width: 310px;
+                      max-width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 245.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(5){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 394px;
+              right:auto;
+              left: 128px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              position: absolute;
+              top: 20px;
+              left: 311.5px;
+              width: 27px;
+              height: 26px;
+              display: none;
+              opacity: 0;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(6){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 780px;
+              right:auto;
+              left: 18px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                  &:nth-child(2){
+                    width: 310px;
+                    .sleep{
+                      width: 310px;
+                      max-width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 376.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(7){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 1264px;
+              left:auto;
+              right:-213px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 442.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(8){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 394px;
+              right:auto;
+              left: 324px;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 509.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(9){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 912px;
+              right:-119px;
+              left: auto;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                  &:nth-child(1){
+                    width: 310px;
+                    .sleep{
+                      width: 310px;
+                      max-width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 575.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(10){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 780px;
+              right:-152px;
+              left: auto;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                    &:nth-child(3){
+                      margin-left: 30px;
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                    width: 310px;
+                    .sleep{
+                      max-width: 310px;
+                      width: 310px;
+                    }
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 641.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+          &:nth-child(11){
+            .yx-cp-tabNav-dropdown{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 24px;
+              padding-top: 20px;
+              background-color: transparent;
+              width: 568px;
+              right:-120px;
+              left: auto;
+              .yx-cp-cateGroupList{
+                padding: 20px 40px 30px;
+                background-color: #fff;
+                box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
+                .yx-cp-cateGroup{
+                  width: 140px;
+                  float: left;
+                  margin-right: 34px;
+                  .sleep{
+                    max-width: 140px;
+                    width: 140px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    border-bottom: 1px solid #ddd;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .yx-cp-cateColumn{
+                    margin-left: 0;
+                    float: left;
+                    width: 140px;
+                    font-size: 14px;
+                    .yx-cp-cateItem{
+                      margin-bottom: 4px;
+                      font-weight: 400;
+                      line-height: 50px;
+                      a{
+                        .yx-cp-subCate-icon{
+                          width: 50px;
+                          height: 50px;
+                          border: 0;
+                          vertical-align: top;
+                        }
+                        .yx-cp-subCate-text{
+                          display: inline-block;
+                          width: 79px;
+                          max-width: 79px;
+                          max-height:48px;
+                          margin-left: 6px;
+                          font-size: 14px;
+                          vertical-align: middle;
+                          line-height: 1.2;
+                          overflow: hidden;
+                          color: #333;
+                          &:hover{
+                            color: #b4a078;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:last-child{
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+            .icon-yxnormal-dropdown-arrow{
+              display: none;
+              opacity: 0;
+              position: absolute;
+              top: 20px;
+              left: 715.5px;
+              width: 27px;
+              height: 26px;
+              background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxnormal-s76cce8d1ec-17d76fbf0c.png") no-repeat center;
+              background-position: 0 -116px;
+            }
+          }
+        }
+
+      }
+      .yx-cp-m-search{
+        position: relative;
+        z-index: 3;
+        width: 20px;
+        height: 22px;
+        float: right;
+        margin-top: 21px;
+        margin-right: 33px;
+        .yx-cp-searchButton{
+          width: 20px;
+          float: right;
+          cursor: pointer;
+          i{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sc6353bfedb-173a41cd9d.png") no-repeat center;
+            background-position: 0 -291px;
+          }
+        }
+      }
+    }
+  }
+  }
+//主页轮播图部分
+#indexRoot{
+  width: 100%;
+  .m-focus{
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5;
+    z-index: 1;
+    margin: 0 auto;
+    .js-slick{
+      position: static;
+      overflow: hidden;
+      width: 1349px;
+      height: 420px;
+      .slick-prev{
+        position: absolute;
+        z-index: 1200;
+        top:200px!important;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        opacity: 0.8;
+        border-radius: 50%;
+        background-color: #D0C4AF;
+        left: 104.5px;
+        display: block;
+        background-image: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sdf26262b15-838efcb5f5.png");
+        background-repeat: no-repeat;
+        background-position: 0 -4936px;
+        &:hover{
+          background-color: #B19E7A;
+        }
+      }
+      .slick-next{
+        position: absolute;
+        display: block;
+        right:104.5px;
+        z-index: 1200;
+        top:200px!important;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        opacity: 0.8;
+        border-radius: 50%;
+        background-color: #D0C4AF;
+        background-image: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sdf26262b15-838efcb5f5.png");
+        background-repeat: no-repeat;
+        background-position: 0 -5116px;
+        &:hover{
+          background-color: #B19E7A;
+        }
+      }
+      .slick-list{
+        .slick-track{
+          width: 1349px;
+          position: relative;
+          top: 0;
+          left: 0;
+          display: block;
+          .imgCenterBanner{
+            opacity: 0;
+            width: 1349px;
+            height: 420px!important;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+              display: block;
+              width: 100%;
+              height: 100%;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+      .slick-dots{
+        position: absolute;
+        width: 100%;
+        bottom: 4px;
+        padding: 0;
+        text-align: center;
+        z-index: 1200;
+        li{
+          position: relative;
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          margin: 0 8px 10px;
+          padding: 0;
+          cursor: pointer;
+          button{
+            width: 8px;
+            height: 8px;
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            border-radius: 50%;
+            cursor: pointer;
+            color: transparent;
+            border: 1px solid #cecece;
+            background-color: #fff;
+            &.current{
+              box-shadow: 0 0 0 4px #dfcead;
+              background-color: #a7936e ;
+            }
+          }
+          &:nth-child(1){
+            button{
+
+            }
+          }
+        }
+      }
+    }
+  }
+  //制造部分
+.m-manufacturer{
+  margin-top: 30px;
+  width: 1090px;
+  margin-right:auto;
+  margin-left:auto;
+  position: relative;
+  .m-commonHeader{
+    padding-bottom: 20px;
+    overflow: hidden;
+    .f-left{
+      line-height: 1;
+      float: left;
+      a{
+        color: #333;
+        .name{
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 1;
+          float: left;
+          margin-right: 20px;
+        }
+        &:hover{
+          color: #b4a078;
+        }
+      }
+      .frontName{
+        padding-top: 13px;
+        display: inline-block;
+        line-height: 1;
+        font-size: 14px;
+        
+      }
+    }
+    .f-right{
+      line-height: 1;
+      float: right;
+      a{
+        display: inline-block;
+        line-height: 1;
+        margin-left: 30px;
+        margin-top: 14px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+        &:hover{
+          color: #b4a078;
+        }
+      }
+    }
+  }
+  .bd{
+    .manufacturerList{
+      overflow: hidden;
+      .manufacturer-first-large{
+        display: inline-block;
+        height: 320px;
+        margin-left: 0;
+        width: 357px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        .mask{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .name{
+          font-size: 24px;
+          margin: 48px 0 19px;
+          line-height: 1;
+          border-right: 0;
+          border-left: 0;
+          position: relative;
+          z-index: 3;
+          color: #666;
+          span:nth-child(1){
+            font-size: 24px;
+            line-height: 1;
+          }
+          .newShelfTag{
+            position: absolute;
+            top: -3px;
+            font-size: 11px;
+            margin-left: 2px;
+            text-align: center;
+            line-height: 19px;
+            width: 32px;
+            height: 21px;
+            color: #fff;
+            background:url("http://yanxuan.nosdn.127.net/18ccda99a6f55ef573b3fb098b4d01b8.png") no-repeat center;
+
+          }
+        }
+        .price{
+          font-size: 14px;
+          padding-top: 17px;
+          display: inline-block;
+          width:auto;
+          border-top: 1px solid #666;
+          position: relative;
+          color: #666;
+          z-index: 3;
+        }
+        .wine{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            transition: transform 1s;
+            z-index: 1;
+            background-color: #f4f4f4;
+            color: #f4f4f4;
+            &:hover{
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+      .manufacturer-middle-large{
+        display: inline-block;
+        height: 320px;
+        margin-left: 9px!important;
+        width: 357px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        .mask{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .name{
+          font-size: 24px;
+          margin: 48px 0 19px;
+          line-height: 1;
+          border-right: 0;
+          border-left: 0;
+          position: relative;
+          z-index: 3;
+          color: #666;
+          span:nth-child(1){
+            font-size: 24px;
+            line-height: 1;
+          }
+          .newShelfTag{
+            position: absolute;
+            top: -3px;
+            font-size: 11px;
+            margin-left: 2px;
+            text-align: center;
+            line-height: 19px;
+            width: 32px;
+            height: 21px;
+            color: #fff;
+            background:url("http://yanxuan.nosdn.127.net/18ccda99a6f55ef573b3fb098b4d01b8.png") no-repeat center;
+
+          }
+        }
+        .price{
+          font-size: 14px;
+          padding-top: 17px;
+          display: inline-block;
+          width:auto;
+          border-top: 1px solid #666;
+          position: relative;
+          color: #666;
+          z-index: 3;
+        }
+        .wine{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            transition: transform 1s;
+            z-index: 1;
+            background-color: #f4f4f4;
+            color: #f4f4f4;
+            &:hover{
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+      .manufacturer-small{
+        display: inline-block;
+        height: 155px;
+        margin-left: 10px;
+        width: 357px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        .mask{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .name{
+          font-size: 20px;
+          margin: 32px 0 10px 20px;
+          text-align: left;
+          line-height: 1;
+          border-right: 0;
+          border-left: 0;
+          position: relative;
+          z-index: 3;
+          color: #666;
+          span{
+            font-size: 20px;
+            text-align: left;
+            line-height: 1;
+            color: #666;
+          }
+        }
+        .price{
+          font-size: 14px;
+          padding-top: 10px;
+          margin-left: 20px;
+          float: left;
+          display: inline-block;
+          width:auto;
+          border-top: 1px solid #666;
+          position: relative;
+          color: #666;
+          z-index: 3;
+        }
+        .wine{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            transition: transform 1s;
+            z-index: 1;
+            background-color: #f4f4f4;
+            color: #f4f4f4;
+          }
+        }
+        &:hover{
+          .wine{
+            img{
+                transform: scale(1.05);
+            }
+          }
+        }
+      }
+      .manufacturer-small-last{
+        display: inline-block;
+        height: 165px;
+        margin-left: 10px;
+        width: 357px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        .mask{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .name{
+          font-size: 20px;
+          margin: 32px 0 10px 20px;
+          text-align: left;
+          line-height: 1;
+          border-right: 0;
+          border-left: 0;
+          position: relative;
+          z-index: 3;
+          color: #666;
+          span:nth-child(1){
+            font-size: 20px;
+            text-align: left;
+            line-height: 1;
+            color: #666;
+          }
+          span:nth-child(2){
+            position: absolute;
+            top: -3px;
+            font-size: 11px;
+            margin-left: 5px;
+            text-align: center;
+            line-height: 19px;
+            width: 32px;
+            height: 21px;
+            color: #fff;
+            background:url("http://yanxuan.nosdn.127.net/18ccda99a6f55ef573b3fb098b4d01b8.png") no-repeat center;
+
+          }
+        }
+        .price{
+          font-size: 14px;
+          padding-top: 10px;
+          margin-left: 20px;
+          float: left;
+          display: inline-block;
+          width:auto;
+          border-top: 1px solid #666;
+          position: relative;
+          color: #666;
+          z-index: 3;
+        }
+        .wine{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            transition: transform 1s;
+            z-index: 1;
+            background-color: #f4f4f4;
+            color: #f4f4f4;
+          }
+        }
+        &:hover{
+          .wine{
+            img{
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//新品发布
+  .m-newProducts{
+    box-sizing: content-box;
+    height: 510px;
+    padding-top: 60px;
+    width: 1090px;
+    margin-right:auto;
+    margin-left:auto;
+    position: relative;
+    .m-commonHeader{
+      padding-bottom: 20px;
+      overflow: hidden;
+      .f-left{
+        line-height: 1;
+        float: left;
+        a{
+          color: #333;
+          .name{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1;
+            float: left;
+            margin-right: 20px;
+          }
+          &:hover{
+            color: #b4a078;
+          }
+        }
+        .frontName{
+          padding-top: 13px;
+          display: inline-block;
+          line-height: 1;
+          font-size: 14px;
+
+        }
+      }
+      .f-right{
+        line-height: 1;
+        float: right;
+        a{
+          display: inline-block;
+          line-height: 1;
+          margin-left: 30px;
+          margin-top: 14px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #333;
+          &:hover{
+            color: #b4a078;
+          }
+        }
+      }
+    }
+    .showColor{
+        background-color: #B19E7A;
+    }
+    .bd{
+      width: 1090px;
+      overflow: hidden;
+      color: #333;
+      .itemList{
+        .js-newItemSlick{
+          position: static;
+          width: 1100px;
+          height: 332px;
+          .left{
+            display: block;
+            background-color: #E7E2D7;
+            position: absolute;
+            left: -60px;
+            z-index: 3333;
+            top: 200px !important;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            opacity: 0.8;
+            border-radius: 50%;
+            border: 0;
+            background-image: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sdf26262b15-838efcb5f5.png");
+            background-repeat: no-repeat;
+            background-position: 0 -4936px;
+            &:hover{
+              background-color: #B19E7A;
+            }
+          }
+          .right{
+            display: block;
+            background-color: #E7E2D7;
+            position: absolute;
+            right: -60px;
+            z-index: 9;
+            top: 200px !important;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            opacity: 0.8;
+            border-radius: 50%;
+            border: 0;
+            background-image: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sdf26262b15-838efcb5f5.png");
+            background-repeat: no-repeat;
+            background-position: 0 -5116px;
+            &:hover{
+              background-color: #B19E7A;
+            }
+          }
+          .slick-list{
+            width: 1100px;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            position: relative;
+          .slick-track{
+          opacity: 1;
+            //width: 4400px;
+            height: 100%;
+            transform: translate3d(0px, 0px, 0px);
+            position: relative;
+            top: 0;
+            left: 0;
+              .m-product{
+                box-sizing: border-box;
+                width: 275px!important;
+                padding-right: 10px;
+                float: left;
+                height: 100%;
+                min-height: 1px;
+                line-height: 1;
+                text-align: center;
+                font-size: 14px;
+                position: relative;
+                &:hover{
+                  .hd{
+                    a{
+                      .imgScene{
+                        display: block;
+                      }
+                    }
+                  }
+                  .bottom{
+                    background-color: rgba(83, 83, 83, 0.09);
+                  }
+                }
+                .hd{
+                  background-color: transparent;
+                  position: relative;
+                  margin-bottom: 8px;
+                  overflow: hidden;
+                  a{
+                    position: relative;
+                    color: #333;
+                    margin-bottom: -2px;
+                    &:nth-child(1){
+                      width: 100%;
+                      height: 100%;
+                      float: left;
+                      .img{
+                        width: 265px;
+                        height: 265px;
+                        background-color: #fff;
+                        color: #fff;
+                        border: 1px solid transparent;
+                        display: block;
+                        margin: auto;
+                      }
+                    }
+                    .imgScene{
+                      width: 100%;
+                      height: 100%;
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      display: none;
+                      box-shadow: 0 0 3px 0 rgba(0,0,0,.8);
+                      img{
+                        width: 265px;
+                        height: 265px;
+                        background-color: #f4f4f4;
+                        color: #f4f4f4;
+                      }
+                    }
+                    .colorNum{
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      height: 20px;
+                      font-size: 12px;
+                      color: #a7936e;
+                      border: 1px solid #b3a07d;
+                      border-radius: 5px;
+                      padding:0 4px;
+                      line-height: 18px;
+                      background-color: #f4f0ea;
+                    }
+                  }
+                }
+                .bottom{
+                  margin-top: -12px;
+                  .prdtTags{
+                    height: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    width: 200px;
+                    margin: 0 auto 3px;
+                    overflow: hidden;
+                    text-align: center;
+                  }
+                  .nameH4{
+                    padding: 0 10px;
+                    margin-bottom: 4px;
+                    height: 20px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    a{
+                      .des{
+                        font-size: 14px;
+                        color: #333!important;
+
+                      }
+                    }
+                  }
+                  .price{
+                    padding: 1px 0 9px;
+                    font-size: 14px;
+                    line-height: 13px;
+                    color: #d4282d;
+                    margin: 0;
+                    text-align: center;
+                    .retailPrice{
+                      span{
+                        font-size: 13px!important;
+                      }
+                    }
+                  }
+                }
+              }
+              .m-product:nth-child(2){
+                .bottom{
+                  .price{
+                    .tagName{
+                      border-left:1px solid #999;
+                      padding-left: 10px;
+                      margin-left:7px;
+                      a{
+                        color: #999;
+                      }
+                    }
+                  }
+                }
+              }
+              .m-product:nth-child(3){
+                .bottom{
+                  overflow: hidden;
+                  .prdtTags{
+                    margin-top: 10px;
+                    margin-bottom: -5px;
+                    .itemTag{
+                      padding: 20px 0 0 0;
+                      height: 23px;
+                      color: #A94528;
+                      background-color: #F8BC59;
+                    }
+                  }
+                  .price{
+                    padding-bottom: 6px;
+                  }
+                }
+              }
+          }
+          }
+        }
+      }
+    }
+  }
+  //人气推荐
+.m-indexPopularItem {
+  padding: 60px 0;
+  background: #f4f0ea;
+  .g-row{
+    width: 1090px;
+    margin-right:auto;
+    margin-left:auto;
+    position: relative;
+    .m-commonHeader{
+      padding-bottom: 20px;
+      overflow: hidden;
+      .f-left{
+        line-height: 1;
+        float: left;
+        a{
+          color: #333;
+          .name{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1;
+            float: left;
+            margin-right: 20px;
+          }
+          &:hover{
+            color: #b4a078;
+          }
+        }
+        .m-commonTab{
+          overflow: hidden;
+          padding-left: 13px;
+          float: left;
+          .innerWrap{
+            overflow: hidden;
+            position: relative;
+            display: block;
+            ul{
+              .item{
+                text-align: center;
+                float: left;
+                width: 70px;
+                height: 28px;
+                line-height: 28px;
+                margin-right: 55px;
+                position: relative;
+                z-index: 2;
+                cursor: pointer;
+                &.active{
+                  border-bottom: 2px solid #b4a078;
+                  a{
+                    color: #b4a078;
+                  }
+                }
+                a{
+                  font-size: 14px;
+                  color: #333;
+                  &:hover{
+                    color: #b4a078;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .f-right{
+        line-height: 1;
+        float: right;
+        a{
+          display: inline-block;
+          line-height: 1;
+          margin-left: 30px;
+          margin-top: 14px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #333;
+          &:hover{
+            color: #b4a078;
+          }
+        }
+      }
+    }
+    .showContainer{
+      overflow: hidden;
+      .m-productBig{
+        width: 390px;
+        height: 530px;
+        margin-left: 0;
+        background-color: #fff;
+        overflow: hidden;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        position: relative;
+        .hd{
+          margin-bottom: 18px;
+          border-bottom:1px solid #F4F0EA;
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 400px;
+          a{
+            color: #333;
+            div{
+              width: 100%;
+              height: 100%;
+              img{
+                transition: all 1s;
+              }
+            }
+            .colorNum{
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              height: 20px;
+              font-size: 12px;
+              color: #a7936e;
+              border: 1px solid #b3a07d;
+              border-radius: 5px;
+              padding:0 4px;
+              line-height: 18px;
+              background-color: #f4f0ea;
+            }
+          }
+        }
+        .bd{
+          text-align: center;
+          .prdtTags{
+            height: 20px;
+            color: #fff;
+            width: 200px;
+            margin: 0 auto 13px;
+            overflow: hidden;
+            .itemTag{
+              margin-left: 0;
+              display: inline-block;
+              height: 20px;
+              line-height: 20px;
+              padding: 0 5px;
+              font-size: 12px;
+              background-color: #e36844;
+            }
+          }
+          .name{
+            margin-bottom: 13px;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 0 10px;
+            height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            cursor: pointer;
+            &:hover{
+              a{
+                color: #b4a078;
+              }
+            }
+            a{
+              color: #333;
+              span:nth-child(2){
+                font-size: 18px;
+
+              }
+
+            }
+          }
+          .price{
+            line-height: 13px;
+            color: #d4282d;
+            padding: 1px 0 9px;
+            margin: 0;
+            text-align: center;
+            .retailPrice{
+              font-size: 18px;
+              height: 18px;
+              line-height:1;
+              position: relative;
+              top: 1px;
+              display: inline-block;
+              overflow: hidden;
+              span{
+                font-size: 18px;
+                &:nth-child(2){
+                  margin-left: -8px;
+                }
+              }
+            }
+            .counterPrice{
+              position: relative;
+              top: -1px;
+              font-size: 18px;
+              height: 18px;
+              line-height: 1;
+              color: #999;
+              margin-left: 2px;
+              overflow: hidden;
+              text-align: center;
+              text-decoration: line-through;
+              span{
+                font-size: 15px;
+
+              }
+            }
+          }
+        }
+        &:hover{
+          .hd{
+            a{
+              div{
+                img{
+                  transform: scale(1.05);
+                }
+              }
+            }
+          }
+        }
+      }
+      .m-product {
+        background-color: #fff;
+        overflow: hidden;
+        width: 223px;
+        height: 260px;
+        float: left;
+        margin-left: 10px;
+        text-align: center;
+        line-height: 1;
+        position: relative;
+        font-size: 13px;
+        &.down{
+          margin-top: 10px;
+        }
+        .hd{
+          margin-bottom: 8px;
+          border-bottom:1px solid #F4F0EA;
+          position: relative;
+          overflow: hidden;
+          a{
+            color: #333;
+            div{
+              width: 100%;
+              height: 100%;
+              img{
+                transition: all 1s;
+              }
+            }
+            .colorNum{
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              height: 20px;
+              font-size: 12px;
+              color: #a7936e;
+              border: 1px solid #b3a07d;
+              border-radius: 5px;
+              padding:0 4px;
+              line-height: 18px;
+              background-color: #f4f0ea;
+            }
+          }
+        }
+        .bd{
+          text-align: center;
+          .prdtTags{
+            height: 20px;
+            color: #fff;
+            width: 200px;
+            margin: 0 auto 4px;
+            overflow: hidden;
+            .itemTag{
+              margin-left: 0;
+              display: inline-block;
+              height: 20px;
+              line-height: 20px;
+              padding: 0 5px;
+              font-size: 12px;
+              background-color: #e36844;
+            }
+          }
+          .name{
+            margin-bottom: 3px;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 10px;
+            height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            cursor: pointer;
+            &:hover{
+              a{
+                color: #b4a078;
+              }
+            }
+            a{
+              color: #333;
+              span:nth-child(2){
+                font-size: 14px;
+
+              }
+
+            }
+          }
+          .price{
+            line-height: 13px;
+            color: #d4282d;
+            padding: 1px 0 9px;
+            margin: 0;
+            text-align: center;
+            .retailPrice{
+              font-size: 13px;
+              height: 13px;
+              line-height:1;
+              position: relative;
+              top: 1px;
+              display: inline-block;
+              overflow: hidden;
+              span{
+                font-size: 13px;
+                &:nth-child(2){
+                  margin-left: -8px;
+                }
+              }
+            }
+            .counterPrice{
+              position: relative;
+              //top: -1px;
+              font-size: 13px;
+              height: 13px;
+              line-height: 1;
+              color: #999;
+              margin-left: 2px;
+              overflow: hidden;
+              text-align: center;
+              text-decoration: line-through;
+              span{
+                font-size: 13px;
+
+              }
+            }
+          }
+        }
+        &:hover{
+          .hd{
+            a{
+              div{
+                img{
+                  transform: scale(1.05);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(1){
+          height: 20px;
+          font-size: 0;
+          color: #fff;
+          width: 200px;
+          margin: 0 auto 3px;
+          overflow: hidden;
+        }
+        &:nth-child(4){
+          .bd{
+            .prdtTags{
+              .itemTag{
+                background-color: #F28F2D;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//限时购
+.flashSaleContainer{
+  .m-flashSale{
+    height: 483px;
+    .g-row{
+      width: 1090px;
+      padding-top: 58px;
+      margin-right:auto;
+      margin-left:auto;
+      position: relative;
+      .m-commonHeader{
+        height: 30px;
+        margin-bottom: 18px;
+        overflow: hidden;
+        .f-left{
+          line-height: 1;
+          float: left;
+          a{
+            color: #333;
+            .name{
+              font-size: 28px;
+              font-weight: 700;
+              line-height: 1;
+              float: left;
+              margin-right: 20px;
+            }
+            &:hover{
+              color: #b4a078;
+            }
+          }
+          .frontName{
+            padding-top: 13px;
+            display: inline-block;
+            line-height: 1;
+            font-size: 14px;
+
+          }
+        }
+        .f-right{
+          line-height: 1;
+          float: right;
+          a{
+            display: inline-block;
+            line-height: 1;
+            margin-left: 30px;
+            margin-top: 14px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            &:hover{
+              color: #b4a078;
+            }
+          }
+        }
+      }
+      .bd{
+        height: 377px;
+        width: 100%;
+        overflow: hidden;
+        .flashSaleLt{
+          position: relative;
+          height: 317px;
+          width: 224px;
+          padding-top: 60px;
+          float: left;
+          text-align: center;
+          background: url("http://yanxuan.nosdn.127.net/c9aeb62a3f79123d793d8c49b6698b09.jpg") center center no-repeat #fff;
+          .screenHd{
+            height: 36px;
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 11px;
+            color: #615548;
+          }
+          .line{
+            width: 20px;
+            height: 2px;
+            margin: 0 auto 18px;
+            background: #61594b;
+          }
+          .screenEndTips{
+            margin-bottom: 18px;
+            color: #615548;
+            line-height: 22px;
+            height: 22px;
+            font-size: 18px;
+
+          }
+          .m-countDown{
+            height: 40px;
+            margin-bottom: 50px;
+            text-align: center;
+            .w-cd{
+              width: 40px;
+              color: #fff;
+              font-size: 18px;
+              line-height: 40px;
+              background-color: #615548;
+              border-radius: 2px;
+              display: inline-block;
+
+            }
+            .colon{
+              font-weight: 700;
+              padding: 0 2px;
+              display: inline-block;
+            }
+          }
+          .seeMoreBtn{
+            width: 110px;
+            height: 30px;
+            margin: 0 auto;
+            line-height: 30px;
+            color: #fff;
+            font-size: 14px;
+            background-color: #a7936e;
+            cursor: pointer;
+            border-radius: 15px;
+          }
+
+        }
+        .flashSaleRt{
+          margin-left: 224px;
+          height: 377px;
+          box-sizing: border-box;
+          .m-flashSaleProduct{
+            float: left;
+            width: 432px;
+            height: 187px;
+            border: 1px solid #f0ece4;
+            border-left: none;
+            .lt{
+              float: left;
+              width: 180px;
+              height: 180px;
+              cursor: pointer;
+              overflow: hidden;
+              margin: 3px 0;
+              a{
+                position: relative;
+                display: block;
+                color: #333;
+                img{
+                  width: 180px;
+                  height: 180px;
+                  border: 1px solid transparent;
+                  margin: 0 auto;
+                  transition: all 1s;
+                }
+              }
+
+            }
+            .rt{
+              margin-left: 180px;
+              height: 187px;
+              padding-top: 14px;
+              .itemName{
+                height: 26px;
+                line-height: 26px;
+                font-weight: 400;
+                color: #666;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                a{
+                  color: #333;
+                  font-size: 16px;
+                  &:hover{
+                    color: #b4a078;
+                  }
+                }
+              }
+              .itemDes{
+                height: 24px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #999;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+              }
+              .itemNum{
+                overflow: hidden;
+                padding: 14px 0 8px;
+                .numBar{
+                  float: left;
+                  position: relative;
+                  width: 152px;
+                  height: 10px;
+                  margin: 2px 0;
+                  border: 1px solid #f2cecd;
+                  border-radius: 5px;
+                  overflow: hidden;
+                  .numBarIn{
+                    width: 119.5px;
+                    background-color: #ffe5e5;
+                    height: 10px;
+                  }
+                }
+                .numTips{
+                  height: 14px;
+                  margin-left: 162px;
+                  font-size: 14px;
+                  color: #999;
+                  line-height: 14px;
+                }
+              }
+              .itemPrice{
+                height: 24px;
+                font-size: 14px;
+                line-height: 1;
+                vertical-align: baseline;
+                box-sizing: border-box;
+                .aPrice{
+                  color: #be4141;
+                  font-size: 14px;
+                  .yuan{
+                    font-size: 18px;
+                  }
+                  .aPriceIn{
+                    margin-right: 12px;
+                    vertical-align: sub;
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-left: -8px;
+                  }
+                }
+                .oPrice{
+                  color: #999;
+                  font-size: 14px;
+                  line-height: 1;
+                  .oPriceIn{
+                    margin-left: -4px;
+                    text-decoration: line-through;
+                    font-size: 14px;
+
+                  }
+                }
+                .fast{
+                  background-color: #be4141;
+                  color: #fff;
+                  display: block;
+                  width: 118px;
+                  height: 31px;
+                  margin-top: 18px;
+                  line-height: 31px;
+                  text-align: center;
+                  font-size: 16px;
+                  border-radius: 2px;
+                  cursor: pointer;
+                  &:hover{
+                    background-color: #da4f4f;
+                  }
+                }
+              }
+            }
+            &:hover{
+              .lt{
+                a{
+                  img{
+                    transform: scale(1.05);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+//右侧固定广告栏
+.fixedTool{
+  .yx-cp-base{
+    position: fixed;
+    top: 152px;
+    z-index:99;
+    right:0;
+    line-height: 1.5;
+    .yx-fixedtoolActivityEntry{
+      position: absolute;
+      top: -153px;
+      display: block;
+      img{
+        width: 72px;
+        border: 0;
+        vertical-align: top;
+      }
+    }
+    .yx-fixedtoolNewuser{
+      display: block;
+      width: 72px;
+      height: 82px;
+      background-color: #fff;
+      color: #666;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+      padding-top: 14px;
+      position: relative;
+      .yx-cp-icon-yxfixedtool{
+        display: inline-block;
+        width: 29px;
+        height: 28px;
+        background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat center;
+        background-position: 0 -297px;
+
+      }
+      .yx-fixedtoolText{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 8px auto 0;
+        position: relative;
+      }
+    }
+    .yx-fixedtoolDownload{
+      height: 140px;
+      padding-top: 0;
+      display: block;
+      width: 72px;
+      background-color: #fff;
+      color: #666;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+      position: relative;
+      .j-yx-fixTool-downloadQrcode{
+        height: 64px;
+        margin-bottom: 8px;
+
+      }
+      .yx-fixedtool-downText1{
+        line-height: 17px;
+        color: #666;
+
+      }
+      .yx-fixedtool-downText2{
+        color: #BC3B3B;
+        line-height: 17px;
+      }
+    }
+    .j-yx-fixedtoolSubscribe{
+      height: 82px;
+      width: 72px;
+      background-color: #fff;
+      color: #666;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+      padding-top: 14px;
+      position: relative;
+      &:hover{
+        .yx-subscribeDialog{
+          display:block;
+        }
+        .hide{
+          display: none;
+        }
+        .yx-fixedtoolText{
+          color: #b4a078;
+        }
+        .yx-cp-icon-yxfixedtool{
+          background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat center;
+          background-position: 0 -389px;
+        }
+      }
+      .yx-cp-icon-yxfixedtool{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat center;
+        background-position: 0 -425px;
+      }
+      .yx-fixedtoolText{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 8px auto 0;
+        position: relative;
+
+      }
+      .yx-subscribeDialog{
+        display:none;
+        width: 400px;
+        height: 220px;
+        position:absolute;
+        right: 62px;
+        top: -68px;
+        cursor:default;
+        line-height: 20px;
+        .yx-main{
+          width: 370px;
+          height: 220px;
+          background-color: #fff;
+          border: 1px solid #eaeaea;
+          box-shadow: 0 2px 4px 0 #7f7f7f;
+          position:relative;
+          .yx-head{
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            line-height: 70px;
+            font-size:26px;
+            color: #fff;
+            margin-top: -1px;
+            //margin-left: -1px;
+            background: url("http://yanxuan.nosdn.127.net/86fe9b8317068538cda05d96768a6e17.png") no-repeat center;
+          }
+          .yx-cp-icon-yxclose{
+            position:absolute;
+            right: 10px;
+            top: 10px;
+            cursor:pointer;
+            width: 10px;
+            height: 10px;
+            background:url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxclose-s2ee250e88f-0060a787aa.png") no-repeat;
+
+          }
+          .yx-body{
+            .yx-desc{
+              font-size:14px;
+              color: #999;
+              text-align:center;
+              margin-top: 20px;
+            }
+            .yx-inputWrap{
+              width: 286px;
+              height: 34px;
+              margin: 10px auto 0;
+              position:relative;
+              .j-yx-fixedtoolInput{
+                width: 185px;
+                height: 34px;
+                padding: 5px 10px;
+                font-size:14px;
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+                float: left;
+                border-right: none;
+                outline:0;
+              }
+              .yx-cp-icon-yxfixedtoolx{
+                display: none;
+                //display:block;
+                position:absolute;
+                z-index: 20;
+                top: 10px;
+                right: 110px;
+                cursor:pointer;
+                width: 14px;
+                height: 14px;
+                background:url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png') no-repeat;
+              }
+              .j-yx-fixedtoolSubmit{
+                width: 80px;
+                height: 34px;
+                background-color: #B4A078;
+                float: left;
+                font-size:14px;
+                color: #fff;
+                line-height: 34px;
+                cursor:pointer;
+              }
+            }
+          }
+          .yx-foot{
+            margin-top: 31px;
+            overflow:hidden;
+            line-height: 1;
+            display: flex;
+            .yx-privilege{
+              width: 122px;
+              text-align:center;
+              font-size:14px;
+              color: #B4A078;
+              .yx-cp-icon-yxfixedtool{
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat;
+              }
+              .yx-text{
+                font-size:14px;
+              }
+              &:nth-child(1){
+                .yx-cp-icon-yxfixedtool{
+                  background-position: 0 -461px;
+                }
+              }
+              &:nth-child(2){
+                .yx-cp-icon-yxfixedtool{
+                  background-position: 0 -24px;
+                  height: 12px;
+                }
+              }
+              &:nth-child(3){
+                .yx-cp-icon-yxfixedtool{
+                  background-position: 0 -365px;
+                }
+              }
+            }
+          }
+          .yx-cp-icon-yxfixedtooltt{
+            position: absolute;
+            right: -11px;
+            top: 96px;
+            width: 11px;
+            height: 19px;
+            background:url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat;
+            background-position:0 -336px;
+          }
+        }
+      }
+    }
+    .j-yx-fixedtoolCustomerService{
+      width: 72px;
+      height: 82px;
+      padding-top: 14px;
+      cursor: pointer;
+      text-align: center;
+      background-color: #fff;
+      color: #666;
+      line-height: 1;
+      font-size: 14px;
+      position: relative;
+      .yx-cp-icon-yxfixedtool{
+        width: 32px;
+        height: 31px;
+        display: inline-block;
+        background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat center;
+        background-position: 0 -87px;
+
+      }
+      .yx-fixedtoolText{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 8px auto 0;
+        position: relative;
+      }
+      &:hover{
+        .yx-cp-icon-yxfixedtool{
+          background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat center;
+          background-position: 0 -46px;
+        }
+        .yx-fixedtoolText{
+          color: #b4a078;
+        }
+      }
+    }
+    .j-yx-fixedtoolGoTop{
+      display: none;
+      position: absolute;
+      bottom: -60px;
+      width: 72px;
+      height: 60px;
+      background-color: #fff;
+      color: #666;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+      padding-top: 14px;
+      &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        left: 6px;
+        top: 0;
+        width: 60px;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .yx-cp-icon-yxfixedtool{
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat center;
+        background-position: 0 -233px;
+      }
+      &:hover{
+        .yx-cp-icon-yxfixedtool{
+          background: url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-a72e983968.png") no-repeat ;
+          background-position: 0 -208px;
+        }
+        .yx-fixedtoolText{
+          color: #b4a078;
+        }
+      }
+      .yx-fixedtoolText{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 8px auto 0;
+        position: relative;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
