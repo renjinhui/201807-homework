@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration-line: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  height: 218px;
+  width: 100%;
+  background: aqua;
+}
+.header .login {
+  width: 100%;
+  height: 30px;
+  background: black;
+}
+.header .headerNav {
+  width: 100%;
+  height: 56px;
+  background: gold;
+}
+.header .headerSearch {
+  width: 100%;
+  height: 132px;
+  background: chartreuse;
+}
+.zt {
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  font-size: 14px;
+}
+.boxs {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+}
+.min {
+  width: 1200px;
+  margin: auto;
+}
+.min .banner {
+  width: 1200px;
+  height: 385px;
+  position: relative;
+}
+.min .banner .minLeft {
+  width: 321px;
+  height: 385px;
+  margin-left: -15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.min .banner .minLeft .menu_box {
+  width: 321px;
+  height: 20px;
+  line-height: 20px;
+  padding: 18px 0 17px 0;
+  position: relative;
+}
+.min .banner .minLeft .menu_box .menu_main {
+  width: 321px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.min .banner .minLeft .menu_box .menu_main h2 {
+  display: inline-block;
+  padding-left: 15px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  float: left;
+}
+.min .banner .minLeft .menu_box .menu_main a {
+  display: inline-block;
+  color: #555;
+  padding: 0 8px;
+  margin: 0 5px 5px 0;
+  float: left;
+  text-decoration: none;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  font-size: 14px;
+}
+.min .banner .minLeft .menu_box .menu_main a:hover {
+  text-decoration-line: underline ;
+  color: #00b38a;
+}
+.min .banner .minLeft .menu_box .menu_main i {
+  background: url("../images/arrow.png") 0 0 no-repeat;
+  width: 6px;
+  height: 11px;
+  margin-right: 8px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+.min .banner .minLeft .menu_box .hide_box {
+  width: 600px;
+  padding: 20px 10px 0 12px;
+  position: absolute;
+  left: 321px;
+  top: 0;
+  background: #fff;
+  display: none;
+}
+.min .banner .minLeft .menu_box .hide_box .content_box {
+  margin-right: -1px;
+  margin-bottom: 17px;
+}
+.min .banner .minLeft .menu_box .hide_box .content_box span {
+  display: block;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  font-size: 14px;
+  color: #333;
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+.min .banner .minLeft .menu_box .hide_box .content_box a {
+  display: inline-block;
+  padding: 0 11px;
+  margin-left: -1px;
+  line-height: 28px;
+  text-decoration: none;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  font-size: 14px;
+  color: #555;
+  position: relative;
+}
+.min .banner .minLeft .menu_box .hide_box .content_box a:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: #D8D8D8;
+  top: 8px;
+  left: 0;
+}
+.min .banner .minLeft .menu_box .hide_box .content_box a:hover {
+  text-decoration-line: underline ;
+  color: #00b38a;
+}
+.min .banner .minLeft .menu_box:hover {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  border-top-left-radius: 0;
+}
+.min .banner .minLeft .menu_box:hover .hide_box {
+  display: block;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  z-index: 10;
+}
+.min .banner .minRight {
+  width: 840px;
+  height: 346px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -173px;
+}
+.min .banner .minRight a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.min .banner .minRight a img {
+  width: 100%;
+  height: 100%;
+}
+.min .hotNew {
+  width: 1200px;
+  height: 53px;
+  background: coral;
+}
+.min .minTop {
+  width: 1200px;
+  height: 648px;
+  background: chocolate ;
+}
+.min .company {
+  width: 1200px;
+  background: darkseagreen;
+  height: 53px;
+}
+.min .minBottom {
+  width: 1200px;
+  height: 572px;
+  background: deeppink;
+}
+.min .frined {
+  width: 1200px;
+  height: 198px;
+  background: beige;
+}
+.footer {
+  width: 100%;
+  height: 354px;
+  background: lawngreen;
+}
+.more_main {
+  width: 1200px;
+  line-height: 14px;
+  color: #555;
+  text-align: -webkit-match-parent;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 35px;
+  height: 2597px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+}
+.more_main .more_main_left {
+  width: 960px;
+  float: left;
+  background: pink;
+  height: 2597px;
+}
+.more_main .more_main_left .nav .nav_top {
+  display: none;
+  height: 40px;
+  padding: 6px 16px 10px;
+  background: #fafafa;
+  border: 1px solid #E4E4E4;
+  line-height: 24px;
+}
+.more_main .more_main_left .nav .nav_top h4 {
+  height: 24px;
+  /*padding: 5px 8px;*/
+  margin: 0 8px;
+  display: inline-block;
+  float: left;
+}
+.more_main .more_main_left .nav .nav_top a {
+  padding: 0 6px;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+  background: #00b38a;
+  color: white;
+}
+.more_main .more_main_left .nav > ul {
+  /*display:none;*/
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #E4E4E4;
+  box-sizing: border-box;
+}
+.more_main .more_main_left .nav > ul li {
+  width: 926px;
+  height: 24px;
+  padding: 6px 16px 10px;
+}
+.more_main .more_main_left .nav > ul li h4 {
+  display: inline-block;
+  font-size: 14px;
+  float: left;
+  height: 14px;
+  padding: 5px 8px;
+}
+.more_main .more_main_left .nav > ul li :nth-child(2) {
+  background: #00b38a;
+  color: white;
+}
+.more_main .more_main_left .nav > ul li span:hover {
+  background: #00b38a;
+  color: white;
+}
+.more_main .more_main_left .nav > ul li span {
+  display: block;
+  float: left;
+  height: 14px;
+  padding: 5px 8px;
+  margin-right: 5px;
+}
+.more_main .more_main_left .nav > ul li .current {
+  background: white;
+  color: #555;
+  border: 1px solid #ccc;
+}
+.more_main .more_main_left .nav .navBtn {
+  width: 36px;
+  height: 15px;
+  border: 1px solid #ededed;
+  margin: 0 auto;
+  background: #fafafa url("../images/c.png") center no-repeat;
+  cursor: pointer;
+}

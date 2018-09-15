@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  border-top: 2px solid #eb7350;
+  background: #fff;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+.header .header_main {
+  width: 1280px;
+  height: 48px;
+  margin: auto;
+  background: #00b38a;
+}
+.header .header_main .logo {
+  background: url("../images/logo.png") no-repeat center;
+  width: 140px;
+  height: 48px;
+  float: left;
+}

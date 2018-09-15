@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image/M00/47/BC/Cgp3O1eQcAKAO0AhAAAUfH4SjJM908.png",
+    "company": "卡行天下",
+    "introduce":"移动互联网",
+    "level":"D轮及以上",
+    "advantage":"让物流改变世界",
+    "num1":"38",
+    "num2":"10",
+    "num3":"80%"
+  },
+  {
+    "id": 2,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image2/M00/0F/7D/CgoB5lnnAAOAKqAOAAASlK1GH5c372.png",
+    "company": "狗民网",
+    "introduce":"电子商务,社交网络",
+    "level":"A轮",
+    "advantage":"中国最大、最活跃的宠物社区。集资讯，社区，购物，服务于一体的全方位宠物平台。",
+    "num1":"9",
+    "num2":"5",
+    "num3":"100%"
+  },
+  {
+    "id": 3,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image2/M00/02/C5/CgoB5lnBEu2ASNmtAACJk29vWEs766.png",
+    "company": "凌宇智控科技",
+    "introduce":"硬件,其他",
+    "level":"A轮",
+    "advantage":"凌宇智控致力于围绕移动 VR 为全球用户缔造一个与现实平行的虚拟世界，以此改变未来人们的娱乐方式。",
+    "num1":"10",
+    "num2":"6",
+    "num3":"100%"
+  },
+  {
+    "id": 4,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image/M00/8E/2C/CgpFT1r9NUSAdIALAADkSky7AXw144.jpg",
+    "company": "健康有益",
+    "introduce":"移动互联网,医疗健康",
+    "level":"未融资",
+    "advantage":"科技引领未来健康！",
+    "num1":"127",
+    "num2":"45",
+    "num3":"100%"
+  },
+  {
+    "id": 5,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image/M00/8B/0F/CgpEMlrUY-uACwUFAAAe1oHCpww541.PNG",
+    "company": "优软科技",
+    "introduce":"移动互联网",
+    "level":"天使轮",
+    "advantage":"一个高具态度、授业、解惑、传道精神的互联网高新技术软件开发公司",
+    "num1":"11",
+    "num2":"21",
+    "num3":"100%"
+  },
+  {
+    "id": 6,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image/M00/1B/52/Cgp3O1b8hQGAWkCBAAB9PqLG7gE747.jpg",
+    "company": "泡椒网",
+    "introduce":"移动互联网,游戏",
+    "level":"B轮",
+    "advantage":"泡椒互娱是中国最具成长性的互动娱乐内容平台",
+    "num1":"99",
+    "num2":"25",
+    "num3":"98%"
+  },
+  {
+    "id": 7,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/image1/M00/21/14/Cgo8PFU55pKAEnBxAABT-oVTZO0256.png",
+    "company": "拓道",
+    "introduce":"移动互联网",
+    "level":"不需要融资",
+    "advantage":"移动互联网产品创新先锋！这里不仅有职位，更有通往新媒体行业的精彩之路。",
+    "num1":"57",
+    "num2":"6",
+    "num3":"100%"
+  },
+  {
+    "id": 8,
+    "picImg": "//www.lgstatic.com/thumbnail_160x160/i/image2/M00/42/C3/CgotOVrDVUeANc21AABwNm509IU196.png",
+    "company": "斗米",
+    "introduce":"移动互联网,O2O",
+    "level":"B轮",
+    "advantage":"专注深耕灵活用工市场",
+    "num1":"109",
+    "num2":"340",
+    "num3":"91%"
+  }
+]
