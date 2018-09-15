@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.w {
+  width: 100%;
+  height: 100%;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.mfw-banner {
+  width: 100%;
+  height: 507px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.mfw-banner ul.show-image {
+  width: 100%;
+  height: 100%;
+}
+.mfw-banner ul.show-image li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 1s;
+}
+.mfw-banner ul.show-image li .mfw-banner-pic {
+  width: 100%;
+  height: 100%;
+}
+.mfw-banner ul.show-image li .mfw-banner-pic img {
+  width: 100%;
+  height: 100%;
+}
+.mfw-banner ul.show-image li .mfw-banner-title {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -500px;
+  color: #fff;
+  font-size: 26px;
+  text-align: left;
+  min-width: 1000px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+.mfw-banner ul.show-image li .mfw-banner-title div.date {
+  width: 180px;
+  height: auto;
+  line-height: 35px;
+  font-size: 24px;
+  overflow: hidden;
+}
+.mfw-banner ul.show-image li .mfw-banner-title div.date .day {
+  font-size: 38px;
+}
+.mfw-banner ul.show-image li .mfw-banner-title h3 {
+  font-size: 26px;
+  font-weight: normal;
+}
+.mfw-banner ul.show-image li .content {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  min-width: 630px;
+  margin-left: -320px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  text-align: left;
+  white-space: nowrap;
+}
+.mfw-banner ul.show-image li .content span a {
+  color: #ff9900;
+}
+.mfw-banner ul.show-image li .content span a:hover {
+  text-decoration: underline;
+}
+.mfw-banner ul.show-image li:nth-of-type(1) {
+  opacity: 1;
+  z-index: 10;
+}
+.mfw-banner ul.show-nav {
+  width: 110px;
+  height: 340px;
+  position: absolute;
+  right: 40px;
+  top: 45%;
+  margin-top: -166px;
+  z-index: 20;
+}
+.mfw-banner ul.show-nav li {
+  display: block;
+  width: 100%;
+  height: 62px;
+  margin-bottom: 6px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.mfw-banner ul.show-nav li:nth-of-type(5) {
+  margin-bottom: 0;
+}
+.mfw-banner ul.show-nav li a img {
+  width: 100%;
+  height: 100%;
+}
+.mfw-banner ul.show-nav li a span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 106px;
+  height: 58px;
+  border: 2px solid #ff9d00;
+  display: none;
+}
+.mfw-banner ul.show-nav li:first-of-type span {
+  border-radius: 0 5px 0 0;
+}
+.mfw-banner ul.show-nav li:last-of-type span {
+  border-radius: 0 0 5px 0;
+}
+.mfw-banner a.show-more {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  margin-top: 160px;
+  width: 110px;
+  height: 35px;
+  background: url("../img/index-sprites8@2x.png") no-repeat -60px -50px;
+  background-size: 200px;
+  z-index: 20;
+}
+.mfw-banner .searchBox {
+  position: absolute;
+  width: 632px;
+  bottom: 45px;
+  left: 50%;
+  margin-left: -320px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  border-radius: 4px;
+}
+.mfw-banner .searchBox .searchGroup {
+  overflow: hidden;
+  padding: 15px;
+}
+.mfw-banner .searchBox .searchGroup .searchTab {
+  float: left;
+}
+.mfw-banner .searchBox .searchGroup .searchTab ul {
+  width: 100%;
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  overflow: hidden;
+}
+.mfw-banner .searchBox .searchGroup .searchTab ul li {
+  display: inline;
+  float: left;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.mfw-banner .searchBox .searchGroup .searchTab ul li i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 5px 5px 0 0;
+  background: url("../img/header-sprites13@2x.png") no-repeat -60px -110px;
+  background-size: 200px;
+}
+.mfw-banner .searchBox .searchGroup .searchTab ul li.current i {
+  background: url("../img/header-sprites13@2x.png") no-repeat -60px -140px;
+  background-size: 200px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar {
+  float: left;
+  overflow: hidden;
+  height: 46px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper {
+  float: left;
+  width: 546px;
+  height: 46px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper input {
+  width: 504px;
+  height: 46px;
+  color: #666;
+  border: 0;
+  padding: 0 21px;
+  font-size: 16px;
+  line-height: 46px;
+  border-radius: 4px;
+  outline: none;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper .search-input {
+  width: 260px;
+  float: left;
+  height: 46px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper .search-input input {
+  width: 214px;
+  border-radius: 4px 0 0 4px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper .search-date {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 46px;
+  margin-left: 3px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #444;
+  line-height: 46px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper .search-date:nth-of-type(3) {
+  border-radius: 0 4px 4px 0;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper .search-date input {
+  width: 120px;
+  padding: 0 10px;
+}
+.mfw-banner .searchBox .searchGroup .searchBar .searchWrapper .search-date i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/header-sprites13@2x.png") 0px -140px no-repeat;
+  background-size: 200px;
+  cursor: pointer;
+}
+.mfw-banner .searchBox .searchGroup .searchButton {
+  float: left;
+  width: 50px;
+  height: 46px;
+  margin-left: 6px;
+}
+.mfw-banner .searchBox .searchGroup .searchButton a {
+  display: block;
+  height: 46px;
+  background: #ff9d00;
+  border-radius: 4px;
+  text-align: center;
+}
+.mfw-banner .searchBox .searchGroup .searchButton a i {
+  display: inline-block;
+  margin-top: 11px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  background: url("../img/header-sprites13@2x.png") no-repeat 0px -110px;
+  background-size: 200px;
+  vertical-align: top;
+}
+/*# sourceMappingURL=banner.css.map */

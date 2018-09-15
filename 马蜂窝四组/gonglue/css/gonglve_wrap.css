@@ -1,0 +1,425 @@
+.r {
+  float: right;
+}
+.l {
+  float: left;
+}
+.wrapper-container {
+  width: 1000px;
+  margin: 15px auto 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+.wrapper-container .gonglve_wrap {
+  margin-top: 15px;
+  width: 100%;
+}
+.wrapper-container .gonglve_wrap .left {
+  float: left;
+  width: 160px;
+}
+.wrapper-container .gonglve_wrap .left .title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.wrapper-container .gonglve_wrap .left .nav-drop {
+  width: 160px;
+  height: 45px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.wrapper-container .gonglve_wrap .left .nav-drop .item {
+  float: left;
+  width: 40px;
+}
+.wrapper-container .gonglve_wrap .left .nav-drop .item .trigger {
+  padding: 10px 0;
+  height: 22px;
+  cursor: pointer;
+}
+.wrapper-container .gonglve_wrap .left .nav-drop .item .trigger i {
+  float: right;
+  font-size: 0;
+  margin-top: 10px;
+  border-top: 4px solid #999;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.wrapper-container .gonglve_wrap .left .nav-drop .item:not(:nth-child(1)) {
+  margin-left: 20px;
+}
+.wrapper-container .gonglve_wrap .left .nav-drop .item:not(:nth-child(1)):before {
+  position: absolute;
+  content: '';
+  display: block;
+  margin: 16px 0 0 -10px;
+  width: 1px;
+  height: 13px;
+  background: #eee;
+}
+.wrapper-container .gonglve_wrap .left .rank {
+  width: 100%;
+}
+.wrapper-container .gonglve_wrap .left .rank li {
+  padding: 15px 0;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list {
+  width: 130px;
+  margin-right: 40px;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list a {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  width: 130px;
+  height: 184px;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list a img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list p {
+  text-align: center;
+  margin: 5px 0;
+  color: #666;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list .downloadNum {
+  width: 130px;
+  height: 24px;
+  background: #ebebeb;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 30px;
+  font-size: 0;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list .downloadNum span {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/icon.png") no-repeat -20px -90px;
+}
+.wrapper-container .gonglve_wrap .left .rank .gl_list .downloadNum p {
+  line-height: 24px;
+  color: #666;
+  padding-left: 30px;
+  font-size: 12px;
+  text-align: left;
+}
+.wrapper-container .gonglve_wrap .left .rank li + li {
+  border-top: 1px solid #f7f7f7;
+  line-height: 24px;
+}
+.wrapper-container .gonglve_wrap .left .rank li + li span {
+  float: left;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ff9d00;
+}
+.wrapper-container .gonglve_wrap .left .rank li + li a {
+  color: #333;
+  font-size: 14px;
+}
+.wrapper-container .gonglve_wrap .right {
+  float: right;
+  width: 790px;
+  margin-bottom: 20px;
+}
+.wrapper-container .gonglve_wrap .right header {
+  height: 50px;
+  border-bottom: 1px solid #eee;
+  line-height: 48px;
+}
+.wrapper-container .gonglve_wrap .right header h3 {
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main {
+  padding: 20px 0 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a {
+  display: block;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_left {
+  float: left;
+  line-height: 20px;
+  color: #666;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_left i.icon_youji {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url("../images/icon.png") no-repeat 0 -40px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_left i.icon_gonglve {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url("../images/icon.png") no-repeat 0 -20px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_left i.icon_wenda {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url("../images/icon.png") no-repeat 0 0;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_left strong {
+  font-weight: normal;
+  color: #ff9d00;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_right {
+  float: right;
+  padding: 0 15px;
+  border: 1px solid #ff9d00;
+  border-radius: 15px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_right span {
+  color: #ff9d00;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_right i.icon_ding {
+  margin-left: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/icon.png") no-repeat -40px -40px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_bar .item_bar_right i.icon_tiyan {
+  margin-left: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/icon.png") no-repeat -20px -116px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dt {
+  float: left;
+  width: 220px;
+  display: inline;
+  margin-right: 20px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dt img {
+  width: 220px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dd {
+  overflow: hidden;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dd .info {
+  height: 102px;
+  padding-top: 10px;
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dd .dd_bottom {
+  float: right;
+  color: #999;
+  line-height: 22px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dd .dd_bottom .author {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ff9d00;
+  font-size: 12px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_content dd .dd_bottom .author img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_txt {
+  margin-bottom: 15px;
+  color: #666;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_txt .info {
+  padding-top: 10px;
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_img ul li:not(:last-child) {
+  float: left;
+  width: 220px;
+  margin-right: 15px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item a .item_img ul li:last-child {
+  line-height: 130px;
+  float: right;
+  color: #999;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item:hover {
+  background: #f8f8f8;
+  padding: 21px 15px 20px;
+  margin: -21px -15px -20px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox main .item:hover .item_title {
+  color: #ff9d00;
+}
+.wrapper-container .gonglve_wrap .right #mainBox a.downloadBar {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff5e5;
+  border-radius: 4px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox a.downloadBar span {
+  color: #666;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper-container .gonglve_wrap .right #mainBox a.downloadBar i {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("../images/icon_1.png") no-repeat 0 -592px;
+  margin-left: 6px;
+}
+.wrapper-container .gonglve_wrap .right #mainBox a.downloadBar:hover {
+  background: #efefef;
+  color: #666;
+}
+.wrapper-container .gonglve_wrap .right #mainBox a.downloadBar:hover i {
+  background-position: 0 -621px;
+}
+.wrapper-container .toolBar {
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  margin-right: -558px;
+}
+.wrapper-container .toolBar .toolBar-toTop {
+  margin-bottom: -1px;
+  display: none;
+}
+.wrapper-container .toolBar .toolBar-toTop .btn {
+  width: 43px;
+  height: 43px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.wrapper-container .toolBar .toolBar-toTop .btn i {
+  width: 21px;
+  height: 12px;
+  background: url("../images/toolBar_1.png") no-repeat -60px -165px;
+  margin-top: 16px;
+  display: inline-block;
+}
+.wrapper-container .toolBar .toolBar-toTop .btn span {
+  width: 35px;
+  height: 38px;
+  background-color: #aaa;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  padding: 5px 4px 0 4px;
+  border: 1px solid #aaa;
+  display: none;
+}
+.wrapper-container .toolBar .yijianfankui {
+  margin-bottom: -1px;
+}
+.wrapper-container .toolBar .yijianfankui .btn {
+  width: 43px;
+  height: 43px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.wrapper-container .toolBar .yijianfankui .btn i {
+  width: 18px;
+  height: 18px;
+  background: url("../images/toolBar_1.png") no-repeat -90px -165px;
+  margin-top: 13px;
+  display: inline-block;
+}
+.wrapper-container .toolBar .yijianfankui .btn span {
+  width: 35px;
+  height: 38px;
+  background-color: #aaa;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  padding: 5px 4px 0 4px;
+  border: 1px solid #aaa;
+  display: none;
+}
+.wrapper-container .toolBar .erweima .btn {
+  width: 43px;
+  height: 43px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.wrapper-container .toolBar .erweima .btn i {
+  width: 19px;
+  height: 19px;
+  background: url('../images/toolBar_1.png') no-repeat -120px -165px;
+  margin-top: 13px;
+  display: inline-block;
+}
+.wrapper-container .toolBar .erweima .erweimaBox {
+  border: 1px solid #e5e5e5;
+  display: none;
+  position: absolute;
+  right: 55px;
+  bottom: 0;
+  background-color: #fff;
+  padding: 6px;
+  color: #999;
+}
+.wrapper-container .toolBar .erweima .erweimaBox img {
+  width: 450px;
+  height: 192px;
+}
+.wrapper-container .toolBar .toolBar-toTop:hover span {
+  display: block;
+}
+.wrapper-container .toolBar .yijianfankui:hover span {
+  display: block;
+}
+.wrapper-container .toolBar .erweima:hover .btn {
+  background: #ff9d00;
+}
+.wrapper-container .toolBar .erweima:hover .btn i {
+  background: url('../images/toolBar_1.png') no-repeat -150px -165px;
+}
+.wrapper-container .toolBar .erweima:hover .erweimaBox {
+  display: block;
+}
+/*# sourceMappingURL=gonglve_wrap.css.map */

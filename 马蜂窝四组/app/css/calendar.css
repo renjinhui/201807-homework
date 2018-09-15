@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.lt {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: url("../img/cbg0612.jpg") no-repeat;
+  background-attachment: fixed;
+}
+.box .calendar {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 658px;
+  padding-top: 15px;
+}
+.box .calendar .hd {
+  width: 980px;
+  height: 50px;
+  margin: auto;
+}
+.box .calendar .hd i {
+  float: left;
+  width: 268px;
+  height: 57px;
+  background: url("../img/liilizaimu.png") no-repeat center;
+}
+.box .calendar .hd #s1 {
+  float: right;
+  margin-right: 5px;
+  margin-top: 25px;
+}
+.box .calendar .hd dl {
+  float: right;
+}
+.box .calendar .hd dl dt {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #4c4844;
+}
+.box .calendar .hd dl dt .month {
+  font-size: 50px;
+  margin: 0 10px 0 20px;
+}
+.box .calendar .hd dl dt .year {
+  font-size: 26px;
+}
+.box .calendar .month-tab {
+  width: 100%;
+  height: 50px;
+}
+.box .calendar .month-tab ul {
+  width: 980px;
+  height: 100%;
+  margin: 30px auto;
+}
+.box .calendar .month-tab ul .yes {
+  margin: -15px 0 0 0;
+}
+.box .calendar .month-tab ul .on {
+  margin-left: 40px;
+}
+.box .calendar .month-tab ul li {
+  float: left;
+  width: 43px;
+  height: 49px;
+  position: relative;
+}
+.box .calendar .month-tab ul li a img {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+.box .calendar .week-bar {
+  width: 100%;
+  height: 33px;
+  background: #fff;
+  opacity: 0.5;
+  margin: 10px 0 25px;
+}
+.box .calendar .week-bar .week-bg {
+  width: 980px;
+  height: 100%;
+  margin: auto;
+}
+.box .calendar .week-bar .week-bg ul li {
+  float: left;
+  display: inline-block;
+  width: 125px;
+  height: 33px;
+  margin-left: 6px;
+  position: relative;
+}
+.box .calendar .week-bar .week-bg ul li img {
+  position: relative;
+  left: 35%;
+  top: 25%;
+}
+.box .calendar .bd {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.box .calendar .bd .viewport {
+  width: 986px;
+  height: 100%;
+  margin: auto;
+}
+.box .calendar .bd .viewport .month-panel .hover,
+.box .calendar .bd .viewport .month-panel .hover_left {
+  float: left;
+  margin: 6px 0 0 6px;
+  width: 135px;
+  height: 84px;
+  position: relative;
+}
+.box .calendar .bd .viewport .month-panel .hover a,
+.box .calendar .bd .viewport .month-panel .hover_left a {
+  cursor: auto;
+}
+.box .calendar .bd .viewport .month-panel .hover a img,
+.box .calendar .bd .viewport .month-panel .hover_left a img {
+  width: 100%;
+  height: 100%;
+}
+.box .calendar .bd .viewport .month-panel .hover .mask,
+.box .calendar .bd .viewport .month-panel .hover_left .mask {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.box .calendar .bd .viewport .month-panel .hover .mask a,
+.box .calendar .bd .viewport .month-panel .hover_left .mask a {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 78px;
+  color: #fff;
+  font-size: 24px;
+}
+.box .calendar .bd .viewport .month-panel .hover em,
+.box .calendar .bd .viewport .month-panel .hover_left em {
+  position: absolute;
+  left: 5px;
+  bottom: 3px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 0 0 3px #000000;
+}
+.box .calendar .bd .viewport .month-panel .hover .mask_box,
+.box .calendar .bd .viewport .month-panel .hover_left .mask_box {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e9e9e9;
+}
+.box .calendar .bd .viewport .month-panel .hover_left {
+  margin: 6px 0 0 0;
+}
+.box .calendar .bd .viewport .month-panel .hover:hover .mask {
+  display: block;
+}
+.box .calendar .bd .extra-btn .pic_left {
+  position: fixed ;
+  right: 200px;
+  top: 218px;
+}
+.box .calendar .bd .extra-btn .pic_right {
+  position: fixed ;
+  right: 190px;
+  top: 226px;
+}

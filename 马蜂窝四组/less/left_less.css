@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  margin-bottom: 30px;
+}
+.h {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.changeCBox p a {
+  cursor: auto;
+}
+.mfw-left {
+  width: 260px;
+  float: left;
+  position: relative;
+}
+.mfw-left .mfw-traveller {
+  margin-bottom: 30px;
+}
+.mfw-left .mfw-traveller .traveller-hd {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.mfw-left .mfw-traveller .traveller-hd p {
+  float: left;
+}
+.mfw-left .mfw-traveller .traveller-hd p a {
+  width: 90px;
+  height: 20px;
+  color: #333;
+  font-size: 18px;
+}
+.mfw-left .mfw-traveller .traveller-hd .hd-right {
+  float: right;
+  color: #999;
+  text-decoration: none;
+  font-size: 12px;
+}
+.mfw-left .mfw-traveller .traveller-hd .hd-right:hover {
+  text-decoration: underline #999999;
+}
+.mfw-left .mfw-traveller #img1 {
+  width: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.mfw-left .mfw-traveller #img1 .traveller-images {
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.mfw-left .mfw-traveller #img1 .traveller-images li {
+  float: left;
+  list-style: none;
+  width: 260px;
+  display: inline-block;
+}
+.mfw-left .mfw-traveller #img1 .traveller-images li h3 {
+  height: 26px;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mfw-left .mfw-traveller #img1 .traveller-images li h3 a {
+  color: #333333;
+}
+.mfw-left .mfw-traveller #img1 .traveller-images li h3 a:hover {
+  color: #ff9d00;
+  border-bottom: 1px solid #ff9d00;
+}
+.mfw-left .mfw-traveller #img1 .traveller-images li p {
+  height: 60px;
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  color: #564a45;
+}
+.mfw-left .mfw-traveller #img1 .traveller-tip_box {
+  position: absolute;
+  top: 120px;
+  right: 14px;
+  width: 90px;
+  height: 8px;
+}
+.mfw-left .mfw-traveller #img1 .traveller-tip_box .current {
+  background-color: #ff9d00;
+}
+.mfw-left .mfw-traveller #img1 .traveller-tip_box li {
+  margin-left: 3px;
+  width: 15px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff;
+}
+.mfw-left .mfw-traveller #img1 .traveller-tip_box li:hover {
+  background-color: #ff9d00;
+}
+.mfw-left .mfw-tuijian {
+  margin-bottom: 30px;
+}
+.mfw-left .mfw-tuijian .tuijian-hd {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.mfw-left .mfw-tuijian .tuijian-hd p {
+  float: left;
+  width: 108px;
+  height: 35px;
+  color: #333;
+  font-size: 18px;
+}
+.mfw-left .mfw-tuijian .tuijian-hd a {
+  float: right;
+  color: #999;
+  font-size: 12px;
+}
+.mfw-left .mfw-tuijian .tuijian-hd a:hover {
+  text-decoration: underline #999999;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item {
+  cursor: pointer;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item .img {
+  position: relative;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item .img a {
+  cursor: pointer;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item .img p {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  color: white;
+  background-color: #ff6262;
+  font-size: 12px;
+  line-height: 24px;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item .img p:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  border-top: 12px solid #ff6262;
+  border-bottom: 12px solid #ff6262;
+  border-right: 5px dashed transparent;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item h3 {
+  height: 26px;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item h3 a {
+  color: #333333;
+}
+.mfw-left .mfw-tuijian .tuijian-bd .gonglve-item h3 a:hover {
+  color: #ff9d00;
+  text-decoration: underline #ff9d00;
+}
+.mfw-left .mfw-tuijian .tuijian-bd ul {
+  width: 260px;
+  height: 140px;
+}
+.mfw-left .mfw-tuijian .tuijian-bd ul li {
+  height: 28px;
+  line-height: 28px;
+}
+.mfw-left .mfw-tuijian .tuijian-bd ul li a {
+  font-size: 14px;
+  color: #ff9d00;
+}
+.mfw-left .mfw-tuijian .tuijian-bd ul li a:hover {
+  text-decoration: underline #ff9d00;
+}
+.mfw-left .newplay {
+  margin-bottom: 30px;
+}
+.mfw-left .newplay #img2 {
+  width: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.mfw-left .newplay #img2 .traveller-images {
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.mfw-left .newplay #img2 .traveller-images li {
+  float: left;
+  list-style: none;
+  width: 260px;
+  display: inline-block;
+}
+.mfw-left .newplay #img2 .traveller-images li h3 {
+  height: 26px;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mfw-left .newplay #img2 .traveller-images li h3 a {
+  color: #ff9d00;
+}
+.mfw-left .newplay #img2 .traveller-images li h3 a:hover {
+  border-bottom: 1px solid #ff9d00;
+}
+.mfw-left .newplay #img2 .traveller-images li p {
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  color: #564a45;
+}
+.mfw-left .newplay #img2 .traveller-tip_box {
+  position: absolute;
+  top: 158px;
+  right: 14px;
+  width: 90px;
+  height: 8px;
+}
+.mfw-left .newplay #img2 .traveller-tip_box li {
+  background-color: white;
+}
+.mfw-left .newplay #img2 .traveller-tip_box .current {
+  background-color: #ff9d00;
+}
+.mfw-left .newplay #img2 .traveller-tip_box li {
+  margin-left: 3px;
+  width: 15px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+.mfw-left .newplay #img2 .traveller-tip_box li:hover {
+  background-color: #ff9d00;
+}
+.mfw-left .foreBox {
+  margin-bottom: 30px;
+  position: relative;
+}
+.mfw-left .foreBox > img {
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+}
+.mfw-left .sixBox {
+  margin-bottom: 30px;
+}
+.mfw-left .sixBox ul li {
+  font-size: 14px;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+}
+.mfw-left .sixBox ul li a {
+  color: #666;
+  padding-bottom: 2px;
+}
+.mfw-left .sixBox ul li a:hover {
+  color: #ff9d00;
+}
+.mfw-left .sixBox ul li a i {
+  font-style: normal;
+  color: #d0122b;
+  background: url("../img/sprite.png") 0 -27px no-repeat;
+  margin-left: 6px;
+  font-size: 10px;
+  padding-left: 8px;
+}
+.mfw-left .sixBox ul li a span {
+  float: right;
+  font-size: 12px;
+  color: #999999;
+}
+.mfw-left .sixBox ul li a span:hover {
+  color: #ff9d00;
+}
+.mfw-left .sevenBox {
+  margin-bottom: 30px;
+}
+.mfw-left .sevenBox .sevenbox-hd {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #333;
+}
+.mfw-left .sevenBox .sevenbox-hd a {
+  color: #333;
+}
+.mfw-left .sevenBox .sevenbox-bd ul li {
+  height: 30px;
+  line-height: 30px;
+  color: #666666;
+  position: relative;
+  font-size: 10px;
+}
+.mfw-left .sevenBox .sevenbox-bd ul li a {
+  margin-left: 5px;
+  color: #666666;
+}
+.mfw-left .sevenBox .sevenbox-bd ul li a:hover {
+  text-decoration: underline #666666;
+}
+/*# sourceMappingURL=left_less.css.map */

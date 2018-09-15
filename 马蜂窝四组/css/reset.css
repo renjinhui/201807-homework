@@ -1,0 +1,22 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td { margin: 0; padding: 0; border: 0;}
+html { color: #000; }
+html,body { height: 100%; }
+body,button,input,select,textarea { font-size: 12px; line-height: 14px; font-family: 'Microsoft Yahei','微软雅黑', \5FAE\8F6F\96C5\9ED1,'宋体',\5b8b\4f53,arial,'Hiragino Sans GB',Tahoma,Arial,Helvetica; }
+ul,ol,li,dl,dd,dt{list-style: none;}
+em { font-style: normal; }
+a { text-decoration: none; cursor: pointer; color:#05c}
+a:hover { text-decoration: none; }
+legend { color: #000; }
+fieldset,img { border: 0; }
+button { cursor: pointer; }
+
+/*解决IE图片缩放失真*/
+img { -ms-interpolation-mode: bicubic; }
+/*清除浮动*/
+.clearfix:after { content: ''; display: block; height: 0; clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both; }
+/*连续英文、数字换行*/
+.wordwrap { word-break: break-all; word-wrap: break-word; }
+/*单行文字超出显示省略号*/
+.omg{overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
