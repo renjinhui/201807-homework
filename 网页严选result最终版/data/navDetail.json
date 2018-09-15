@@ -1,0 +1,24 @@
+{
+"titleArr":["床件","家居家装","收纳","宠物"],
+  "jujia":{
+      "chuangpin":[{"url":"https://yanxuan.nosdn.127.net/ec6d3a9b3bc96dcd5c42c6a1b9e7e50b.png","val":"夏凉"},
+        {"url":"https://yanxuan.nosdn.127.net/ec6d3a9b3bc96dcd5c42c6a1b9e7e50b.png","val":"床品件套"},
+        {"url":"https://yanxuan.nosdn.127.net/ec6d3a9b3bc96dcd5c42c6a1b9e7e50b.png","val":"被枕"}],
+      "jiajujiazhuang":[
+        {"url":"https://yanxuan.nosdn.127.net/ec6d3a9b3bc96dcd5c42c6a1b9e7e50b.png","val":"夏凉"},
+        {"url":"https://yanxuan.nosdn.127.net/e4ecd69e244ff63ba6e7ca649fae5a53.png","val":"床品件套"},
+        {"url":"https://yanxuan.nosdn.127.net/f57994dcda1e459f69a6d3a092aebe7d.png","val":"被枕"},
+        {"url":"https://yanxuan.nosdn.127.net/1bd51b940ede5b0a975a36d20f9c12de.png","val":"被枕"}
+      ],
+      "shouna":[
+        {"url":"https://yanxuan.nosdn.127.net/b46926e47db6d9b33122da594a488800.png","val":"收纳"},
+        {"url":"https://yanxuan.nosdn.127.net/b46926e47db6d9b33122da594a488800.png","val":"收纳2"},
+        {"url":"https://yanxuan.nosdn.127.net/b46926e47db6d9b33122da594a488800.png","val":"收纳3"}
+      ],
+      "yiliaochongwu":[
+        {"url":"https://yanxuan.nosdn.127.net/aa5e66de1609462db109f2e4b6a4d389.png","val":"宠物1"},
+        {"url":"https://yanxuan.nosdn.127.net/aa5e66de1609462db109f2e4b6a4d389.png","val":"宠物1"},
+        {"url":"https://yanxuan.nosdn.127.net/aa5e66de1609462db109f2e4b6a4d389.png","val":"宠物1"}
+      ]
+  }
+}
